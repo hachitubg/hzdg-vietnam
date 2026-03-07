@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
 
 @section('title', 'Loa Array Martin MLA – VD GROUP')
-@section('body_class', 'page-template-page-blank-php')
+@section('body_class', 'page-template-page-blank-php single-product')
 
 @section('content')
 

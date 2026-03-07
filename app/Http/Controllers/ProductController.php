@@ -27,7 +27,12 @@ class ProductController extends Controller
 
     public function show($slug)
     {
-        $product = Product::where('slug', $slug)->where('is_visible', true)->with('category', 'images', 'reviews')->firstOrFail();
+        $product = Product::where('slug', $slug)->where('is_visible', true)->with('category', 'images', 'reviews')->first();
+
+        if (!$product) {
+            return view('frontend.products.show');
+        }
+
         $product->increment('view_count');
         $relatedProducts = Product::where('category_id', $product->category_id)->where('id', '!=', $product->id)->where('is_visible', true)->limit(4)->get();
 

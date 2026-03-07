@@ -17,7 +17,12 @@ class ProjectController extends Controller
 
     public function show($slug)
     {
-        $project = Project::where('slug', $slug)->where('is_visible', true)->firstOrFail();
+        $project = Project::where('slug', $slug)->where('is_visible', true)->first();
+
+        if (!$project) {
+            return view('frontend.projects.show');
+        }
+
         $project->increment('view_count');
         $relatedProjects = Project::where('category_id', $project->category_id)->where('id', '!=', $project->id)->where('is_visible', true)->limit(4)->get();
 
