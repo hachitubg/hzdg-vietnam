@@ -16,6 +16,9 @@ Route::get('/gioi-thieu', [HomeController::class, 'about'])->name('about');
 // Năng lực
 Route::get('/ho-so-nang-luc', [HomeController::class, 'capability'])->name('capability');
 
+// Hệ thống âm thanh
+Route::get('/gioi-thieu-he-thong-am-thanh', [HomeController::class, 'audioSystem'])->name('audio-system');
+
 // Sản phẩm
 Route::get('/san-pham', [ProductController::class, 'index'])->name('products.index');
 Route::get('/danh-muc/{slug}', [ProductController::class, 'category'])->name('products.category');
@@ -35,3 +38,6 @@ Route::post('/lien-he', [ContactController::class, 'store'])->name('contact.stor
 
 // Gửi yêu cầu mua hàng (form trên trang sản phẩm)
 Route::post('/yeu-cau-mua', [ContactController::class, 'purchase'])->name('contact.purchase');
+
+// Trang sản phẩm cụ thể (coda-cue-four)
+Route::get('/coda-cue-four', fn() => view('frontend.pages.coda-cue-four'))->name('pages.coda-cue-four');

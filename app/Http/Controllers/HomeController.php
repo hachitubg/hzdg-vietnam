@@ -11,14 +11,7 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $hotProducts = Product::where('is_visible', true)->where('is_hot', true)->limit(8)->get();
-        $newProducts = Product::where('is_visible', true)->where('is_new', true)->limit(8)->get();
-        $bestsellerProducts = Product::where('is_visible', true)->where('is_bestseller', true)->limit(8)->get();
-        $categories = Category::where('type', 'product')->where('is_visible', true)->whereNull('parent_id')->with('children')->orderBy('sort_order')->get();
-        $featuredProjects = Project::where('is_visible', true)->where('is_featured', true)->limit(6)->get();
-        $latestPosts = Post::where('is_visible', true)->orderByDesc('published_at')->limit(6)->get();
-
-        return view('frontend.home', compact('hotProducts', 'newProducts', 'bestsellerProducts', 'categories', 'featuredProjects', 'latestPosts'));
+        return view('frontend.home');
     }
 
     public function about()
@@ -29,5 +22,10 @@ class HomeController extends Controller
     public function capability()
     {
         return view('frontend.capability');
+    }
+
+    public function audioSystem()
+    {
+        return view('frontend.audio-system');
     }
 }

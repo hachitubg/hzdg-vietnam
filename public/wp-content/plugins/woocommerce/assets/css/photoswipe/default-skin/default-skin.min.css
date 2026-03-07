@@ -1,0 +1,12 @@
+/* Minimal default-skin stub to avoid 404s during static testing.
+   References images that exist in this folder (default-skin.png, preloader.gif, etc.).
+*/
+/* Keep UI hidden unless Photoswipe is opened; real skin has many more rules. */
+.pswp__ui{display:none}
+.pswp.pswp--open .pswp__ui{display:block}
+.pswp__button{background:none;border:0}
+.pswp__preloader{width:44px;height:44px;position:absolute;right:10px;top:10px}
+.pswp__img{max-width:100%;height:auto}
+.pswp__caption{color:#fff;padding:10px;font-size:14px}
+/* ensure the preloader image is referenced relative to this CSS file */
+.pswp__preloader__icn{background-image:url('preloader.gif');background-repeat:no-repeat}
