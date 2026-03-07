@@ -3,6 +3,13 @@
 @section('title', 'Giới thiệu VD GROUP – Công ty cổ phần VD-GROUP')
 @section('body_class', 'page-template-page-blank-php')
 
+@push('styles')
+<link rel="stylesheet" href="{{ asset('assets/extracted-about.css') }}">
+@endpush
+@push('scripts')
+<script defer src="{{ asset('assets/extracted-about.js') }}"></script>
+@endpush
+
 @section('content')
 
 <div class="content-area" id="content" role="main">

@@ -36,9 +36,6 @@
 {{-- Contact Form 7 CSS --}}
 <link rel="stylesheet" href="{{ asset('wp-content/cache/min/1/wp-content/plugins/contact-form-7/includes/css/styles.css') }}">
 
-{{-- Extracted clone CSS --}}
-<link rel="stylesheet" href="{{ asset('assets/extracted.css') }}">
-
 @stack('styles')
 </head>
 
@@ -94,9 +91,6 @@ var flatsomeVars = {
 
 {{-- WP Rocket LazyLoad --}}
 <script async src="{{ asset('wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js') }}"></script>
-
-{{-- Extracted clone JS --}}
-<script defer src="{{ asset('assets/extracted.js') }}"></script>
 
 @stack('scripts')
 

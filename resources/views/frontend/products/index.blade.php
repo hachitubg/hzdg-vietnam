@@ -3,6 +3,13 @@
 @section('title', 'Sản phẩm – VD GROUP')
 @section('body_class', 'page-template-page-blank-php')
 
+@push('styles')
+<link rel="stylesheet" href="{{ asset('assets/extracted-products-index.css') }}">
+@endpush
+@push('scripts')
+<script defer src="{{ asset('assets/extracted-products-index.js') }}"></script>
+@endpush
+
 @section('content')
 
 <div class="content-area" id="content" role="main">

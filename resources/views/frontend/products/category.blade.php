@@ -3,6 +3,13 @@
 @section('title', 'Loa Array – VD GROUP')
 @section('body_class', 'page-template-page-blank-php')
 
+@push('styles')
+<link rel="stylesheet" href="{{ asset('assets/extracted-products-category.css') }}">
+@endpush
+@push('scripts')
+<script defer src="{{ asset('assets/extracted-products-category.js') }}"></script>
+@endpush
+
 @section('content')
 
 <div class="row category-page-row">

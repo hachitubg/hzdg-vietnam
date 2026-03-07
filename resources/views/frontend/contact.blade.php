@@ -3,6 +3,13 @@
 @section('title', 'Liên hệ VD GROUP')
 @section('body_class', 'page-template-page-blank-php')
 
+@push('styles')
+<link rel="stylesheet" href="{{ asset('assets/extracted-contact.css') }}">
+@endpush
+@push('scripts')
+<script defer src="{{ asset('assets/extracted-contact.js') }}"></script>
+@endpush
+
 @section('content')
 
 <div class="content-area" id="content" role="main">

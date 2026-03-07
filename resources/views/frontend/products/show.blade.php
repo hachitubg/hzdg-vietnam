@@ -3,6 +3,13 @@
 @section('title', 'Loa Array Martin MLA – VD GROUP')
 @section('body_class', 'page-template-page-blank-php single-product')
 
+@push('styles')
+<link rel="stylesheet" href="{{ asset('assets/extracted-products-show.css') }}">
+@endpush
+@push('scripts')
+<script defer src="{{ asset('assets/extracted-products-show.js') }}"></script>
+@endpush
+
 @section('content')
 
 <div class="content-area" id="primary"><main class="site-main shop-container" id="main" role="main">

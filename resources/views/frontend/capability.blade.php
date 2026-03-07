@@ -3,6 +3,13 @@
 @section('title', 'Hồ sơ năng lực – VD GROUP')
 @section('body_class', 'page-template-page-blank-php')
 
+@push('styles')
+<link rel="stylesheet" href="{{ asset('assets/extracted-capability.css') }}">
+@endpush
+@push('scripts')
+<script defer src="{{ asset('assets/extracted-capability.js') }}"></script>
+@endpush
+
 @section('content')
 
 <div class="content-area" id="content" role="main">

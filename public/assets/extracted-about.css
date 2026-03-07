@@ -1,0 +1,4188 @@
+
+      img:is([sizes="auto" i], [sizes^="auto," i]) {
+        contain-intrinsic-size: 3000px 1500px;
+      }
+    
+
+/* ---- extracted style block ---- */
+
+
+      .woocommerce form .form-row .required {
+        visibility: visible;
+      }
+    
+
+/* ---- extracted style block ---- */
+
+
+      :root {
+        --yith-wcan-filters_colors_titles: #333333;
+        --yith-wcan-filters_colors_background: #ffffff;
+        --yith-wcan-filters_colors_accent: rgb(37, 66, 131);
+        --yith-wcan-filters_colors_accent_r: 37;
+        --yith-wcan-filters_colors_accent_g: 66;
+        --yith-wcan-filters_colors_accent_b: 131;
+        --yith-wcan-color_swatches_border_radius: 100%;
+        --yith-wcan-color_swatches_size: 30px;
+        --yith-wcan-labels_style_background: #ffffff;
+        --yith-wcan-labels_style_background_hover: rgb(37, 66, 131);
+        --yith-wcan-labels_style_background_active: rgb(37, 66, 131);
+        --yith-wcan-labels_style_text: #434343;
+        --yith-wcan-labels_style_text_hover: #ffffff;
+        --yith-wcan-labels_style_text_active: #ffffff;
+        --yith-wcan-anchors_style_text: #434343;
+        --yith-wcan-anchors_style_text_hover: rgb(37, 66, 131);
+        --yith-wcan-anchors_style_text_active: rgb(37, 66, 131);
+      }
+    
+
+/* ---- extracted style block ---- */
+
+
+      @font-face {
+        font-family: "fl-icons";
+        font-display: block;
+        src: url(../../wp-content/themes/flatsome/assets/css/icons/fl-icons.eot);
+        src:
+          url(../../wp-content/themes/flatsome/assets/css/icons/fl-icons.eot#iefix?v=3.19.15)
+            format("embedded-opentype"),
+          url(../../wp-content/themes/flatsome/assets/css/icons/fl-icons.woff2)
+            format("woff2"),
+          url(../../wp-content/themes/flatsome/assets/css/icons/fl-icons.ttf)
+            format("truetype"),
+          url(../../wp-content/themes/flatsome/assets/css/icons/fl-icons.woff)
+            format("woff"),
+          url(../../wp-content/themes/flatsome/assets/css/icons/fl-icons.svg#fl-icons)
+            format("svg");
+      }
+    
+
+/* ---- extracted style block ---- */
+
+
+      :root {
+        --secondary-color: #db3e26;
+      }
+      .header-top .menu-item.featured a {
+        color: #254283 !important;
+        font-weight: bold;
+      }
+      .header-top .nav > li.active > a {
+        color: #254283;
+        font-weight: bold;
+      }
+      .back-to-top.active {
+        background-color: #254283;
+        color: #fff;
+      }
+      .headSc
+        .header.has-sticky.sticky-jump
+        .ux-menu
+        > .ux-menu-link.active
+        > a,
+      .page-template-page-no-header .header.has-sticky.sticky-jump a:hover {
+        color: #254283;
+      }
+      .ux-menu-link--active .ux-menu-link__link,
+      .ux-menu-link:hover .ux-menu-link__link {
+        color: #254283;
+      }
+      .person-name {
+        color: #254283;
+      }
+      .nav-outline > li.active > a,
+      .nav-outline > li.active > a {
+        color: #254283 !important;
+      }
+      .grid-tools a {
+        background-color: #db3e26;
+      }
+      .single_add_to_cart_button {
+        background-color: #b20000 !important;
+      }
+      .box-shadow-shape .img-inner:after {
+        background-color: #000;
+      }
+      #ftwp-postcontent h2 {
+        color: #db3e26;
+      }
+    
+
+/* ---- extracted style block ---- */
+
+
+      :root {
+        --primary-color: #254283;
+        --fs-color-primary: #254283;
+        --fs-color-secondary: #db3e26;
+        --fs-color-success: #7a9c59;
+        --fs-color-alert: #b20000;
+        --fs-experimental-link-color: #db3e26;
+        --fs-experimental-link-color-hover: #254283;
+      }
+      .tooltipster-base {
+        --tooltip-color: #fff;
+        --tooltip-bg-color: #000;
+      }
+      .off-canvas-right .mfp-content,
+      .off-canvas-left .mfp-content {
+        --drawer-width: 300px;
+      }
+      .off-canvas .mfp-content.off-canvas-cart {
+        --drawer-width: 360px;
+      }
+      .container-width,
+      .full-width .ubermenu-nav,
+      .container,
+      .row {
+        max-width: 1250px;
+      }
+      .row.row-collapse {
+        max-width: 1220px;
+      }
+      .row.row-small {
+        max-width: 1242.5px;
+      }
+      .row.row-large {
+        max-width: 1280px;
+      }
+      .header-main {
+        height: 83px;
+      }
+      #logo img {
+        max-height: 83px;
+      }
+      #logo {
+        width: 90px;
+      }
+      .header-bottom {
+        min-height: 80px;
+      }
+      .header-top {
+        min-height: 30px;
+      }
+      .transparent .header-main {
+        height: 90px;
+      }
+      .transparent #logo img {
+        max-height: 90px;
+      }
+      .has-transparent + .page-title:first-of-type,
+      .has-transparent + #main > .page-title,
+      .has-transparent + #main > div > .page-title,
+      .has-transparent + #main .page-header-wrapper:first-of-type .page-title {
+        padding-top: 120px;
+      }
+      .header.show-on-scroll,
+      .stuck .header-main {
+        height: 50px !important;
+      }
+      .stuck #logo img {
+        max-height: 50px !important;
+      }
+      .header-bottom {
+        background-color: #ffffff;
+      }
+      .header-main .nav > li > a {
+        line-height: 16px;
+      }
+      .stuck .header-main .nav > li > a {
+        line-height: 31px;
+      }
+      @media (max-width: 549px) {
+        .header-main {
+          height: 70px;
+        }
+        #logo img {
+          max-height: 70px;
+        }
+      }
+      .header-top {
+        background-color: #000000 !important;
+      }
+      body {
+        color: #333333;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      .heading-font {
+        color: #333333;
+      }
+      body {
+        font-size: 100%;
+      }
+      @media screen and (max-width: 549px) {
+        body {
+          font-size: 100%;
+        }
+      }
+      body {
+        font-family: "Source Sans 3", sans-serif;
+      }
+      body {
+        font-weight: 400;
+        font-style: normal;
+      }
+      .nav > li > a {
+        font-family: "Source Sans 3", sans-serif;
+      }
+      .mobile-sidebar-levels-2 .nav > li > ul > li > a {
+        font-family: "Source Sans 3", sans-serif;
+      }
+      .nav > li > a,
+      .mobile-sidebar-levels-2 .nav > li > ul > li > a {
+        font-weight: 700;
+        font-style: normal;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      .heading-font,
+      .off-canvas-center .nav-sidebar.nav-vertical > li > a {
+        font-family: "Source Sans 3", sans-serif;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      .heading-font,
+      .banner h1,
+      .banner h2 {
+        font-weight: 500;
+        font-style: normal;
+      }
+      .alt-font {
+        font-family: "Dancing Script", sans-serif;
+      }
+      .alt-font {
+        font-weight: 400 !important;
+        font-style: normal !important;
+      }
+      .breadcrumbs {
+        text-transform: none;
+      }
+      button,
+      .button {
+        text-transform: none;
+      }
+      .header:not(.transparent) .header-nav-main.nav > li > a {
+        color: #333333;
+      }
+      .header:not(.transparent) .header-nav-main.nav > li > a:hover,
+      .header:not(.transparent) .header-nav-main.nav > li.active > a,
+      .header:not(.transparent) .header-nav-main.nav > li.current > a,
+      .header:not(.transparent) .header-nav-main.nav > li > a.active,
+      .header:not(.transparent) .header-nav-main.nav > li > a.current {
+        color: #254283;
+      }
+      .header-nav-main.nav-line-bottom > li > a:before,
+      .header-nav-main.nav-line-grow > li > a:before,
+      .header-nav-main.nav-line > li > a:before,
+      .header-nav-main.nav-box > li > a:hover,
+      .header-nav-main.nav-box > li.active > a,
+      .header-nav-main.nav-pills > li > a:hover,
+      .header-nav-main.nav-pills > li.active > a {
+        color: #fff !important;
+        background-color: #254283;
+      }
+      .has-equal-box-heights .box-image {
+        padding-top: 100%;
+      }
+      .star-rating span:before,
+      .star-rating:before,
+      .woocommerce-page .star-rating:before,
+      .stars a:hover:after,
+      .stars a.active:after {
+        color: #eeee22;
+      }
+      input[type="submit"],
+      input[type="button"],
+      button:not(.icon),
+      .button:not(.icon) {
+        border-radius: 5px !important;
+      }
+      @media screen and (min-width: 550px) {
+        .products .box-vertical .box-image {
+          min-width: 500px !important;
+          width: 500px !important;
+        }
+      }
+      .nav-vertical-fly-out > li + li {
+        border-top-width: 1px;
+        border-top-style: solid;
+      }
+      .label-new.menu-item > a:after {
+        content: "Mới";
+      }
+      .label-hot.menu-item > a:after {
+        content: "Nổi bật";
+      }
+      .label-sale.menu-item > a:after {
+        content: "Giảm giá";
+      }
+      .label-popular.menu-item > a:after {
+        content: "Phổ biến";
+      }
+    
+
+/* ---- extracted style block ---- */
+
+
+      .wpcf7 input[type="submit"] {
+        background-color: #ff0000;
+        color: #fff;
+        border: none;
+        padding: 12px 30px;
+        border-radius: 30px;
+        font-weight: 600;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transition:
+          background-color 0.3s ease,
+          transform 0.2s ease;
+      }
+
+      .wpcf7 input[type="submit"]::after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        transform: scale(0);
+        opacity: 0;
+        transition:
+          transform 0.6s ease,
+          opacity 0.8s ease;
+      }
+
+      .wpcf7 input[type="submit"]:active::after {
+        transform: scale(20);
+        opacity: 0;
+        transition:
+          transform 0.6s ease,
+          opacity 0.8s ease;
+      }
+    
+
+/* ---- extracted style block ---- */
+
+
+      .variations_form .ux-swatch.selected {
+        box-shadow: 0 0 0 2px var(--fs-color-secondary);
+      }
+      .ux-swatches-in-loop .ux-swatch.selected {
+        box-shadow: 0 0 0 2px var(--fs-color-secondary);
+      }
+    
+
+/* ---- extracted style block ---- */
+
+
+      .ux-additional-variation-images-thumbs-placeholder {
+        max-height: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition:
+          visibility 0.1s,
+          opacity 0.1s,
+          max-height 0.2s ease-out;
+      }
+      .ux-additional-variation-images-thumbs-placeholder--visible {
+        max-height: 1000px;
+        opacity: 1;
+        visibility: visible;
+        transition:
+          visibility 0.2s,
+          opacity 0.2s,
+          max-height 0.1s ease-in;
+      }
+    
+
+/* ---- extracted style block ---- */
+
+
+      .border-img-3:before {
+        --wpr-bg-59422c62-e994-46f0-b178-98a2b4daa857: url("../../wp-content/themes/flatsome-child/assets/img/border-img-3.png");
+      }
+    
+
+/* ---- extracted style block ---- */
+
+
+                                        .st0 {
+                                          fill-rule: evenodd;
+                                          clip-rule: evenodd;
+                                        }
+                                      
+
+/* ---- extracted style block ---- */
+
+
+                                #iconbox-2127654804 {
+                                  float: none;
+                                }
+                                #iconbox-2127654804 .ace-iconbox--inner {
+                                  flex-direction: column;
+                                }
+                                #iconbox-2127654804
+                                  .ace-iconbox--inner
+                                  .img-inner
+                                  img {
+                                  object-fit: cover;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                #iconbox-548477303 {
+                                  float: none;
+                                }
+                                #iconbox-548477303 .ace-iconbox--inner {
+                                  flex-direction: column;
+                                }
+                                #iconbox-548477303
+                                  .ace-iconbox--inner
+                                  .img-inner
+                                  img {
+                                  object-fit: cover;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                #iconbox-1626524120 {
+                                  float: none;
+                                }
+                                #iconbox-1626524120 .ace-iconbox--inner {
+                                  flex-direction: column;
+                                }
+                                #iconbox-1626524120
+                                  .ace-iconbox--inner
+                                  .img-inner
+                                  img {
+                                  object-fit: cover;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                #iconbox-1092181130 {
+                                  float: none;
+                                }
+                                #iconbox-1092181130 .ace-iconbox--inner {
+                                  flex-direction: column;
+                                }
+                                #iconbox-1092181130
+                                  .ace-iconbox--inner
+                                  .img-inner
+                                  img {
+                                  object-fit: cover;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                #iconbox-1709031520 {
+                                  float: none;
+                                }
+                                #iconbox-1709031520 .ace-iconbox--inner {
+                                  flex-direction: column;
+                                }
+                                #iconbox-1709031520
+                                  .ace-iconbox--inner
+                                  .img-inner
+                                  img {
+                                  object-fit: cover;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                #iconbox-634419270 {
+                                  float: none;
+                                }
+                                #iconbox-634419270 .ace-iconbox--inner {
+                                  flex-direction: column;
+                                }
+                                #iconbox-634419270
+                                  .ace-iconbox--inner
+                                  .img-inner
+                                  img {
+                                  object-fit: cover;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                        .st0 {
+                                          fill: #010101;
+                                        }
+                                        .st1 {
+                                          fill: #020202;
+                                        }
+                                        .st2 {
+                                          fill: #030303;
+                                        }
+                                      
+
+/* ---- extracted style block ---- */
+
+
+                                #iconbox-1824687678 {
+                                  float: none;
+                                }
+                                #iconbox-1824687678 .ace-iconbox--inner {
+                                  flex-direction: column;
+                                }
+                                #iconbox-1824687678
+                                  .ace-iconbox--inner
+                                  .img-inner
+                                  img {
+                                  object-fit: cover;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                #iconbox-2013783817 {
+                                  float: none;
+                                }
+                                #iconbox-2013783817 .ace-iconbox--inner {
+                                  flex-direction: column;
+                                }
+                                #iconbox-2013783817
+                                  .ace-iconbox--inner
+                                  .img-inner
+                                  img {
+                                  object-fit: cover;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                        .st0 {
+                                          fill: #010101;
+                                        }
+                                      
+
+/* ---- extracted style block ---- */
+
+
+                                #iconbox-1188141124 {
+                                  float: none;
+                                }
+                                #iconbox-1188141124 .ace-iconbox--inner {
+                                  flex-direction: column;
+                                }
+                                #iconbox-1188141124
+                                  .ace-iconbox--inner
+                                  .img-inner
+                                  img {
+                                  object-fit: cover;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                #iconbox-740442460 {
+                                  float: none;
+                                }
+                                #iconbox-740442460 .ace-iconbox--inner {
+                                  flex-direction: column;
+                                }
+                                #iconbox-740442460
+                                  .ace-iconbox--inner
+                                  .img-inner
+                                  img {
+                                  object-fit: cover;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                #iconbox-1982678494 {
+                                  float: none;
+                                }
+                                #iconbox-1982678494 .ace-iconbox--inner {
+                                  flex-direction: column;
+                                }
+                                #iconbox-1982678494
+                                  .ace-iconbox--inner
+                                  .img-inner
+                                  img {
+                                  object-fit: cover;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                        .st0 {
+                                          fill: #505050;
+                                        }
+                                        .st1 {
+                                          fill: #080808;
+                                        }
+                                      
+
+/* ---- extracted style block ---- */
+
+
+                                #iconbox-1786446117 {
+                                  float: none;
+                                }
+                                #iconbox-1786446117 .ace-iconbox--inner {
+                                  flex-direction: column;
+                                }
+                                #iconbox-1786446117
+                                  .ace-iconbox--inner
+                                  .img-inner
+                                  img {
+                                  object-fit: cover;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                          #row-1847155117 > .col > .col-inner {
+                            background-color: rgb(255, 255, 255);
+                          }
+                        
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-2024439382 {
+                                    float: none;
+                                  }
+                                  #iconbox-2024439382 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-2024439382
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-113414333 {
+                                    float: none;
+                                  }
+                                  #iconbox-113414333 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-113414333
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-30689770 {
+                                    float: none;
+                                  }
+                                  #iconbox-30689770 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-30689770
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-894003476 {
+                                    float: none;
+                                  }
+                                  #iconbox-894003476 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-894003476
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-604263099 {
+                                    float: none;
+                                  }
+                                  #iconbox-604263099 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-604263099
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: cover;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1518761145 {
+                                    float: none;
+                                  }
+                                  #iconbox-1518761145 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1518761145
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: cover;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1279535338 {
+                                    float: none;
+                                  }
+                                  #iconbox-1279535338 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1279535338
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1139117605 {
+                                    float: none;
+                                  }
+                                  #iconbox-1139117605 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1139117605
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: cover;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1111535167 {
+                                    float: none;
+                                  }
+                                  #iconbox-1111535167 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1111535167
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1375133409 {
+                                    float: none;
+                                  }
+                                  #iconbox-1375133409 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1375133409
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-492774098 {
+                                    float: none;
+                                  }
+                                  #iconbox-492774098 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-492774098
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: cover;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1243065380 {
+                                    float: none;
+                                  }
+                                  #iconbox-1243065380 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1243065380
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: cover;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1466064395 {
+                                    float: none;
+                                  }
+                                  #iconbox-1466064395 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1466064395
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: cover;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                #stack-173359179 > * {
+                                  padding: 1rem !important;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                #iconbox-1922983938 {
+                                  float: right;
+                                }
+                                #iconbox-1922983938 .ace-iconbox--inner {
+                                  flex-direction: row-reverse;
+                                }
+                                #iconbox-1922983938
+                                  .ace-iconbox--inner
+                                  .img-inner
+                                  img {
+                                  object-fit: cover;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                            #text-2806498396 {
+                                              color: rgb(0, 0, 0);
+                                            }
+                                            #text-2806498396 > * {
+                                              color: rgb(0, 0, 0);
+                                            }
+                                          
+
+/* ---- extracted style block ---- */
+
+
+                                      #text-box-826118869 {
+                                        width: 93%;
+                                      }
+                                      #text-box-826118869 .text-box-content {
+                                        font-size: 100%;
+                                      }
+                                    
+
+/* ---- extracted style block ---- */
+
+
+                                #banner-1429851641 {
+                                  padding-top: 150px;
+                                }
+                                #banner-1429851641
+                                  .ux-shape-divider--bottom
+                                  svg {
+                                  height: 50px;
+                                  --divider-width: 100%;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1356568506 {
+                                    float: none;
+                                  }
+                                  #iconbox-1356568506 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1356568506
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-785149985 {
+                                    float: none;
+                                  }
+                                  #iconbox-785149985 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-785149985
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-776330280 {
+                                    float: none;
+                                  }
+                                  #iconbox-776330280 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-776330280
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-2048902595 {
+                                    float: none;
+                                  }
+                                  #iconbox-2048902595 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-2048902595
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                #stack-2097007718 > * {
+                                  --stack-gap: 1rem;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                #iconbox-2084827992 {
+                                  float: right;
+                                }
+                                #iconbox-2084827992 .ace-iconbox--inner {
+                                  flex-direction: row-reverse;
+                                }
+                                #iconbox-2084827992
+                                  .ace-iconbox--inner
+                                  .img-inner
+                                  img {
+                                  object-fit: cover;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-37788734 {
+                                    float: none;
+                                  }
+                                  #iconbox-37788734 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-37788734
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1328953686 {
+                                    float: none;
+                                  }
+                                  #iconbox-1328953686 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1328953686
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1022986231 {
+                                    float: none;
+                                  }
+                                  #iconbox-1022986231 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-1022986231 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1022986231
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-17274184 {
+                                    float: none;
+                                  }
+                                  #iconbox-17274184 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-17274184
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1365489314 {
+                                    float: none;
+                                  }
+                                  #iconbox-1365489314 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1365489314
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-985402230 {
+                                    float: none;
+                                  }
+                                  #iconbox-985402230 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-985402230
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1448950918 {
+                                    float: none;
+                                  }
+                                  #iconbox-1448950918 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1448950918
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1339081797 {
+                                    float: none;
+                                  }
+                                  #iconbox-1339081797 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1339081797
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1690441549 {
+                                    float: none;
+                                  }
+                                  #iconbox-1690441549 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1690441549
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-364849980 {
+                                    float: none;
+                                  }
+                                  #iconbox-364849980 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-364849980
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                #stack-1246539034 > * {
+                                  padding: 1rem !important;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                #iconbox-1652722909 {
+                                  float: right;
+                                }
+                                #iconbox-1652722909 .ace-iconbox--inner {
+                                  flex-direction: row-reverse;
+                                }
+                                #iconbox-1652722909
+                                  .ace-iconbox--inner
+                                  .img-inner
+                                  img {
+                                  object-fit: cover;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                            #text-2717246867 {
+                                              color: rgb(0, 0, 0);
+                                            }
+                                            #text-2717246867 > * {
+                                              color: rgb(0, 0, 0);
+                                            }
+                                          
+
+/* ---- extracted style block ---- */
+
+
+                                      #text-box-1030051962 {
+                                        width: 85%;
+                                      }
+                                      #text-box-1030051962 .text-box-content {
+                                        font-size: 100%;
+                                      }
+                                    
+
+/* ---- extracted style block ---- */
+
+
+                                #banner-1710032027 {
+                                  padding-top: 150px;
+                                }
+                                #banner-1710032027
+                                  .ux-shape-divider--bottom
+                                  svg {
+                                  height: 50px;
+                                  --divider-width: 100%;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-912304851 {
+                                    float: none;
+                                  }
+                                  #iconbox-912304851 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-912304851
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-208809711 {
+                                    float: none;
+                                  }
+                                  #iconbox-208809711 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-208809711
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1555323114 {
+                                    float: none;
+                                  }
+                                  #iconbox-1555323114 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1555323114
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-708957052 {
+                                    float: none;
+                                  }
+                                  #iconbox-708957052 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-708957052
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                #stack-4140268377 > * {
+                                  --stack-gap: 1rem;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                #iconbox-380672668 {
+                                  float: right;
+                                }
+                                #iconbox-380672668 .ace-iconbox--inner {
+                                  flex-direction: row-reverse;
+                                }
+                                #iconbox-380672668
+                                  .ace-iconbox--inner
+                                  .img-inner
+                                  img {
+                                  object-fit: cover;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                            #text-4078668656 {
+                                              color: rgb(0, 0, 0);
+                                            }
+                                            #text-4078668656 > * {
+                                              color: rgb(0, 0, 0);
+                                            }
+                                          
+
+/* ---- extracted style block ---- */
+
+
+                                      #text-box-1785168952 {
+                                        width: 94%;
+                                      }
+                                      #text-box-1785168952 .text-box-content {
+                                        font-size: 100%;
+                                      }
+                                    
+
+/* ---- extracted style block ---- */
+
+
+                                #banner-64338182 {
+                                  padding-top: 150px;
+                                }
+                                #banner-64338182 .ux-shape-divider--bottom svg {
+                                  height: 50px;
+                                  --divider-width: 100%;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-917498483 {
+                                    float: none;
+                                  }
+                                  #iconbox-917498483 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-917498483
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-831032171 {
+                                    float: none;
+                                  }
+                                  #iconbox-831032171 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-831032171 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-831032171
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-263475203 {
+                                    float: none;
+                                  }
+                                  #iconbox-263475203 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-263475203 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-263475203
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                #stack-4225375249 > * {
+                                  --stack-gap: 1rem;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                #iconbox-1663952413 {
+                                  float: right;
+                                }
+                                #iconbox-1663952413 .ace-iconbox--inner {
+                                  flex-direction: row-reverse;
+                                }
+                                #iconbox-1663952413
+                                  .ace-iconbox--inner
+                                  .img-inner
+                                  img {
+                                  object-fit: cover;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1044959222 {
+                                    float: none;
+                                  }
+                                  #iconbox-1044959222 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1044959222
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: cover;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-67381414 {
+                                    float: none;
+                                  }
+                                  #iconbox-67381414 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-67381414 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-67381414
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: cover;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1056935919 {
+                                    float: none;
+                                  }
+                                  #iconbox-1056935919 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-1056935919 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1056935919
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: cover;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1100743328 {
+                                    float: none;
+                                  }
+                                  #iconbox-1100743328 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-1100743328 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1100743328
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1213573751 {
+                                    float: none;
+                                  }
+                                  #iconbox-1213573751 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-1213573751 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1213573751
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: cover;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-737231795 {
+                                    float: none;
+                                  }
+                                  #iconbox-737231795 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-737231795 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-737231795
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: cover;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1657973852 {
+                                    float: none;
+                                  }
+                                  #iconbox-1657973852 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-1657973852 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1657973852
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1724623944 {
+                                    float: none;
+                                  }
+                                  #iconbox-1724623944 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-1724623944 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1724623944
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                #stack-2819489491 > * {
+                                  padding: 1rem !important;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                #iconbox-1470253880 {
+                                  float: right;
+                                }
+                                #iconbox-1470253880 .ace-iconbox--inner {
+                                  flex-direction: row-reverse;
+                                }
+                                #iconbox-1470253880
+                                  .ace-iconbox--inner
+                                  .img-inner
+                                  img {
+                                  object-fit: cover;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-801153226 {
+                                    float: none;
+                                  }
+                                  #iconbox-801153226 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-801153226
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                    padding: 0px 10px 0px 10px;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1952253991 {
+                                    float: none;
+                                  }
+                                  #iconbox-1952253991 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-1952253991 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1952253991
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1452970484 {
+                                    float: none;
+                                  }
+                                  #iconbox-1452970484 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-1452970484 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1452970484
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1657538854 {
+                                    float: none;
+                                  }
+                                  #iconbox-1657538854 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-1657538854 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1657538854
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-275334632 {
+                                    float: none;
+                                  }
+                                  #iconbox-275334632 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-275334632 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-275334632
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-737344019 {
+                                    float: none;
+                                  }
+                                  #iconbox-737344019 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-737344019 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-737344019
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-2060876277 {
+                                    float: none;
+                                  }
+                                  #iconbox-2060876277 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-2060876277 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-2060876277
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1384392279 {
+                                    float: none;
+                                  }
+                                  #iconbox-1384392279 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-1384392279 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1384392279
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1532255860 {
+                                    float: none;
+                                  }
+                                  #iconbox-1532255860 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-1532255860 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1532255860
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-277854638 {
+                                    float: none;
+                                  }
+                                  #iconbox-277854638 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-277854638 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-277854638
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                #stack-1907909921 > * {
+                                  padding: 1rem !important;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                #iconbox-1573998246 {
+                                  float: right;
+                                }
+                                #iconbox-1573998246 .ace-iconbox--inner {
+                                  flex-direction: row-reverse;
+                                }
+                                #iconbox-1573998246
+                                  .ace-iconbox--inner
+                                  .img-inner
+                                  img {
+                                  object-fit: cover;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                            #text-850436295 {
+                                              color: rgb(0, 0, 0);
+                                            }
+                                            #text-850436295 > * {
+                                              color: rgb(0, 0, 0);
+                                            }
+                                          
+
+/* ---- extracted style block ---- */
+
+
+                                      #text-box-1269748332 {
+                                        width: 60%;
+                                      }
+                                      #text-box-1269748332 .text-box-content {
+                                        font-size: 100%;
+                                      }
+                                    
+
+/* ---- extracted style block ---- */
+
+
+                                #banner-1139819017 {
+                                  padding-top: 150px;
+                                }
+                                #banner-1139819017
+                                  .ux-shape-divider--bottom
+                                  svg {
+                                  height: 50px;
+                                  --divider-width: 100%;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-280373842 {
+                                    float: none;
+                                  }
+                                  #iconbox-280373842 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-280373842
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: cover;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1700626047 {
+                                    float: none;
+                                  }
+                                  #iconbox-1700626047 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-1700626047 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1700626047
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: cover;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1201273276 {
+                                    float: none;
+                                  }
+                                  #iconbox-1201273276 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-1201273276 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1201273276
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: cover;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1553672832 {
+                                    float: none;
+                                  }
+                                  #iconbox-1553672832 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-1553672832 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1553672832
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: cover;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1721536071 {
+                                    float: none;
+                                  }
+                                  #iconbox-1721536071 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-1721536071 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1721536071
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: cover;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                #stack-2365239393 > * {
+                                  --stack-gap: 1rem;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                #iconbox-96374370 {
+                                  float: right;
+                                }
+                                #iconbox-96374370 .ace-iconbox--inner {
+                                  flex-direction: row-reverse;
+                                }
+                                #iconbox-96374370
+                                  .ace-iconbox--inner
+                                  .img-inner
+                                  img {
+                                  object-fit: cover;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                            #text-3850957488 {
+                                              color: rgb(0, 0, 0);
+                                            }
+                                            #text-3850957488 > * {
+                                              color: rgb(0, 0, 0);
+                                            }
+                                          
+
+/* ---- extracted style block ---- */
+
+
+                                      #text-box-1970947987 {
+                                        width: 82%;
+                                      }
+                                      #text-box-1970947987 .text-box-content {
+                                        font-size: 100%;
+                                      }
+                                    
+
+/* ---- extracted style block ---- */
+
+
+                                #banner-263793493 {
+                                  padding-top: 150px;
+                                }
+                                #banner-263793493
+                                  .ux-shape-divider--bottom
+                                  svg {
+                                  height: 50px;
+                                  --divider-width: 100%;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1929636214 {
+                                    float: none;
+                                  }
+                                  #iconbox-1929636214 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1929636214
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: cover;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-408360305 {
+                                    float: none;
+                                  }
+                                  #iconbox-408360305 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-408360305 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-408360305
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: cover;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1610899465 {
+                                    float: right;
+                                  }
+                                  #iconbox-1610899465 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-1610899465 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1610899465
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: cover;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1677985198 {
+                                    float: none;
+                                  }
+                                  #iconbox-1677985198 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-1677985198 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1677985198
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: cover;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                #stack-3485099708 > * {
+                                  --stack-gap: 1rem;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                #iconbox-916795592 {
+                                  float: right;
+                                }
+                                #iconbox-916795592 .ace-iconbox--inner {
+                                  flex-direction: row-reverse;
+                                }
+                                #iconbox-916795592
+                                  .ace-iconbox--inner
+                                  .img-inner
+                                  img {
+                                  object-fit: cover;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                    #text-331927906 {
+                                      text-align: left;
+                                    }
+                                  
+
+/* ---- extracted style block ---- */
+
+
+                              #text-box-92139513 {
+                                width: 88%;
+                              }
+                              #text-box-92139513 .text-box-content {
+                                font-size: 100%;
+                              }
+                            
+
+/* ---- extracted style block ---- */
+
+
+                        #banner-1964587326 {
+                          padding-top: 500px;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                          #text-3865837251 {
+                            line-height: 1.5;
+                          }
+                        
+
+/* ---- extracted style block ---- */
+
+
+                    #col-961938937 > .col-inner {
+                      padding: 20px 20px 20px 20px;
+                    }
+                  
+
+/* ---- extracted style block ---- */
+
+
+              #section_648370547 {
+                padding-top: 0px;
+                padding-bottom: 0px;
+              }
+            
+
+/* ---- extracted style block ---- */
+
+
+                        #title-2115880543 .section-title-main {
+                          font-size: 400%;
+                        }
+                        #title-2115880543 .section-title-main span {
+                          flex-direction: column;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                        #text-2865325182 {
+                          line-height: 1.5;
+                          color: rgb(0, 0, 0);
+                        }
+                        #text-2865325182 > * {
+                          color: rgb(0, 0, 0);
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                    #col-1874232079 > .col-inner {
+                      padding: 20px 20px 20px 20px;
+                    }
+                  
+
+/* ---- extracted style block ---- */
+
+
+                        #image_1566591066 {
+                          width: 100%;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+              #section_1946074461 {
+                padding-top: 30px;
+                padding-bottom: 30px;
+                background-color: rgb(238, 238, 238);
+              }
+            
+
+/* ---- extracted style block ---- */
+
+
+                              #image_1977759317 {
+                                width: 100%;
+                              }
+                              @media (min-width: 550px) {
+                                #image_1977759317 {
+                                  width: 100%;
+                                }
+                              }
+                            
+
+/* ---- extracted style block ---- */
+
+
+                        #text-box-507055349 {
+                          width: 50%;
+                        }
+                        #text-box-507055349 .text-box-content {
+                          font-size: 100%;
+                        }
+                        @media (min-width: 550px) {
+                          #text-box-507055349 {
+                            width: 28%;
+                          }
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                  #banner-1306612490 {
+                    padding-top: 200px;
+                  }
+                  #banner-1306612490 .overlay {
+                    background-color: rgba(0, 0, 0, 0.5);
+                  }
+                  #banner-1306612490 .banner-bg img {
+                    object-position: 42% 23%;
+                  }
+                
+
+/* ---- extracted style block ---- */
+
+
+                        #title-824033037 .section-title-main {
+                          font-size: 150%;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                        #title-328110752 .section-title-main {
+                          font-size: 150%;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                        #title-969206512 .section-title-main {
+                          font-size: 150%;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-700401299
+                          .ace-iconbox--content
+                          > :first-child {
+                          text-indent: calc(2.25em + 5px);
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-700401299 {
+                          float: none;
+                        }
+                        #iconbox-700401299 .ace-iconbox--inner {
+                          flex-direction: first-letter;
+                        }
+                        #iconbox-700401299 .ace-iconbox--inner .img-inner img {
+                          object-fit: cover;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-345515969
+                          .ace-iconbox--content
+                          > :first-child {
+                          text-indent: calc(2.25em + 5px);
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-345515969 {
+                          float: none;
+                        }
+                        #iconbox-345515969 .ace-iconbox--inner {
+                          flex-direction: first-letter;
+                        }
+                        #iconbox-345515969 .ace-iconbox--inner .img-inner img {
+                          object-fit: cover;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-1766861850
+                          .ace-iconbox--content
+                          > :first-child {
+                          text-indent: calc(2.25em + 5px);
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-1766861850 {
+                          float: none;
+                        }
+                        #iconbox-1766861850 .ace-iconbox--inner {
+                          flex-direction: first-letter;
+                        }
+                        #iconbox-1766861850 .ace-iconbox--inner .img-inner img {
+                          object-fit: cover;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                  #row-1708243144 > .col > .col-inner {
+                    padding: 20px 0px 20px 0px;
+                  }
+                
+
+/* ---- extracted style block ---- */
+
+
+              #section_417035477 {
+                padding-top: 0px;
+                padding-bottom: 0px;
+              }
+            
+
+/* ---- extracted style block ---- */
+
+
+                        #title-792836970 .section-title-main {
+                          font-size: 120%;
+                          line-height: 1.25;
+                        }
+                        #title-792836970 .section-title-main span {
+                          flex-direction: column;
+                        }
+                        @media (min-width: 550px) {
+                          #title-792836970 .section-title-main {
+                            font-size: 150%;
+                          }
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                    #col-782875238 > .col-inner {
+                      padding: 30px 20px 20px 20px;
+                    }
+                  
+
+/* ---- extracted style block ---- */
+
+
+                        #image_1755473513 {
+                          width: 100%;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                        #title-1669683659 .section-title-main {
+                          font-size: 150%;
+                        }
+                        @media (min-width: 550px) {
+                          #title-1669683659 .section-title-main {
+                            font-size: 180%;
+                          }
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                    #col-242086046 > .col-inner {
+                      padding: 30px 20px 20px 20px;
+                    }
+                  
+
+/* ---- extracted style block ---- */
+
+
+              #section_515170360 {
+                padding-top: 0px;
+                padding-bottom: 0px;
+              }
+              #section_515170360 .section-bg-overlay {
+                background-color: rgba(255, 255, 255, 0.8);
+              }
+            
+
+/* ---- extracted style block ---- */
+
+
+                #title-1283744912 .section-title-main {
+                  font-size: 150%;
+                }
+                #title-1283744912 .section-title-main span {
+                  flex-direction: column;
+                }
+                @media (min-width: 550px) {
+                  #title-1283744912 .section-title-main {
+                    font-size: 200%;
+                  }
+                }
+              
+
+/* ---- extracted style block ---- */
+
+
+                      #title-1065663905 .section-title-main {
+                        font-size: 150%;
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-1208759645 {
+                          float: flex-start;
+                        }
+                        #iconbox-1208759645 .ace-iconbox--content {
+                          text-align: left;
+                        }
+                        #iconbox-1208759645 .ace-iconbox--inner {
+                          flex-direction: icon-left;
+                        }
+                        #iconbox-1208759645 .ace-iconbox--inner .img-inner img {
+                          object-fit: cover;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-2057401518 {
+                          float: flex-start;
+                        }
+                        #iconbox-2057401518 .ace-iconbox--content {
+                          text-align: left;
+                        }
+                        #iconbox-2057401518 .ace-iconbox--inner {
+                          flex-direction: icon-left;
+                        }
+                        #iconbox-2057401518 .ace-iconbox--inner .img-inner img {
+                          object-fit: cover;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-2076079494 {
+                          float: flex-start;
+                        }
+                        #iconbox-2076079494 .ace-iconbox--content {
+                          text-align: left;
+                        }
+                        #iconbox-2076079494 .ace-iconbox--inner {
+                          flex-direction: icon-left;
+                        }
+                        #iconbox-2076079494 .ace-iconbox--inner .img-inner img {
+                          object-fit: cover;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-233559295 {
+                          float: flex-start;
+                        }
+                        #iconbox-233559295 .ace-iconbox--content {
+                          text-align: left;
+                        }
+                        #iconbox-233559295 .ace-iconbox--inner {
+                          flex-direction: icon-left;
+                        }
+                        #iconbox-233559295 .ace-iconbox--inner .img-inner img {
+                          object-fit: cover;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-382121435 {
+                          float: flex-start;
+                        }
+                        #iconbox-382121435 .ace-iconbox--content {
+                          text-align: left;
+                        }
+                        #iconbox-382121435 .ace-iconbox--inner {
+                          flex-direction: icon-left;
+                        }
+                        #iconbox-382121435 .ace-iconbox--inner .img-inner img {
+                          object-fit: cover;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-325315110 {
+                          float: flex-start;
+                        }
+                        #iconbox-325315110 .ace-iconbox--content {
+                          text-align: left;
+                        }
+                        #iconbox-325315110 .ace-iconbox--inner {
+                          flex-direction: icon-left;
+                        }
+                        #iconbox-325315110 .ace-iconbox--inner .img-inner img {
+                          object-fit: cover;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+            #section_2135056950 {
+              padding-top: 0px;
+              padding-bottom: 0px;
+              background-color: #254283;
+            }
+          
+
+/* ---- extracted style block ---- */
+
+
+                      #title-566658867 .section-title-main {
+                        font-size: 150%;
+                        line-height: 1;
+                      }
+                      @media (min-width: 550px) {
+                        #title-566658867 .section-title-main {
+                          font-size: 200%;
+                          line-height: 0.5;
+                        }
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                      #text-2793043285 {
+                        text-align: center;
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+            #section_1471608979 {
+              padding-top: 30px;
+              padding-bottom: 30px;
+            }
+            #section_1471608979 .section-bg-overlay {
+              background-color: rgba(0, 0, 0, 0.7);
+            }
+            #section_1471608979 .section-bg img {
+              object-position: 58% 38%;
+            }
+          
+
+/* ---- extracted style block ---- */
+
+
+                      #iconbox-831440976 .ace-iconbox--content > :first-child {
+                        text-indent: calc(1.5em + 5px);
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                      #iconbox-831440976 {
+                        float: flex-start;
+                      }
+                      #iconbox-831440976 .ace-iconbox--content {
+                        text-align: left;
+                      }
+                      #iconbox-831440976 .ace-iconbox--inner {
+                        flex-direction: first-letter;
+                      }
+                      #iconbox-831440976 .ace-iconbox--inner .img-inner img {
+                        object-fit: cover;
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                      #iconbox-1111082691 .ace-iconbox--content > :first-child {
+                        text-indent: calc(1.5em + 5px);
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                      #iconbox-1111082691 {
+                        float: flex-start;
+                      }
+                      #iconbox-1111082691 .ace-iconbox--content {
+                        text-align: left;
+                      }
+                      #iconbox-1111082691 .ace-iconbox--inner {
+                        flex-direction: first-letter;
+                      }
+                      #iconbox-1111082691 .ace-iconbox--inner .img-inner img {
+                        object-fit: cover;
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                      #iconbox-1185403236 .ace-iconbox--content > :first-child {
+                        text-indent: calc(1.5em + 5px);
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                      #iconbox-1185403236 {
+                        float: flex-start;
+                      }
+                      #iconbox-1185403236 .ace-iconbox--content {
+                        text-align: left;
+                      }
+                      #iconbox-1185403236 .ace-iconbox--inner {
+                        flex-direction: first-letter;
+                      }
+                      #iconbox-1185403236 .ace-iconbox--inner .img-inner img {
+                        object-fit: cover;
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                      #iconbox-1970002259 .ace-iconbox--content > :first-child {
+                        text-indent: calc(1.5em + 5px);
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                      #iconbox-1970002259 {
+                        float: left;
+                      }
+                      #iconbox-1970002259 .ace-iconbox--content {
+                        text-align: left;
+                      }
+                      #iconbox-1970002259 .ace-iconbox--inner {
+                        flex-direction: first-letter;
+                      }
+                      #iconbox-1970002259 .ace-iconbox--inner .img-inner img {
+                        object-fit: cover;
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                      #iconbox-1759127744 .ace-iconbox--content > :first-child {
+                        text-indent: calc(1.5em + 5px);
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                      #iconbox-1759127744 {
+                        float: flex-start;
+                      }
+                      #iconbox-1759127744 .ace-iconbox--content {
+                        text-align: left;
+                      }
+                      #iconbox-1759127744 .ace-iconbox--inner {
+                        flex-direction: first-letter;
+                      }
+                      #iconbox-1759127744 .ace-iconbox--inner .img-inner img {
+                        object-fit: cover;
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                      #iconbox-359546102 .ace-iconbox--content > :first-child {
+                        text-indent: calc(1.5em + 5px);
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                      #iconbox-359546102 {
+                        float: flex-start;
+                      }
+                      #iconbox-359546102 .ace-iconbox--content {
+                        text-align: left;
+                      }
+                      #iconbox-359546102 .ace-iconbox--inner {
+                        flex-direction: first-letter;
+                      }
+                      #iconbox-359546102 .ace-iconbox--inner .img-inner img {
+                        object-fit: cover;
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                      #iconbox-58219965 .ace-iconbox--content > :first-child {
+                        text-indent: calc(1.5em + 5px);
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                      #iconbox-58219965 {
+                        float: flex-start;
+                      }
+                      #iconbox-58219965 .ace-iconbox--content {
+                        text-align: left;
+                      }
+                      #iconbox-58219965 .ace-iconbox--inner {
+                        flex-direction: first-letter;
+                      }
+                      #iconbox-58219965 .ace-iconbox--inner .img-inner img {
+                        object-fit: cover;
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                      #gap-1407624458 {
+                        padding-top: 20px;
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-2055855571 {
+                          float: flex-start;
+                        }
+                        #iconbox-2055855571 .ace-iconbox--content {
+                          text-align: left;
+                        }
+                        #iconbox-2055855571 .ace-iconbox--inner {
+                          flex-direction: icon-left;
+                        }
+                        #iconbox-2055855571 .ace-iconbox--inner .img-inner img {
+                          object-fit: cover;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-780869026 {
+                          float: flex-start;
+                        }
+                        #iconbox-780869026 .ace-iconbox--content {
+                          text-align: left;
+                        }
+                        #iconbox-780869026 .ace-iconbox--inner {
+                          flex-direction: icon-left;
+                        }
+                        #iconbox-780869026 .ace-iconbox--inner .img-inner img {
+                          object-fit: cover;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-578836049 {
+                          float: flex-start;
+                        }
+                        #iconbox-578836049 .ace-iconbox--content {
+                          text-align: left;
+                        }
+                        #iconbox-578836049 .ace-iconbox--inner {
+                          flex-direction: icon-left;
+                        }
+                        #iconbox-578836049 .ace-iconbox--inner .img-inner img {
+                          object-fit: cover;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-61159719 {
+                          float: flex-start;
+                        }
+                        #iconbox-61159719 .ace-iconbox--content {
+                          text-align: left;
+                        }
+                        #iconbox-61159719 .ace-iconbox--inner {
+                          flex-direction: icon-left;
+                        }
+                        #iconbox-61159719 .ace-iconbox--inner .img-inner img {
+                          object-fit: cover;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-1147613827 {
+                          float: flex-start;
+                        }
+                        #iconbox-1147613827 .ace-iconbox--content {
+                          text-align: left;
+                        }
+                        #iconbox-1147613827 .ace-iconbox--inner {
+                          flex-direction: icon-left;
+                        }
+                        #iconbox-1147613827 .ace-iconbox--inner .img-inner img {
+                          object-fit: cover;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-625576525 {
+                          float: flex-start;
+                        }
+                        #iconbox-625576525 .ace-iconbox--content {
+                          text-align: left;
+                        }
+                        #iconbox-625576525 .ace-iconbox--inner {
+                          flex-direction: icon-left;
+                        }
+                        #iconbox-625576525 .ace-iconbox--inner .img-inner img {
+                          object-fit: cover;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-72033729 {
+                          float: flex-start;
+                        }
+                        #iconbox-72033729 .ace-iconbox--content {
+                          text-align: left;
+                        }
+                        #iconbox-72033729 .ace-iconbox--inner {
+                          flex-direction: icon-left;
+                        }
+                        #iconbox-72033729 .ace-iconbox--inner .img-inner img {
+                          object-fit: cover;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-1656291988 {
+                          float: flex-start;
+                        }
+                        #iconbox-1656291988 .ace-iconbox--content {
+                          text-align: left;
+                        }
+                        #iconbox-1656291988 .ace-iconbox--inner {
+                          flex-direction: icon-left;
+                        }
+                        #iconbox-1656291988 .ace-iconbox--inner .img-inner img {
+                          object-fit: cover;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-409953846 {
+                          float: flex-start;
+                        }
+                        #iconbox-409953846 .ace-iconbox--content {
+                          text-align: left;
+                        }
+                        #iconbox-409953846 .ace-iconbox--inner {
+                          flex-direction: icon-left;
+                        }
+                        #iconbox-409953846 .ace-iconbox--inner .img-inner img {
+                          object-fit: cover;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-1348147607 {
+                          float: flex-start;
+                        }
+                        #iconbox-1348147607 .ace-iconbox--content {
+                          text-align: left;
+                        }
+                        #iconbox-1348147607 .ace-iconbox--inner {
+                          flex-direction: icon-left;
+                        }
+                        #iconbox-1348147607 .ace-iconbox--inner .img-inner img {
+                          object-fit: cover;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                      #gap-152238256 {
+                        padding-top: 20px;
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                      #iconbox-2085383168 {
+                        float: none;
+                      }
+                      #iconbox-2085383168 .ace-iconbox--inner {
+                        flex-direction: column;
+                      }
+                      #iconbox-2085383168 .ace-iconbox--inner .img-inner img {
+                        object-fit: cover;
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+            #section_1019963624 {
+              padding-top: 30px;
+              padding-bottom: 30px;
+              background-color: rgb(255, 255, 255);
+            }
+          
+
+/* ---- extracted style block ---- */
+
+
+              #iconbox-1368740993 {
+                float: none;
+              }
+              #iconbox-1368740993 .ace-iconbox--inner {
+                flex-direction: column;
+              }
+              #iconbox-1368740993 .ace-iconbox--inner .img-inner img {
+                object-fit: cover;
+              }
+              @media (min-width: 550px) {
+                #iconbox-1368740993 .ace-iconbox--inner {
+                  flex-direction: row;
+                }
+              }
+            
+
+/* ---- extracted style block ---- */
+
+
+              #iconbox-664265749 {
+                float: none;
+              }
+              #iconbox-664265749 .ace-iconbox--inner {
+                flex-direction: column;
+              }
+              #iconbox-664265749 .ace-iconbox--inner .img-inner img {
+                object-fit: cover;
+              }
+              @media (min-width: 550px) {
+                #iconbox-664265749 .ace-iconbox--inner {
+                  flex-direction: icon-left;
+                }
+              }
+            
+
+/* ---- extracted style block ---- */
+
+
+              #iconbox-1861776050 {
+                float: none;
+              }
+              #iconbox-1861776050 .ace-iconbox--inner {
+                flex-direction: column;
+              }
+              #iconbox-1861776050 .ace-iconbox--inner .img-inner img {
+                object-fit: cover;
+              }
+              @media (min-width: 550px) {
+                #iconbox-1861776050 .ace-iconbox--inner {
+                  flex-direction: row;
+                }
+              }
+            
+
+/* ---- extracted style block ---- */
+
+
+              #iconbox-1179138159 {
+                float: none;
+              }
+              #iconbox-1179138159 .ace-iconbox--inner {
+                flex-direction: column;
+              }
+              #iconbox-1179138159 .ace-iconbox--inner .img-inner img {
+                object-fit: cover;
+              }
+              @media (min-width: 550px) {
+                #iconbox-1179138159 .ace-iconbox--inner {
+                  flex-direction: row;
+                }
+              }
+            
+
+/* ---- extracted style block ---- */
+
+
+              #iconbox-1380706311 {
+                float: none;
+              }
+              #iconbox-1380706311 .ace-iconbox--inner {
+                flex-direction: column;
+              }
+              #iconbox-1380706311 .ace-iconbox--inner .img-inner img {
+                object-fit: cover;
+              }
+              @media (min-width: 550px) {
+                #iconbox-1380706311 .ace-iconbox--inner {
+                  flex-direction: row;
+                }
+              }
+            
+
+/* ---- extracted style block ---- */
+
+
+              #iconbox-236020202 {
+                float: none;
+              }
+              #iconbox-236020202 .ace-iconbox--inner {
+                flex-direction: column;
+              }
+              #iconbox-236020202 .ace-iconbox--inner .img-inner img {
+                object-fit: cover;
+              }
+              @media (min-width: 550px) {
+                #iconbox-236020202 .ace-iconbox--inner {
+                  flex-direction: row;
+                }
+              }
+            
+
+/* ---- extracted style block ---- */
+
+
+            #stack-2621485115 > * {
+              --stack-gap: 0.5rem;
+            }
+          
+
+/* ---- extracted style block ---- */
+
+
+              #iconbox-2089598777 {
+                float: none;
+              }
+              #iconbox-2089598777 .ace-iconbox--content {
+                text-align: center;
+              }
+              #iconbox-2089598777 .ace-iconbox--inner {
+                flex-direction: column;
+              }
+              #iconbox-2089598777 .ace-iconbox--inner .img-inner img {
+                object-fit: cover;
+              }
+            
+
+/* ---- extracted style block ---- */
+
+
+              #iconbox-1982845843 {
+                float: none;
+              }
+              #iconbox-1982845843 .ace-iconbox--content {
+                text-align: left;
+              }
+              #iconbox-1982845843 .ace-iconbox--inner {
+                flex-direction: column;
+              }
+              #iconbox-1982845843 .ace-iconbox--inner .img-inner img {
+                object-fit: cover;
+              }
+            
+
+/* ---- extracted style block ---- */
+
+
+              #iconbox-1628943344 {
+                float: none;
+              }
+              #iconbox-1628943344 .ace-iconbox--inner {
+                flex-direction: column;
+              }
+              #iconbox-1628943344 .ace-iconbox--inner .img-inner img {
+                object-fit: cover;
+              }
+            
+
+/* ---- extracted style block ---- */
+
+
+            #stack-2027907123 > * {
+              --stack-gap: 0.5rem;
+            }
+          
+
+/* ---- extracted style block ---- */
+
+
+              #iconbox-1063572652 {
+                float: none;
+              }
+              #iconbox-1063572652 .ace-iconbox--inner {
+                flex-direction: row-reverse;
+              }
+              #iconbox-1063572652 .ace-iconbox--inner .img-inner img {
+                object-fit: cover;
+              }
+            
+
+/* ---- extracted style block ---- */
+
+
+            #stack-1877031829 > * {
+              --stack-gap: 0rem;
+            }
+          
+
+/* ---- extracted style block ---- */
+
+
+              #iconbox-1880427520 {
+                float: none;
+              }
+              #iconbox-1880427520 .ace-iconbox--inner {
+                flex-direction: row-reverse;
+              }
+              #iconbox-1880427520 .ace-iconbox--inner .img-inner img {
+                object-fit: cover;
+              }
+            
+
+/* ---- extracted style block ---- */
+
+
+            #stack-3838006988 > * {
+              --stack-gap: 0rem;
+            }
+          
+
+/* ---- extracted style block ---- */
+
+
+                  #title-1210861276 .section-title-main {
+                    font-size: 150%;
+                  }
+                
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-1671175225 {
+                          float: none;
+                        }
+                        #iconbox-1671175225 .ace-iconbox--inner {
+                          flex-direction: column;
+                        }
+                        #iconbox-1671175225 .ace-iconbox--inner .img-inner img {
+                          object-fit: cover;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                    #col-956127720 > .col-inner {
+                      padding: 10px 10px 10px 10px;
+                      border-radius: 10px;
+                    }
+                  
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-2063488437 {
+                          float: none;
+                        }
+                        #iconbox-2063488437 .ace-iconbox--inner {
+                          flex-direction: column;
+                        }
+                        #iconbox-2063488437 .ace-iconbox--inner .img-inner img {
+                          object-fit: cover;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                    #col-619412365 > .col-inner {
+                      padding: 10px 10px 10px 10px;
+                      border-radius: 10px;
+                    }
+                  
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-1276558861 {
+                          float: none;
+                        }
+                        #iconbox-1276558861 .ace-iconbox--inner {
+                          flex-direction: column;
+                        }
+                        #iconbox-1276558861 .ace-iconbox--inner .img-inner img {
+                          object-fit: cover;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                    #col-765207628 > .col-inner {
+                      padding: 10px 10px 10px 10px;
+                      border-radius: 10px;
+                    }
+                  
+
+/* ---- extracted style block ---- */
+
+
+                        #title-1782122425 .section-title-main {
+                          font-size: 150%;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                              #iconbox-1247299646 {
+                                float: none;
+                              }
+                              #iconbox-1247299646 .ace-iconbox--content {
+                                text-align: center;
+                              }
+                              #iconbox-1247299646 .ace-iconbox--inner {
+                                flex-direction: row;
+                              }
+                              #iconbox-1247299646
+                                .ace-iconbox--inner
+                                .img-inner
+                                img {
+                                object-fit: cover;
+                              }
+                            
+
+/* ---- extracted style block ---- */
+
+
+                          #col-1595576439 > .col-inner {
+                            margin: 0px 5px 0px 0px;
+                          }
+                        
+
+/* ---- extracted style block ---- */
+
+
+                              #iconbox-1716310988 {
+                                float: none;
+                              }
+                              #iconbox-1716310988 .ace-iconbox--content {
+                                text-align: center;
+                              }
+                              #iconbox-1716310988 .ace-iconbox--inner {
+                                flex-direction: row;
+                              }
+                              #iconbox-1716310988
+                                .ace-iconbox--inner
+                                .img-inner
+                                img {
+                                object-fit: cover;
+                              }
+                            
+
+/* ---- extracted style block ---- */
+
+
+                          #col-208796436 > .col-inner {
+                            margin: 0px 0px 0px 5px;
+                          }
+                        
+
+/* ---- extracted style block ---- */
+
+
+                              #iconbox-1927997918 {
+                                float: none;
+                              }
+                              #iconbox-1927997918 .ace-iconbox--content {
+                                text-align: left;
+                              }
+                              #iconbox-1927997918 .ace-iconbox--inner {
+                                flex-direction: row;
+                              }
+                              #iconbox-1927997918
+                                .ace-iconbox--inner
+                                .img-inner
+                                img {
+                                object-fit: cover;
+                              }
+                            
+
+/* ---- extracted style block ---- */
+
+
+                          #col-434765385 > .col-inner {
+                            margin: 0px 5px 0px 0px;
+                          }
+                        
+
+/* ---- extracted style block ---- */
+
+
+                              #iconbox-1692889636 {
+                                float: none;
+                              }
+                              #iconbox-1692889636 .ace-iconbox--content {
+                                text-align: left;
+                              }
+                              #iconbox-1692889636 .ace-iconbox--inner {
+                                flex-direction: row;
+                              }
+                              #iconbox-1692889636
+                                .ace-iconbox--inner
+                                .img-inner
+                                img {
+                                object-fit: cover;
+                              }
+                            
+
+/* ---- extracted style block ---- */
+
+
+                          #col-146050368 > .col-inner {
+                            margin: 0px 0px 0px 5px;
+                          }
+                        
+
+/* ---- extracted style block ---- */
+
+
+                        #text-2272294055 {
+                          line-height: 3;
+                          text-align: center;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                    #col-151102373 > .col-inner {
+                      padding: 10px 10px 10px 10px;
+                      border-radius: 10px;
+                    }
+                  
+
+/* ---- extracted style block ---- */
+
+
+              #section_946716022 {
+                padding-top: 0px;
+                padding-bottom: 0px;
+              }
+            
+
+/* ---- extracted style block ---- */
+
+
+                          #text-149619190 {
+                            font-size: 2rem;
+                            line-height: 1;
+                            text-align: center;
+                            color: rgb(255, 255, 255);
+                          }
+                          #text-149619190 > * {
+                            color: rgb(255, 255, 255);
+                          }
+                        
+
+/* ---- extracted style block ---- */
+
+
+                    #text-box-1248771753 {
+                      width: 77%;
+                    }
+                    #text-box-1248771753 .text-box-content {
+                      font-size: 100%;
+                    }
+                  
+
+/* ---- extracted style block ---- */
+
+
+              #banner-470824568 {
+                padding-top: 150px;
+              }
+              #banner-470824568 .overlay {
+                background-color: rgba(0, 0, 0, 0.5);
+              }
+              #banner-470824568 .banner-bg img {
+                object-position: 5% 22%;
+              }
+            
+
+/* ---- extracted style block ---- */
+
+
+                          #iconbox-1324613296 {
+                            float: none;
+                          }
+                          #iconbox-1324613296 .ace-iconbox--content {
+                            text-align: center;
+                          }
+                          #iconbox-1324613296 .ace-iconbox--inner {
+                            flex-direction: row;
+                          }
+                          #iconbox-1324613296
+                            .ace-iconbox--inner
+                            .img-inner
+                            img {
+                            object-fit: cover;
+                          }
+                        
+
+/* ---- extracted style block ---- */
+
+
+                      #col-545809333 > .col-inner {
+                        margin: 0px 5px 0px 0px;
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                          #iconbox-1064731142 {
+                            float: none;
+                          }
+                          #iconbox-1064731142 .ace-iconbox--content {
+                            text-align: center;
+                          }
+                          #iconbox-1064731142 .ace-iconbox--inner {
+                            flex-direction: row;
+                          }
+                          #iconbox-1064731142
+                            .ace-iconbox--inner
+                            .img-inner
+                            img {
+                            object-fit: cover;
+                          }
+                        
+
+/* ---- extracted style block ---- */
+
+
+                      #col-252128829 > .col-inner {
+                        margin: 0px 0px 0px 5px;
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                          #iconbox-2026610288 {
+                            float: none;
+                          }
+                          #iconbox-2026610288 .ace-iconbox--content {
+                            text-align: left;
+                          }
+                          #iconbox-2026610288 .ace-iconbox--inner {
+                            flex-direction: row;
+                          }
+                          #iconbox-2026610288
+                            .ace-iconbox--inner
+                            .img-inner
+                            img {
+                            object-fit: cover;
+                          }
+                        
+
+/* ---- extracted style block ---- */
+
+
+                      #col-272327615 > .col-inner {
+                        margin: 0px 5px 0px 0px;
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                          #iconbox-375976485 {
+                            float: none;
+                          }
+                          #iconbox-375976485 .ace-iconbox--content {
+                            text-align: left;
+                          }
+                          #iconbox-375976485 .ace-iconbox--inner {
+                            flex-direction: row;
+                          }
+                          #iconbox-375976485
+                            .ace-iconbox--inner
+                            .img-inner
+                            img {
+                            object-fit: cover;
+                          }
+                        
+
+/* ---- extracted style block ---- */
+
+
+                      #col-1674042538 > .col-inner {
+                        margin: 0px 0px 0px 5px;
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                    #gap-1911452328 {
+                      padding-top: 10px;
+                    }
+                  
+
+/* ---- extracted style block ---- */
+
+
+                    #text-1615019956 {
+                      line-height: 2;
+                      text-align: center;
+                    }
+                  
+
+/* ---- extracted style block ---- */
+
+
+                #col-70704816 > .col-inner {
+                  padding: 10px 20px 0px 20px;
+                }
+              
+
+/* ---- extracted style block ---- */
+
+
+      .single-product div#tab-description {
+        overflow: hidden;
+        position: relative;
+        padding-bottom: 50px;
+      }
+      .single-product .tab-panels div#tab-description.panel:not(.active) {
+        height: 0 !important;
+      }
+      .devvn_readmore_flatsome {
+        text-align: center;
+        padding: 10px 0;
+        cursor: pointer;
+        position: absolute;
+        z-index: 10;
+        bottom: 0;
+        width: 100%;
+        background: #fff;
+      }
+      .devvn_readmore_flatsome:before {
+        height: 55px;
+        margin-top: -65px;
+        content: "";
+        background: -moz-linear-gradient(
+          top,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 1) 100%
+        );
+        background: -webkit-linear-gradient(
+          top,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 1) 100%
+        );
+        background: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 1) 100%
+        );
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff00', endColorstr='#ffffff',GradientType=0 );
+        display: block;
+      }
+      .devvn_readmore_flatsome a {
+        *display: block;
+        margin: 0;
+        line-height: 2 !important;
+        min-height: 2em;
+      }
+      .devvn_readmore_flatsome a:after {
+        content: "";
+        width: 0;
+        right: 0;
+        border-top: 6px solid;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        display: inline-block;
+        vertical-align: middle;
+        margin: -2px 0 0 5px;
+      }
+      .devvn_readmore_flatsome_less a:after {
+        border-top: 0;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-bottom: 6px solid;
+      }
+      .devvn_readmore_flatsome_less:before {
+        display: none;
+      }
+    
+
+/* ---- extracted style block ---- */
+
+
+      .googlesitekit-sign-in-with-google__frontend-output-button {
+        max-width: 320px;
+      }
+    
+
+/* ---- extracted style block ---- */
+
+
+      :root {
+        --wp--preset--aspect-ratio--square: 1;
+        --wp--preset--aspect-ratio--4-3: 4/3;
+        --wp--preset--aspect-ratio--3-4: 3/4;
+        --wp--preset--aspect-ratio--3-2: 3/2;
+        --wp--preset--aspect-ratio--2-3: 2/3;
+        --wp--preset--aspect-ratio--16-9: 16/9;
+        --wp--preset--aspect-ratio--9-16: 9/16;
+        --wp--preset--color--black: #000000;
+        --wp--preset--color--cyan-bluish-gray: #abb8c3;
+        --wp--preset--color--white: #ffffff;
+        --wp--preset--color--pale-pink: #f78da7;
+        --wp--preset--color--vivid-red: #cf2e2e;
+        --wp--preset--color--luminous-vivid-orange: #ff6900;
+        --wp--preset--color--luminous-vivid-amber: #fcb900;
+        --wp--preset--color--light-green-cyan: #7bdcb5;
+        --wp--preset--color--vivid-green-cyan: #00d084;
+        --wp--preset--color--pale-cyan-blue: #8ed1fc;
+        --wp--preset--color--vivid-cyan-blue: #0693e3;
+        --wp--preset--color--vivid-purple: #9b51e0;
+        --wp--preset--color--primary: #254283;
+        --wp--preset--color--secondary: #db3e26;
+        --wp--preset--color--success: #7a9c59;
+        --wp--preset--color--alert: #b20000;
+        --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(
+          135deg,
+          rgba(6, 147, 227, 1) 0%,
+          rgb(155, 81, 224) 100%
+        );
+        --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(
+          135deg,
+          rgb(122, 220, 180) 0%,
+          rgb(0, 208, 130) 100%
+        );
+        --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(
+          135deg,
+          rgba(252, 185, 0, 1) 0%,
+          rgba(255, 105, 0, 1) 100%
+        );
+        --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(
+          135deg,
+          rgba(255, 105, 0, 1) 0%,
+          rgb(207, 46, 46) 100%
+        );
+        --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(
+          135deg,
+          rgb(238, 238, 238) 0%,
+          rgb(169, 184, 195) 100%
+        );
+        --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(
+          135deg,
+          rgb(74, 234, 220) 0%,
+          rgb(151, 120, 209) 20%,
+          rgb(207, 42, 186) 40%,
+          rgb(238, 44, 130) 60%,
+          rgb(251, 105, 98) 80%,
+          rgb(254, 248, 76) 100%
+        );
+        --wp--preset--gradient--blush-light-purple: linear-gradient(
+          135deg,
+          rgb(255, 206, 236) 0%,
+          rgb(152, 150, 240) 100%
+        );
+        --wp--preset--gradient--blush-bordeaux: linear-gradient(
+          135deg,
+          rgb(254, 205, 165) 0%,
+          rgb(254, 45, 45) 50%,
+          rgb(107, 0, 62) 100%
+        );
+        --wp--preset--gradient--luminous-dusk: linear-gradient(
+          135deg,
+          rgb(255, 203, 112) 0%,
+          rgb(199, 81, 192) 50%,
+          rgb(65, 88, 208) 100%
+        );
+        --wp--preset--gradient--pale-ocean: linear-gradient(
+          135deg,
+          rgb(255, 245, 203) 0%,
+          rgb(182, 227, 212) 50%,
+          rgb(51, 167, 181) 100%
+        );
+        --wp--preset--gradient--electric-grass: linear-gradient(
+          135deg,
+          rgb(202, 248, 128) 0%,
+          rgb(113, 206, 126) 100%
+        );
+        --wp--preset--gradient--midnight: linear-gradient(
+          135deg,
+          rgb(2, 3, 129) 0%,
+          rgb(40, 116, 252) 100%
+        );
+        --wp--preset--font-size--small: 13px;
+        --wp--preset--font-size--medium: 20px;
+        --wp--preset--font-size--large: 36px;
+        --wp--preset--font-size--x-large: 42px;
+        --wp--preset--spacing--20: 0.44rem;
+        --wp--preset--spacing--30: 0.67rem;
+        --wp--preset--spacing--40: 1rem;
+        --wp--preset--spacing--50: 1.5rem;
+        --wp--preset--spacing--60: 2.25rem;
+        --wp--preset--spacing--70: 3.38rem;
+        --wp--preset--spacing--80: 5.06rem;
+        --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+        --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--outlined:
+          6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+        --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+      }
+      :where(body) {
+        margin: 0;
+      }
+      .wp-site-blocks > .alignleft {
+        float: left;
+        margin-right: 2em;
+      }
+      .wp-site-blocks > .alignright {
+        float: right;
+        margin-left: 2em;
+      }
+      .wp-site-blocks > .aligncenter {
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      :where(.is-layout-flex) {
+        gap: 0.5em;
+      }
+      :where(.is-layout-grid) {
+        gap: 0.5em;
+      }
+      .is-layout-flow > .alignleft {
+        float: left;
+        margin-inline-start: 0;
+        margin-inline-end: 2em;
+      }
+      .is-layout-flow > .alignright {
+        float: right;
+        margin-inline-start: 2em;
+        margin-inline-end: 0;
+      }
+      .is-layout-flow > .aligncenter {
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      .is-layout-constrained > .alignleft {
+        float: left;
+        margin-inline-start: 0;
+        margin-inline-end: 2em;
+      }
+      .is-layout-constrained > .alignright {
+        float: right;
+        margin-inline-start: 2em;
+        margin-inline-end: 0;
+      }
+      .is-layout-constrained > .aligncenter {
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      .is-layout-constrained
+        > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      body .is-layout-flex {
+        display: flex;
+      }
+      .is-layout-flex {
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .is-layout-flex > :is(*, div) {
+        margin: 0;
+      }
+      body .is-layout-grid {
+        display: grid;
+      }
+      .is-layout-grid > :is(*, div) {
+        margin: 0;
+      }
+      body {
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+      }
+      a:where(:not(.wp-element-button)) {
+        text-decoration: none;
+      }
+      :root :where(.wp-element-button, .wp-block-button__link) {
+        background-color: #32373c;
+        border-width: 0;
+        color: #fff;
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        padding: calc(0.667em + 2px) calc(1.333em + 2px);
+        text-decoration: none;
+      }
+      .has-black-color {
+        color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-color {
+        color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-color {
+        color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-color {
+        color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-color {
+        color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-color {
+        color: var(--wp--preset--color--luminous-vivid-orange) !important;
+      }
+      .has-luminous-vivid-amber-color {
+        color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+      .has-light-green-cyan-color {
+        color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-color {
+        color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-color {
+        color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-color {
+        color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-color {
+        color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-primary-color {
+        color: var(--wp--preset--color--primary) !important;
+      }
+      .has-secondary-color {
+        color: var(--wp--preset--color--secondary) !important;
+      }
+      .has-success-color {
+        color: var(--wp--preset--color--success) !important;
+      }
+      .has-alert-color {
+        color: var(--wp--preset--color--alert) !important;
+      }
+      .has-black-background-color {
+        background-color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-background-color {
+        background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-background-color {
+        background-color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-background-color {
+        background-color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-background-color {
+        background-color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-background-color {
+        background-color: var(
+          --wp--preset--color--luminous-vivid-orange
+        ) !important;
+      }
+      .has-luminous-vivid-amber-background-color {
+        background-color: var(
+          --wp--preset--color--luminous-vivid-amber
+        ) !important;
+      }
+      .has-light-green-cyan-background-color {
+        background-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-background-color {
+        background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-background-color {
+        background-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-primary-background-color {
+        background-color: var(--wp--preset--color--primary) !important;
+      }
+      .has-secondary-background-color {
+        background-color: var(--wp--preset--color--secondary) !important;
+      }
+      .has-success-background-color {
+        background-color: var(--wp--preset--color--success) !important;
+      }
+      .has-alert-background-color {
+        background-color: var(--wp--preset--color--alert) !important;
+      }
+      .has-black-border-color {
+        border-color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-border-color {
+        border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-border-color {
+        border-color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-border-color {
+        border-color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-border-color {
+        border-color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-border-color {
+        border-color: var(
+          --wp--preset--color--luminous-vivid-orange
+        ) !important;
+      }
+      .has-luminous-vivid-amber-border-color {
+        border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+      .has-light-green-cyan-border-color {
+        border-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-border-color {
+        border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-border-color {
+        border-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-primary-border-color {
+        border-color: var(--wp--preset--color--primary) !important;
+      }
+      .has-secondary-border-color {
+        border-color: var(--wp--preset--color--secondary) !important;
+      }
+      .has-success-border-color {
+        border-color: var(--wp--preset--color--success) !important;
+      }
+      .has-alert-border-color {
+        border-color: var(--wp--preset--color--alert) !important;
+      }
+      .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+        background: var(
+          --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple
+        ) !important;
+      }
+      .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+        background: var(
+          --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan
+        ) !important;
+      }
+      .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+        background: var(
+          --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange
+        ) !important;
+      }
+      .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+        background: var(
+          --wp--preset--gradient--luminous-vivid-orange-to-vivid-red
+        ) !important;
+      }
+      .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+        background: var(
+          --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray
+        ) !important;
+      }
+      .has-cool-to-warm-spectrum-gradient-background {
+        background: var(
+          --wp--preset--gradient--cool-to-warm-spectrum
+        ) !important;
+      }
+      .has-blush-light-purple-gradient-background {
+        background: var(--wp--preset--gradient--blush-light-purple) !important;
+      }
+      .has-blush-bordeaux-gradient-background {
+        background: var(--wp--preset--gradient--blush-bordeaux) !important;
+      }
+      .has-luminous-dusk-gradient-background {
+        background: var(--wp--preset--gradient--luminous-dusk) !important;
+      }
+      .has-pale-ocean-gradient-background {
+        background: var(--wp--preset--gradient--pale-ocean) !important;
+      }
+      .has-electric-grass-gradient-background {
+        background: var(--wp--preset--gradient--electric-grass) !important;
+      }
+      .has-midnight-gradient-background {
+        background: var(--wp--preset--gradient--midnight) !important;
+      }
+      .has-small-font-size {
+        font-size: var(--wp--preset--font-size--small) !important;
+      }
+      .has-medium-font-size {
+        font-size: var(--wp--preset--font-size--medium) !important;
+      }
+      .has-large-font-size {
+        font-size: var(--wp--preset--font-size--large) !important;
+      }
+      .has-x-large-font-size {
+        font-size: var(--wp--preset--font-size--x-large) !important;
+      }
+    

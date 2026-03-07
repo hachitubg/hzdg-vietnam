@@ -3,6 +3,13 @@
 @section('title', 'Giới thiệu hệ thống âm thanh – VD GROUP')
 @section('body_class', 'page-template-page-blank-php')
 
+@push('styles')
+<link rel="stylesheet" href="{{ asset('assets/extracted-audio-system.css') }}">
+@endpush
+@push('scripts')
+<script defer src="{{ asset('assets/extracted-audio-system.js') }}"></script>
+@endpush
+
 @section('content')
 
 <div class="content-area" id="content" role="main">

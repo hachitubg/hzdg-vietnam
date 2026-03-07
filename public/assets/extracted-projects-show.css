@@ -1,0 +1,3859 @@
+
+      img:is([sizes="auto" i], [sizes^="auto," i]) {
+        contain-intrinsic-size: 3000px 1500px;
+      }
+    
+
+/* ---- extracted style block ---- */
+
+
+      .woocommerce form .form-row .required {
+        visibility: visible;
+      }
+    
+
+/* ---- extracted style block ---- */
+
+
+      :root {
+        --yith-wcan-filters_colors_titles: #333333;
+        --yith-wcan-filters_colors_background: #ffffff;
+        --yith-wcan-filters_colors_accent: rgb(37, 66, 131);
+        --yith-wcan-filters_colors_accent_r: 37;
+        --yith-wcan-filters_colors_accent_g: 66;
+        --yith-wcan-filters_colors_accent_b: 131;
+        --yith-wcan-color_swatches_border_radius: 100%;
+        --yith-wcan-color_swatches_size: 30px;
+        --yith-wcan-labels_style_background: #ffffff;
+        --yith-wcan-labels_style_background_hover: rgb(37, 66, 131);
+        --yith-wcan-labels_style_background_active: rgb(37, 66, 131);
+        --yith-wcan-labels_style_text: #434343;
+        --yith-wcan-labels_style_text_hover: #ffffff;
+        --yith-wcan-labels_style_text_active: #ffffff;
+        --yith-wcan-anchors_style_text: #434343;
+        --yith-wcan-anchors_style_text_hover: rgb(37, 66, 131);
+        --yith-wcan-anchors_style_text_active: rgb(37, 66, 131);
+      }
+    
+
+/* ---- extracted style block ---- */
+
+
+      @font-face {
+        font-family: "fl-icons";
+        font-display: block;
+        src: url(../../../../wp-content/themes/flatsome/assets/css/icons/fl-icons.eot);
+        src:
+          url(../../../../wp-content/themes/flatsome/assets/css/icons/fl-icons.eot#iefix?v=3.19.15)
+            format("embedded-opentype"),
+          url(../../../../wp-content/themes/flatsome/assets/css/icons/fl-icons.woff2)
+            format("woff2"),
+          url(../../../../wp-content/themes/flatsome/assets/css/icons/fl-icons.ttf)
+            format("truetype"),
+          url(../../../../wp-content/themes/flatsome/assets/css/icons/fl-icons.woff)
+            format("woff"),
+          url(../../../../wp-content/themes/flatsome/assets/css/icons/fl-icons.svg#fl-icons)
+            format("svg");
+      }
+    
+
+/* ---- extracted style block ---- */
+
+
+      :root {
+        --secondary-color: #db3e26;
+      }
+      .header-top .menu-item.featured a {
+        color: #254283 !important;
+        font-weight: bold;
+      }
+      .header-top .nav > li.active > a {
+        color: #254283;
+        font-weight: bold;
+      }
+      .back-to-top.active {
+        background-color: #254283;
+        color: #fff;
+      }
+      .headSc
+        .header.has-sticky.sticky-jump
+        .ux-menu
+        > .ux-menu-link.active
+        > a,
+      .page-template-page-no-header .header.has-sticky.sticky-jump a:hover {
+        color: #254283;
+      }
+      .ux-menu-link--active .ux-menu-link__link,
+      .ux-menu-link:hover .ux-menu-link__link {
+        color: #254283;
+      }
+      .person-name {
+        color: #254283;
+      }
+      .nav-outline > li.active > a,
+      .nav-outline > li.active > a {
+        color: #254283 !important;
+      }
+      .grid-tools a {
+        background-color: #db3e26;
+      }
+      .single_add_to_cart_button {
+        background-color: #b20000 !important;
+      }
+      .box-shadow-shape .img-inner:after {
+        background-color: #000;
+      }
+      #ftwp-postcontent h2 {
+        color: #db3e26;
+      }
+    
+
+/* ---- extracted style block ---- */
+
+
+      :root {
+        --primary-color: #254283;
+        --fs-color-primary: #254283;
+        --fs-color-secondary: #db3e26;
+        --fs-color-success: #7a9c59;
+        --fs-color-alert: #b20000;
+        --fs-experimental-link-color: #db3e26;
+        --fs-experimental-link-color-hover: #254283;
+      }
+      .tooltipster-base {
+        --tooltip-color: #fff;
+        --tooltip-bg-color: #000;
+      }
+      .off-canvas-right .mfp-content,
+      .off-canvas-left .mfp-content {
+        --drawer-width: 300px;
+      }
+      .off-canvas .mfp-content.off-canvas-cart {
+        --drawer-width: 360px;
+      }
+      .container-width,
+      .full-width .ubermenu-nav,
+      .container,
+      .row {
+        max-width: 1250px;
+      }
+      .row.row-collapse {
+        max-width: 1220px;
+      }
+      .row.row-small {
+        max-width: 1242.5px;
+      }
+      .row.row-large {
+        max-width: 1280px;
+      }
+      .header-main {
+        height: 83px;
+      }
+      #logo img {
+        max-height: 83px;
+      }
+      #logo {
+        width: 90px;
+      }
+      .header-bottom {
+        min-height: 80px;
+      }
+      .header-top {
+        min-height: 30px;
+      }
+      .transparent .header-main {
+        height: 90px;
+      }
+      .transparent #logo img {
+        max-height: 90px;
+      }
+      .has-transparent + .page-title:first-of-type,
+      .has-transparent + #main > .page-title,
+      .has-transparent + #main > div > .page-title,
+      .has-transparent + #main .page-header-wrapper:first-of-type .page-title {
+        padding-top: 120px;
+      }
+      .header.show-on-scroll,
+      .stuck .header-main {
+        height: 50px !important;
+      }
+      .stuck #logo img {
+        max-height: 50px !important;
+      }
+      .header-bottom {
+        background-color: #ffffff;
+      }
+      .header-main .nav > li > a {
+        line-height: 16px;
+      }
+      .stuck .header-main .nav > li > a {
+        line-height: 31px;
+      }
+      @media (max-width: 549px) {
+        .header-main {
+          height: 70px;
+        }
+        #logo img {
+          max-height: 70px;
+        }
+      }
+      .header-top {
+        background-color: #000000 !important;
+      }
+      body {
+        color: #333333;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      .heading-font {
+        color: #333333;
+      }
+      body {
+        font-size: 100%;
+      }
+      @media screen and (max-width: 549px) {
+        body {
+          font-size: 100%;
+        }
+      }
+      body {
+        font-family: "Source Sans 3", sans-serif;
+      }
+      body {
+        font-weight: 400;
+        font-style: normal;
+      }
+      .nav > li > a {
+        font-family: "Source Sans 3", sans-serif;
+      }
+      .mobile-sidebar-levels-2 .nav > li > ul > li > a {
+        font-family: "Source Sans 3", sans-serif;
+      }
+      .nav > li > a,
+      .mobile-sidebar-levels-2 .nav > li > ul > li > a {
+        font-weight: 700;
+        font-style: normal;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      .heading-font,
+      .off-canvas-center .nav-sidebar.nav-vertical > li > a {
+        font-family: "Source Sans 3", sans-serif;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      .heading-font,
+      .banner h1,
+      .banner h2 {
+        font-weight: 500;
+        font-style: normal;
+      }
+      .alt-font {
+        font-family: "Dancing Script", sans-serif;
+      }
+      .alt-font {
+        font-weight: 400 !important;
+        font-style: normal !important;
+      }
+      .breadcrumbs {
+        text-transform: none;
+      }
+      button,
+      .button {
+        text-transform: none;
+      }
+      .header:not(.transparent) .header-nav-main.nav > li > a {
+        color: #333333;
+      }
+      .header:not(.transparent) .header-nav-main.nav > li > a:hover,
+      .header:not(.transparent) .header-nav-main.nav > li.active > a,
+      .header:not(.transparent) .header-nav-main.nav > li.current > a,
+      .header:not(.transparent) .header-nav-main.nav > li > a.active,
+      .header:not(.transparent) .header-nav-main.nav > li > a.current {
+        color: #254283;
+      }
+      .header-nav-main.nav-line-bottom > li > a:before,
+      .header-nav-main.nav-line-grow > li > a:before,
+      .header-nav-main.nav-line > li > a:before,
+      .header-nav-main.nav-box > li > a:hover,
+      .header-nav-main.nav-box > li.active > a,
+      .header-nav-main.nav-pills > li > a:hover,
+      .header-nav-main.nav-pills > li.active > a {
+        color: #fff !important;
+        background-color: #254283;
+      }
+      .has-equal-box-heights .box-image {
+        padding-top: 100%;
+      }
+      .star-rating span:before,
+      .star-rating:before,
+      .woocommerce-page .star-rating:before,
+      .stars a:hover:after,
+      .stars a.active:after {
+        color: #eeee22;
+      }
+      input[type="submit"],
+      input[type="button"],
+      button:not(.icon),
+      .button:not(.icon) {
+        border-radius: 5px !important;
+      }
+      @media screen and (min-width: 550px) {
+        .products .box-vertical .box-image {
+          min-width: 500px !important;
+          width: 500px !important;
+        }
+      }
+      .nav-vertical-fly-out > li + li {
+        border-top-width: 1px;
+        border-top-style: solid;
+      }
+      .label-new.menu-item > a:after {
+        content: "Mới";
+      }
+      .label-hot.menu-item > a:after {
+        content: "Nổi bật";
+      }
+      .label-sale.menu-item > a:after {
+        content: "Giảm giá";
+      }
+      .label-popular.menu-item > a:after {
+        content: "Phổ biến";
+      }
+    
+
+/* ---- extracted style block ---- */
+
+
+      .wpcf7 input[type="submit"] {
+        background-color: #ff0000;
+        color: #fff;
+        border: none;
+        padding: 12px 30px;
+        border-radius: 30px;
+        font-weight: 600;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transition:
+          background-color 0.3s ease,
+          transform 0.2s ease;
+      }
+
+      .wpcf7 input[type="submit"]::after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        transform: scale(0);
+        opacity: 0;
+        transition:
+          transform 0.6s ease,
+          opacity 0.8s ease;
+      }
+
+      .wpcf7 input[type="submit"]:active::after {
+        transform: scale(20);
+        opacity: 0;
+        transition:
+          transform 0.6s ease,
+          opacity 0.8s ease;
+      }
+    
+
+/* ---- extracted style block ---- */
+
+
+      .variations_form .ux-swatch.selected {
+        box-shadow: 0 0 0 2px var(--fs-color-secondary);
+      }
+      .ux-swatches-in-loop .ux-swatch.selected {
+        box-shadow: 0 0 0 2px var(--fs-color-secondary);
+      }
+    
+
+/* ---- extracted style block ---- */
+
+
+      .ux-additional-variation-images-thumbs-placeholder {
+        max-height: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition:
+          visibility 0.1s,
+          opacity 0.1s,
+          max-height 0.2s ease-out;
+      }
+      .ux-additional-variation-images-thumbs-placeholder--visible {
+        max-height: 1000px;
+        opacity: 1;
+        visibility: visible;
+        transition:
+          visibility 0.2s,
+          opacity 0.2s,
+          max-height 0.1s ease-in;
+      }
+    
+
+/* ---- extracted style block ---- */
+
+
+                                        .st0 {
+                                          fill-rule: evenodd;
+                                          clip-rule: evenodd;
+                                        }
+                                      
+
+/* ---- extracted style block ---- */
+
+
+                                #iconbox-1433702895 {
+                                  float: none;
+                                }
+                                #iconbox-1433702895 .ace-iconbox--inner {
+                                  flex-direction: column;
+                                }
+                                #iconbox-1433702895
+                                  .ace-iconbox--inner
+                                  .img-inner
+                                  img {
+                                  object-fit: cover;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                #iconbox-271422088 {
+                                  float: none;
+                                }
+                                #iconbox-271422088 .ace-iconbox--inner {
+                                  flex-direction: column;
+                                }
+                                #iconbox-271422088
+                                  .ace-iconbox--inner
+                                  .img-inner
+                                  img {
+                                  object-fit: cover;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                #iconbox-2088468138 {
+                                  float: none;
+                                }
+                                #iconbox-2088468138 .ace-iconbox--inner {
+                                  flex-direction: column;
+                                }
+                                #iconbox-2088468138
+                                  .ace-iconbox--inner
+                                  .img-inner
+                                  img {
+                                  object-fit: cover;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                #iconbox-1029440879 {
+                                  float: none;
+                                }
+                                #iconbox-1029440879 .ace-iconbox--inner {
+                                  flex-direction: column;
+                                }
+                                #iconbox-1029440879
+                                  .ace-iconbox--inner
+                                  .img-inner
+                                  img {
+                                  object-fit: cover;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                #iconbox-1352213180 {
+                                  float: none;
+                                }
+                                #iconbox-1352213180 .ace-iconbox--inner {
+                                  flex-direction: column;
+                                }
+                                #iconbox-1352213180
+                                  .ace-iconbox--inner
+                                  .img-inner
+                                  img {
+                                  object-fit: cover;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                #iconbox-1094678885 {
+                                  float: none;
+                                }
+                                #iconbox-1094678885 .ace-iconbox--inner {
+                                  flex-direction: column;
+                                }
+                                #iconbox-1094678885
+                                  .ace-iconbox--inner
+                                  .img-inner
+                                  img {
+                                  object-fit: cover;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                        .st0 {
+                                          fill: #010101;
+                                        }
+                                        .st1 {
+                                          fill: #020202;
+                                        }
+                                        .st2 {
+                                          fill: #030303;
+                                        }
+                                      
+
+/* ---- extracted style block ---- */
+
+
+                                #iconbox-326357555 {
+                                  float: none;
+                                }
+                                #iconbox-326357555 .ace-iconbox--inner {
+                                  flex-direction: column;
+                                }
+                                #iconbox-326357555
+                                  .ace-iconbox--inner
+                                  .img-inner
+                                  img {
+                                  object-fit: cover;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                #iconbox-1276735644 {
+                                  float: none;
+                                }
+                                #iconbox-1276735644 .ace-iconbox--inner {
+                                  flex-direction: column;
+                                }
+                                #iconbox-1276735644
+                                  .ace-iconbox--inner
+                                  .img-inner
+                                  img {
+                                  object-fit: cover;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                        .st0 {
+                                          fill: #010101;
+                                        }
+                                      
+
+/* ---- extracted style block ---- */
+
+
+                                #iconbox-1561173593 {
+                                  float: none;
+                                }
+                                #iconbox-1561173593 .ace-iconbox--inner {
+                                  flex-direction: column;
+                                }
+                                #iconbox-1561173593
+                                  .ace-iconbox--inner
+                                  .img-inner
+                                  img {
+                                  object-fit: cover;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                #iconbox-1225773599 {
+                                  float: none;
+                                }
+                                #iconbox-1225773599 .ace-iconbox--inner {
+                                  flex-direction: column;
+                                }
+                                #iconbox-1225773599
+                                  .ace-iconbox--inner
+                                  .img-inner
+                                  img {
+                                  object-fit: cover;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                #iconbox-1312277351 {
+                                  float: none;
+                                }
+                                #iconbox-1312277351 .ace-iconbox--inner {
+                                  flex-direction: column;
+                                }
+                                #iconbox-1312277351
+                                  .ace-iconbox--inner
+                                  .img-inner
+                                  img {
+                                  object-fit: cover;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                        .st0 {
+                                          fill: #505050;
+                                        }
+                                        .st1 {
+                                          fill: #080808;
+                                        }
+                                      
+
+/* ---- extracted style block ---- */
+
+
+                                #iconbox-1785396557 {
+                                  float: none;
+                                }
+                                #iconbox-1785396557 .ace-iconbox--inner {
+                                  flex-direction: column;
+                                }
+                                #iconbox-1785396557
+                                  .ace-iconbox--inner
+                                  .img-inner
+                                  img {
+                                  object-fit: cover;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                          #row-1861683402 > .col > .col-inner {
+                            background-color: rgb(255, 255, 255);
+                          }
+                        
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1617104115 {
+                                    float: none;
+                                  }
+                                  #iconbox-1617104115 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1617104115
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1939493013 {
+                                    float: none;
+                                  }
+                                  #iconbox-1939493013 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1939493013
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1831501837 {
+                                    float: none;
+                                  }
+                                  #iconbox-1831501837 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1831501837
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1323140188 {
+                                    float: none;
+                                  }
+                                  #iconbox-1323140188 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1323140188
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1350294946 {
+                                    float: none;
+                                  }
+                                  #iconbox-1350294946 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1350294946
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: cover;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1387647664 {
+                                    float: none;
+                                  }
+                                  #iconbox-1387647664 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1387647664
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: cover;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-375117040 {
+                                    float: none;
+                                  }
+                                  #iconbox-375117040 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-375117040
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1299850141 {
+                                    float: none;
+                                  }
+                                  #iconbox-1299850141 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1299850141
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: cover;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1811261811 {
+                                    float: none;
+                                  }
+                                  #iconbox-1811261811 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1811261811
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-579226534 {
+                                    float: none;
+                                  }
+                                  #iconbox-579226534 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-579226534
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1865867594 {
+                                    float: none;
+                                  }
+                                  #iconbox-1865867594 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1865867594
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: cover;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1119390819 {
+                                    float: none;
+                                  }
+                                  #iconbox-1119390819 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1119390819
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: cover;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1240575726 {
+                                    float: none;
+                                  }
+                                  #iconbox-1240575726 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1240575726
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: cover;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                #stack-3112689542 > * {
+                                  padding: 1rem !important;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                #iconbox-1347982955 {
+                                  float: right;
+                                }
+                                #iconbox-1347982955 .ace-iconbox--inner {
+                                  flex-direction: row-reverse;
+                                }
+                                #iconbox-1347982955
+                                  .ace-iconbox--inner
+                                  .img-inner
+                                  img {
+                                  object-fit: cover;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                            #text-2678578590 {
+                                              color: rgb(0, 0, 0);
+                                            }
+                                            #text-2678578590 > * {
+                                              color: rgb(0, 0, 0);
+                                            }
+                                          
+
+/* ---- extracted style block ---- */
+
+
+                                      #text-box-1966988128 {
+                                        width: 93%;
+                                      }
+                                      #text-box-1966988128 .text-box-content {
+                                        font-size: 100%;
+                                      }
+                                    
+
+/* ---- extracted style block ---- */
+
+
+                                #banner-1700516392 {
+                                  padding-top: 150px;
+                                }
+                                #banner-1700516392
+                                  .ux-shape-divider--bottom
+                                  svg {
+                                  height: 50px;
+                                  --divider-width: 100%;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-442475524 {
+                                    float: none;
+                                  }
+                                  #iconbox-442475524 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-442475524
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1632605482 {
+                                    float: none;
+                                  }
+                                  #iconbox-1632605482 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1632605482
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-91597211 {
+                                    float: none;
+                                  }
+                                  #iconbox-91597211 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-91597211
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-989222453 {
+                                    float: none;
+                                  }
+                                  #iconbox-989222453 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-989222453
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                #stack-2947456069 > * {
+                                  --stack-gap: 1rem;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                #iconbox-462915815 {
+                                  float: right;
+                                }
+                                #iconbox-462915815 .ace-iconbox--inner {
+                                  flex-direction: row-reverse;
+                                }
+                                #iconbox-462915815
+                                  .ace-iconbox--inner
+                                  .img-inner
+                                  img {
+                                  object-fit: cover;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1659545542 {
+                                    float: none;
+                                  }
+                                  #iconbox-1659545542 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1659545542
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-2139891531 {
+                                    float: none;
+                                  }
+                                  #iconbox-2139891531 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-2139891531
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1968387001 {
+                                    float: none;
+                                  }
+                                  #iconbox-1968387001 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-1968387001 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1968387001
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-216008374 {
+                                    float: none;
+                                  }
+                                  #iconbox-216008374 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-216008374
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-144031946 {
+                                    float: none;
+                                  }
+                                  #iconbox-144031946 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-144031946
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1335798682 {
+                                    float: none;
+                                  }
+                                  #iconbox-1335798682 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1335798682
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-2015395926 {
+                                    float: none;
+                                  }
+                                  #iconbox-2015395926 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-2015395926
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-2017492103 {
+                                    float: none;
+                                  }
+                                  #iconbox-2017492103 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-2017492103
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1352439735 {
+                                    float: none;
+                                  }
+                                  #iconbox-1352439735 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1352439735
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-994966159 {
+                                    float: none;
+                                  }
+                                  #iconbox-994966159 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-994966159
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                #stack-3148108936 > * {
+                                  padding: 1rem !important;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                #iconbox-1643381435 {
+                                  float: right;
+                                }
+                                #iconbox-1643381435 .ace-iconbox--inner {
+                                  flex-direction: row-reverse;
+                                }
+                                #iconbox-1643381435
+                                  .ace-iconbox--inner
+                                  .img-inner
+                                  img {
+                                  object-fit: cover;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                            #text-1564565561 {
+                                              color: rgb(0, 0, 0);
+                                            }
+                                            #text-1564565561 > * {
+                                              color: rgb(0, 0, 0);
+                                            }
+                                          
+
+/* ---- extracted style block ---- */
+
+
+                                      #text-box-1060403540 {
+                                        width: 85%;
+                                      }
+                                      #text-box-1060403540 .text-box-content {
+                                        font-size: 100%;
+                                      }
+                                    
+
+/* ---- extracted style block ---- */
+
+
+                                #banner-540984822 {
+                                  padding-top: 150px;
+                                }
+                                #banner-540984822
+                                  .ux-shape-divider--bottom
+                                  svg {
+                                  height: 50px;
+                                  --divider-width: 100%;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-350107434 {
+                                    float: none;
+                                  }
+                                  #iconbox-350107434 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-350107434
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1722293771 {
+                                    float: none;
+                                  }
+                                  #iconbox-1722293771 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1722293771
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1897783026 {
+                                    float: none;
+                                  }
+                                  #iconbox-1897783026 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1897783026
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-747582284 {
+                                    float: none;
+                                  }
+                                  #iconbox-747582284 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-747582284
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                #stack-778347497 > * {
+                                  --stack-gap: 1rem;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                #iconbox-1371253263 {
+                                  float: right;
+                                }
+                                #iconbox-1371253263 .ace-iconbox--inner {
+                                  flex-direction: row-reverse;
+                                }
+                                #iconbox-1371253263
+                                  .ace-iconbox--inner
+                                  .img-inner
+                                  img {
+                                  object-fit: cover;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                            #text-454466630 {
+                                              color: rgb(0, 0, 0);
+                                            }
+                                            #text-454466630 > * {
+                                              color: rgb(0, 0, 0);
+                                            }
+                                          
+
+/* ---- extracted style block ---- */
+
+
+                                      #text-box-1551073852 {
+                                        width: 94%;
+                                      }
+                                      #text-box-1551073852 .text-box-content {
+                                        font-size: 100%;
+                                      }
+                                    
+
+/* ---- extracted style block ---- */
+
+
+                                #banner-1888776483 {
+                                  padding-top: 150px;
+                                }
+                                #banner-1888776483
+                                  .ux-shape-divider--bottom
+                                  svg {
+                                  height: 50px;
+                                  --divider-width: 100%;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-652886196 {
+                                    float: none;
+                                  }
+                                  #iconbox-652886196 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-652886196
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-643318924 {
+                                    float: none;
+                                  }
+                                  #iconbox-643318924 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-643318924 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-643318924
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-2114363888 {
+                                    float: none;
+                                  }
+                                  #iconbox-2114363888 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-2114363888 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-2114363888
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                #stack-1560764574 > * {
+                                  --stack-gap: 1rem;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                #iconbox-946210016 {
+                                  float: right;
+                                }
+                                #iconbox-946210016 .ace-iconbox--inner {
+                                  flex-direction: row-reverse;
+                                }
+                                #iconbox-946210016
+                                  .ace-iconbox--inner
+                                  .img-inner
+                                  img {
+                                  object-fit: cover;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1084032971 {
+                                    float: none;
+                                  }
+                                  #iconbox-1084032971 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1084032971
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: cover;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-318720517 {
+                                    float: none;
+                                  }
+                                  #iconbox-318720517 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-318720517 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-318720517
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: cover;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-165901737 {
+                                    float: none;
+                                  }
+                                  #iconbox-165901737 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-165901737 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-165901737
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: cover;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-171387101 {
+                                    float: none;
+                                  }
+                                  #iconbox-171387101 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-171387101 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-171387101
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1733711450 {
+                                    float: none;
+                                  }
+                                  #iconbox-1733711450 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-1733711450 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1733711450
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: cover;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-689606974 {
+                                    float: none;
+                                  }
+                                  #iconbox-689606974 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-689606974 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-689606974
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: cover;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-829863664 {
+                                    float: none;
+                                  }
+                                  #iconbox-829863664 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-829863664 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-829863664
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-329303098 {
+                                    float: none;
+                                  }
+                                  #iconbox-329303098 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-329303098 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-329303098
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                #stack-394518849 > * {
+                                  padding: 1rem !important;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                #iconbox-1994737935 {
+                                  float: right;
+                                }
+                                #iconbox-1994737935 .ace-iconbox--inner {
+                                  flex-direction: row-reverse;
+                                }
+                                #iconbox-1994737935
+                                  .ace-iconbox--inner
+                                  .img-inner
+                                  img {
+                                  object-fit: cover;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-398200167 {
+                                    float: none;
+                                  }
+                                  #iconbox-398200167 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-398200167
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                    padding: 0px 10px 0px 10px;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1274203299 {
+                                    float: none;
+                                  }
+                                  #iconbox-1274203299 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-1274203299 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1274203299
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1496547650 {
+                                    float: none;
+                                  }
+                                  #iconbox-1496547650 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-1496547650 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1496547650
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-48755659 {
+                                    float: none;
+                                  }
+                                  #iconbox-48755659 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-48755659 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-48755659
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-879029032 {
+                                    float: none;
+                                  }
+                                  #iconbox-879029032 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-879029032 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-879029032
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-242968999 {
+                                    float: none;
+                                  }
+                                  #iconbox-242968999 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-242968999 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-242968999
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-286406700 {
+                                    float: none;
+                                  }
+                                  #iconbox-286406700 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-286406700 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-286406700
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1376769291 {
+                                    float: none;
+                                  }
+                                  #iconbox-1376769291 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-1376769291 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1376769291
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-2074292208 {
+                                    float: none;
+                                  }
+                                  #iconbox-2074292208 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-2074292208 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-2074292208
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1036865688 {
+                                    float: none;
+                                  }
+                                  #iconbox-1036865688 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-1036865688 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1036865688
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: contain;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                #stack-2105115119 > * {
+                                  padding: 1rem !important;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                #iconbox-1819513058 {
+                                  float: right;
+                                }
+                                #iconbox-1819513058 .ace-iconbox--inner {
+                                  flex-direction: row-reverse;
+                                }
+                                #iconbox-1819513058
+                                  .ace-iconbox--inner
+                                  .img-inner
+                                  img {
+                                  object-fit: cover;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                            #text-1709398649 {
+                                              color: rgb(0, 0, 0);
+                                            }
+                                            #text-1709398649 > * {
+                                              color: rgb(0, 0, 0);
+                                            }
+                                          
+
+/* ---- extracted style block ---- */
+
+
+                                      #text-box-1828918010 {
+                                        width: 60%;
+                                      }
+                                      #text-box-1828918010 .text-box-content {
+                                        font-size: 100%;
+                                      }
+                                    
+
+/* ---- extracted style block ---- */
+
+
+                                #banner-1812267787 {
+                                  padding-top: 150px;
+                                }
+                                #banner-1812267787
+                                  .ux-shape-divider--bottom
+                                  svg {
+                                  height: 50px;
+                                  --divider-width: 100%;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-66975130 {
+                                    float: none;
+                                  }
+                                  #iconbox-66975130 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-66975130
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: cover;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1985153103 {
+                                    float: none;
+                                  }
+                                  #iconbox-1985153103 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-1985153103 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1985153103
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: cover;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1171298943 {
+                                    float: none;
+                                  }
+                                  #iconbox-1171298943 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-1171298943 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1171298943
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: cover;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1676676980 {
+                                    float: none;
+                                  }
+                                  #iconbox-1676676980 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-1676676980 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1676676980
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: cover;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-611088264 {
+                                    float: none;
+                                  }
+                                  #iconbox-611088264 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-611088264 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-611088264
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: cover;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                #stack-1213455923 > * {
+                                  --stack-gap: 1rem;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                #iconbox-505445322 {
+                                  float: right;
+                                }
+                                #iconbox-505445322 .ace-iconbox--inner {
+                                  flex-direction: row-reverse;
+                                }
+                                #iconbox-505445322
+                                  .ace-iconbox--inner
+                                  .img-inner
+                                  img {
+                                  object-fit: cover;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                            #text-578703852 {
+                                              color: rgb(0, 0, 0);
+                                            }
+                                            #text-578703852 > * {
+                                              color: rgb(0, 0, 0);
+                                            }
+                                          
+
+/* ---- extracted style block ---- */
+
+
+                                      #text-box-232911943 {
+                                        width: 82%;
+                                      }
+                                      #text-box-232911943 .text-box-content {
+                                        font-size: 100%;
+                                      }
+                                    
+
+/* ---- extracted style block ---- */
+
+
+                                #banner-1290400620 {
+                                  padding-top: 150px;
+                                }
+                                #banner-1290400620
+                                  .ux-shape-divider--bottom
+                                  svg {
+                                  height: 50px;
+                                  --divider-width: 100%;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-2077335919 {
+                                    float: none;
+                                  }
+                                  #iconbox-2077335919 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-2077335919
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: cover;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-1864835897 {
+                                    float: none;
+                                  }
+                                  #iconbox-1864835897 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-1864835897 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-1864835897
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: cover;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-131624062 {
+                                    float: right;
+                                  }
+                                  #iconbox-131624062 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-131624062 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-131624062
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: cover;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                  #iconbox-283828019 {
+                                    float: none;
+                                  }
+                                  #iconbox-283828019 .ace-iconbox--content {
+                                    text-align: center;
+                                  }
+                                  #iconbox-283828019 .ace-iconbox--inner {
+                                    flex-direction: column;
+                                  }
+                                  #iconbox-283828019
+                                    .ace-iconbox--inner
+                                    .img-inner
+                                    img {
+                                    object-fit: cover;
+                                  }
+                                
+
+/* ---- extracted style block ---- */
+
+
+                                #stack-59837002 > * {
+                                  --stack-gap: 1rem;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                                #iconbox-1365038200 {
+                                  float: right;
+                                }
+                                #iconbox-1365038200 .ace-iconbox--inner {
+                                  flex-direction: row-reverse;
+                                }
+                                #iconbox-1365038200
+                                  .ace-iconbox--inner
+                                  .img-inner
+                                  img {
+                                  object-fit: cover;
+                                }
+                              
+
+/* ---- extracted style block ---- */
+
+
+                #title-227000199 .section-title-main {
+                  font-size: 150%;
+                }
+                #title-227000199 .section-title-main span {
+                  flex-direction: column;
+                }
+                @media (min-width: 550px) {
+                  #title-227000199 .section-title-main {
+                    font-size: 200%;
+                  }
+                }
+              
+
+/* ---- extracted style block ---- */
+
+
+                      #title-474118376 .section-title-main {
+                        font-size: 150%;
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-2102502704 {
+                          float: flex-start;
+                        }
+                        #iconbox-2102502704 .ace-iconbox--content {
+                          text-align: left;
+                        }
+                        #iconbox-2102502704 .ace-iconbox--inner {
+                          flex-direction: icon-left;
+                        }
+                        #iconbox-2102502704 .ace-iconbox--inner .img-inner img {
+                          object-fit: cover;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-689119783 {
+                          float: flex-start;
+                        }
+                        #iconbox-689119783 .ace-iconbox--content {
+                          text-align: left;
+                        }
+                        #iconbox-689119783 .ace-iconbox--inner {
+                          flex-direction: icon-left;
+                        }
+                        #iconbox-689119783 .ace-iconbox--inner .img-inner img {
+                          object-fit: cover;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-1161272371 {
+                          float: flex-start;
+                        }
+                        #iconbox-1161272371 .ace-iconbox--content {
+                          text-align: left;
+                        }
+                        #iconbox-1161272371 .ace-iconbox--inner {
+                          flex-direction: icon-left;
+                        }
+                        #iconbox-1161272371 .ace-iconbox--inner .img-inner img {
+                          object-fit: cover;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-1148166377 {
+                          float: flex-start;
+                        }
+                        #iconbox-1148166377 .ace-iconbox--content {
+                          text-align: left;
+                        }
+                        #iconbox-1148166377 .ace-iconbox--inner {
+                          flex-direction: icon-left;
+                        }
+                        #iconbox-1148166377 .ace-iconbox--inner .img-inner img {
+                          object-fit: cover;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-589621821 {
+                          float: flex-start;
+                        }
+                        #iconbox-589621821 .ace-iconbox--content {
+                          text-align: left;
+                        }
+                        #iconbox-589621821 .ace-iconbox--inner {
+                          flex-direction: icon-left;
+                        }
+                        #iconbox-589621821 .ace-iconbox--inner .img-inner img {
+                          object-fit: cover;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-73652117 {
+                          float: flex-start;
+                        }
+                        #iconbox-73652117 .ace-iconbox--content {
+                          text-align: left;
+                        }
+                        #iconbox-73652117 .ace-iconbox--inner {
+                          flex-direction: icon-left;
+                        }
+                        #iconbox-73652117 .ace-iconbox--inner .img-inner img {
+                          object-fit: cover;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+            #section_541308811 {
+              padding-top: 0px;
+              padding-bottom: 0px;
+              background-color: #254283;
+            }
+          
+
+/* ---- extracted style block ---- */
+
+
+                      #title-386002758 .section-title-main {
+                        font-size: 150%;
+                        line-height: 1;
+                      }
+                      @media (min-width: 550px) {
+                        #title-386002758 .section-title-main {
+                          font-size: 200%;
+                          line-height: 0.5;
+                        }
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                      #text-2770307953 {
+                        text-align: center;
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+            #section_1248932918 {
+              padding-top: 30px;
+              padding-bottom: 30px;
+            }
+            #section_1248932918 .section-bg-overlay {
+              background-color: rgba(0, 0, 0, 0.7);
+            }
+            #section_1248932918 .section-bg img {
+              object-position: 58% 38%;
+            }
+          
+
+/* ---- extracted style block ---- */
+
+
+                      #iconbox-114574358 .ace-iconbox--content > :first-child {
+                        text-indent: calc(1.5em + 5px);
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                      #iconbox-114574358 {
+                        float: flex-start;
+                      }
+                      #iconbox-114574358 .ace-iconbox--content {
+                        text-align: left;
+                      }
+                      #iconbox-114574358 .ace-iconbox--inner {
+                        flex-direction: first-letter;
+                      }
+                      #iconbox-114574358 .ace-iconbox--inner .img-inner img {
+                        object-fit: cover;
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                      #iconbox-1220631663 .ace-iconbox--content > :first-child {
+                        text-indent: calc(1.5em + 5px);
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                      #iconbox-1220631663 {
+                        float: flex-start;
+                      }
+                      #iconbox-1220631663 .ace-iconbox--content {
+                        text-align: left;
+                      }
+                      #iconbox-1220631663 .ace-iconbox--inner {
+                        flex-direction: first-letter;
+                      }
+                      #iconbox-1220631663 .ace-iconbox--inner .img-inner img {
+                        object-fit: cover;
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                      #iconbox-1382349467 .ace-iconbox--content > :first-child {
+                        text-indent: calc(1.5em + 5px);
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                      #iconbox-1382349467 {
+                        float: flex-start;
+                      }
+                      #iconbox-1382349467 .ace-iconbox--content {
+                        text-align: left;
+                      }
+                      #iconbox-1382349467 .ace-iconbox--inner {
+                        flex-direction: first-letter;
+                      }
+                      #iconbox-1382349467 .ace-iconbox--inner .img-inner img {
+                        object-fit: cover;
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                      #iconbox-721176563 .ace-iconbox--content > :first-child {
+                        text-indent: calc(1.5em + 5px);
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                      #iconbox-721176563 {
+                        float: left;
+                      }
+                      #iconbox-721176563 .ace-iconbox--content {
+                        text-align: left;
+                      }
+                      #iconbox-721176563 .ace-iconbox--inner {
+                        flex-direction: first-letter;
+                      }
+                      #iconbox-721176563 .ace-iconbox--inner .img-inner img {
+                        object-fit: cover;
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                      #iconbox-838069536 .ace-iconbox--content > :first-child {
+                        text-indent: calc(1.5em + 5px);
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                      #iconbox-838069536 {
+                        float: flex-start;
+                      }
+                      #iconbox-838069536 .ace-iconbox--content {
+                        text-align: left;
+                      }
+                      #iconbox-838069536 .ace-iconbox--inner {
+                        flex-direction: first-letter;
+                      }
+                      #iconbox-838069536 .ace-iconbox--inner .img-inner img {
+                        object-fit: cover;
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                      #iconbox-520732880 .ace-iconbox--content > :first-child {
+                        text-indent: calc(1.5em + 5px);
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                      #iconbox-520732880 {
+                        float: flex-start;
+                      }
+                      #iconbox-520732880 .ace-iconbox--content {
+                        text-align: left;
+                      }
+                      #iconbox-520732880 .ace-iconbox--inner {
+                        flex-direction: first-letter;
+                      }
+                      #iconbox-520732880 .ace-iconbox--inner .img-inner img {
+                        object-fit: cover;
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                      #iconbox-1633274579 .ace-iconbox--content > :first-child {
+                        text-indent: calc(1.5em + 5px);
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                      #iconbox-1633274579 {
+                        float: flex-start;
+                      }
+                      #iconbox-1633274579 .ace-iconbox--content {
+                        text-align: left;
+                      }
+                      #iconbox-1633274579 .ace-iconbox--inner {
+                        flex-direction: first-letter;
+                      }
+                      #iconbox-1633274579 .ace-iconbox--inner .img-inner img {
+                        object-fit: cover;
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                      #gap-1030138610 {
+                        padding-top: 20px;
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-342824383 {
+                          float: flex-start;
+                        }
+                        #iconbox-342824383 .ace-iconbox--content {
+                          text-align: left;
+                        }
+                        #iconbox-342824383 .ace-iconbox--inner {
+                          flex-direction: icon-left;
+                        }
+                        #iconbox-342824383 .ace-iconbox--inner .img-inner img {
+                          object-fit: cover;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-362464984 {
+                          float: flex-start;
+                        }
+                        #iconbox-362464984 .ace-iconbox--content {
+                          text-align: left;
+                        }
+                        #iconbox-362464984 .ace-iconbox--inner {
+                          flex-direction: icon-left;
+                        }
+                        #iconbox-362464984 .ace-iconbox--inner .img-inner img {
+                          object-fit: cover;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-1591167567 {
+                          float: flex-start;
+                        }
+                        #iconbox-1591167567 .ace-iconbox--content {
+                          text-align: left;
+                        }
+                        #iconbox-1591167567 .ace-iconbox--inner {
+                          flex-direction: icon-left;
+                        }
+                        #iconbox-1591167567 .ace-iconbox--inner .img-inner img {
+                          object-fit: cover;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-1828472424 {
+                          float: flex-start;
+                        }
+                        #iconbox-1828472424 .ace-iconbox--content {
+                          text-align: left;
+                        }
+                        #iconbox-1828472424 .ace-iconbox--inner {
+                          flex-direction: icon-left;
+                        }
+                        #iconbox-1828472424 .ace-iconbox--inner .img-inner img {
+                          object-fit: cover;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-302648760 {
+                          float: flex-start;
+                        }
+                        #iconbox-302648760 .ace-iconbox--content {
+                          text-align: left;
+                        }
+                        #iconbox-302648760 .ace-iconbox--inner {
+                          flex-direction: icon-left;
+                        }
+                        #iconbox-302648760 .ace-iconbox--inner .img-inner img {
+                          object-fit: cover;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-1868227501 {
+                          float: flex-start;
+                        }
+                        #iconbox-1868227501 .ace-iconbox--content {
+                          text-align: left;
+                        }
+                        #iconbox-1868227501 .ace-iconbox--inner {
+                          flex-direction: icon-left;
+                        }
+                        #iconbox-1868227501 .ace-iconbox--inner .img-inner img {
+                          object-fit: cover;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-1651652266 {
+                          float: flex-start;
+                        }
+                        #iconbox-1651652266 .ace-iconbox--content {
+                          text-align: left;
+                        }
+                        #iconbox-1651652266 .ace-iconbox--inner {
+                          flex-direction: icon-left;
+                        }
+                        #iconbox-1651652266 .ace-iconbox--inner .img-inner img {
+                          object-fit: cover;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-1671675263 {
+                          float: flex-start;
+                        }
+                        #iconbox-1671675263 .ace-iconbox--content {
+                          text-align: left;
+                        }
+                        #iconbox-1671675263 .ace-iconbox--inner {
+                          flex-direction: icon-left;
+                        }
+                        #iconbox-1671675263 .ace-iconbox--inner .img-inner img {
+                          object-fit: cover;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-1036160267 {
+                          float: flex-start;
+                        }
+                        #iconbox-1036160267 .ace-iconbox--content {
+                          text-align: left;
+                        }
+                        #iconbox-1036160267 .ace-iconbox--inner {
+                          flex-direction: icon-left;
+                        }
+                        #iconbox-1036160267 .ace-iconbox--inner .img-inner img {
+                          object-fit: cover;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-583311028 {
+                          float: flex-start;
+                        }
+                        #iconbox-583311028 .ace-iconbox--content {
+                          text-align: left;
+                        }
+                        #iconbox-583311028 .ace-iconbox--inner {
+                          flex-direction: icon-left;
+                        }
+                        #iconbox-583311028 .ace-iconbox--inner .img-inner img {
+                          object-fit: cover;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                      #gap-1527217461 {
+                        padding-top: 20px;
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                      #iconbox-1041429676 {
+                        float: none;
+                      }
+                      #iconbox-1041429676 .ace-iconbox--inner {
+                        flex-direction: column;
+                      }
+                      #iconbox-1041429676 .ace-iconbox--inner .img-inner img {
+                        object-fit: cover;
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+            #section_1942386525 {
+              padding-top: 30px;
+              padding-bottom: 30px;
+              background-color: rgb(255, 255, 255);
+            }
+          
+
+/* ---- extracted style block ---- */
+
+
+              #iconbox-1262561532 {
+                float: none;
+              }
+              #iconbox-1262561532 .ace-iconbox--inner {
+                flex-direction: column;
+              }
+              #iconbox-1262561532 .ace-iconbox--inner .img-inner img {
+                object-fit: cover;
+              }
+              @media (min-width: 550px) {
+                #iconbox-1262561532 .ace-iconbox--inner {
+                  flex-direction: row;
+                }
+              }
+            
+
+/* ---- extracted style block ---- */
+
+
+              #iconbox-1309420848 {
+                float: none;
+              }
+              #iconbox-1309420848 .ace-iconbox--inner {
+                flex-direction: column;
+              }
+              #iconbox-1309420848 .ace-iconbox--inner .img-inner img {
+                object-fit: cover;
+              }
+              @media (min-width: 550px) {
+                #iconbox-1309420848 .ace-iconbox--inner {
+                  flex-direction: icon-left;
+                }
+              }
+            
+
+/* ---- extracted style block ---- */
+
+
+              #iconbox-423808678 {
+                float: none;
+              }
+              #iconbox-423808678 .ace-iconbox--inner {
+                flex-direction: column;
+              }
+              #iconbox-423808678 .ace-iconbox--inner .img-inner img {
+                object-fit: cover;
+              }
+              @media (min-width: 550px) {
+                #iconbox-423808678 .ace-iconbox--inner {
+                  flex-direction: row;
+                }
+              }
+            
+
+/* ---- extracted style block ---- */
+
+
+              #iconbox-1315375525 {
+                float: none;
+              }
+              #iconbox-1315375525 .ace-iconbox--inner {
+                flex-direction: column;
+              }
+              #iconbox-1315375525 .ace-iconbox--inner .img-inner img {
+                object-fit: cover;
+              }
+              @media (min-width: 550px) {
+                #iconbox-1315375525 .ace-iconbox--inner {
+                  flex-direction: row;
+                }
+              }
+            
+
+/* ---- extracted style block ---- */
+
+
+              #iconbox-268038642 {
+                float: none;
+              }
+              #iconbox-268038642 .ace-iconbox--inner {
+                flex-direction: column;
+              }
+              #iconbox-268038642 .ace-iconbox--inner .img-inner img {
+                object-fit: cover;
+              }
+              @media (min-width: 550px) {
+                #iconbox-268038642 .ace-iconbox--inner {
+                  flex-direction: row;
+                }
+              }
+            
+
+/* ---- extracted style block ---- */
+
+
+              #iconbox-179702530 {
+                float: none;
+              }
+              #iconbox-179702530 .ace-iconbox--inner {
+                flex-direction: column;
+              }
+              #iconbox-179702530 .ace-iconbox--inner .img-inner img {
+                object-fit: cover;
+              }
+              @media (min-width: 550px) {
+                #iconbox-179702530 .ace-iconbox--inner {
+                  flex-direction: row;
+                }
+              }
+            
+
+/* ---- extracted style block ---- */
+
+
+            #stack-1708947740 > * {
+              --stack-gap: 0.5rem;
+            }
+          
+
+/* ---- extracted style block ---- */
+
+
+              #iconbox-1885477220 {
+                float: none;
+              }
+              #iconbox-1885477220 .ace-iconbox--content {
+                text-align: center;
+              }
+              #iconbox-1885477220 .ace-iconbox--inner {
+                flex-direction: column;
+              }
+              #iconbox-1885477220 .ace-iconbox--inner .img-inner img {
+                object-fit: cover;
+              }
+            
+
+/* ---- extracted style block ---- */
+
+
+              #iconbox-653863906 {
+                float: none;
+              }
+              #iconbox-653863906 .ace-iconbox--content {
+                text-align: left;
+              }
+              #iconbox-653863906 .ace-iconbox--inner {
+                flex-direction: column;
+              }
+              #iconbox-653863906 .ace-iconbox--inner .img-inner img {
+                object-fit: cover;
+              }
+            
+
+/* ---- extracted style block ---- */
+
+
+              #iconbox-1894123829 {
+                float: none;
+              }
+              #iconbox-1894123829 .ace-iconbox--inner {
+                flex-direction: column;
+              }
+              #iconbox-1894123829 .ace-iconbox--inner .img-inner img {
+                object-fit: cover;
+              }
+            
+
+/* ---- extracted style block ---- */
+
+
+            #stack-301497475 > * {
+              --stack-gap: 0.5rem;
+            }
+          
+
+/* ---- extracted style block ---- */
+
+
+              #iconbox-274196504 {
+                float: none;
+              }
+              #iconbox-274196504 .ace-iconbox--inner {
+                flex-direction: row-reverse;
+              }
+              #iconbox-274196504 .ace-iconbox--inner .img-inner img {
+                object-fit: cover;
+              }
+            
+
+/* ---- extracted style block ---- */
+
+
+            #stack-1046100722 > * {
+              --stack-gap: 0rem;
+            }
+          
+
+/* ---- extracted style block ---- */
+
+
+              #iconbox-1885199799 {
+                float: none;
+              }
+              #iconbox-1885199799 .ace-iconbox--inner {
+                flex-direction: row-reverse;
+              }
+              #iconbox-1885199799 .ace-iconbox--inner .img-inner img {
+                object-fit: cover;
+              }
+            
+
+/* ---- extracted style block ---- */
+
+
+            #stack-1245055209 > * {
+              --stack-gap: 0rem;
+            }
+          
+
+/* ---- extracted style block ---- */
+
+
+                  #title-474991594 .section-title-main {
+                    font-size: 150%;
+                  }
+                
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-1661035623 {
+                          float: none;
+                        }
+                        #iconbox-1661035623 .ace-iconbox--inner {
+                          flex-direction: column;
+                        }
+                        #iconbox-1661035623 .ace-iconbox--inner .img-inner img {
+                          object-fit: cover;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                    #col-283200327 > .col-inner {
+                      padding: 10px 10px 10px 10px;
+                      border-radius: 10px;
+                    }
+                  
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-2040460586 {
+                          float: none;
+                        }
+                        #iconbox-2040460586 .ace-iconbox--inner {
+                          flex-direction: column;
+                        }
+                        #iconbox-2040460586 .ace-iconbox--inner .img-inner img {
+                          object-fit: cover;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                    #col-1479402092 > .col-inner {
+                      padding: 10px 10px 10px 10px;
+                      border-radius: 10px;
+                    }
+                  
+
+/* ---- extracted style block ---- */
+
+
+                        #iconbox-1836699016 {
+                          float: none;
+                        }
+                        #iconbox-1836699016 .ace-iconbox--inner {
+                          flex-direction: column;
+                        }
+                        #iconbox-1836699016 .ace-iconbox--inner .img-inner img {
+                          object-fit: cover;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                    #col-1385048778 > .col-inner {
+                      padding: 10px 10px 10px 10px;
+                      border-radius: 10px;
+                    }
+                  
+
+/* ---- extracted style block ---- */
+
+
+                        #title-1109827128 .section-title-main {
+                          font-size: 150%;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                              #iconbox-6779657 {
+                                float: none;
+                              }
+                              #iconbox-6779657 .ace-iconbox--content {
+                                text-align: center;
+                              }
+                              #iconbox-6779657 .ace-iconbox--inner {
+                                flex-direction: row;
+                              }
+                              #iconbox-6779657
+                                .ace-iconbox--inner
+                                .img-inner
+                                img {
+                                object-fit: cover;
+                              }
+                            
+
+/* ---- extracted style block ---- */
+
+
+                          #col-345862586 > .col-inner {
+                            margin: 0px 5px 0px 0px;
+                          }
+                        
+
+/* ---- extracted style block ---- */
+
+
+                              #iconbox-650403610 {
+                                float: none;
+                              }
+                              #iconbox-650403610 .ace-iconbox--content {
+                                text-align: center;
+                              }
+                              #iconbox-650403610 .ace-iconbox--inner {
+                                flex-direction: row;
+                              }
+                              #iconbox-650403610
+                                .ace-iconbox--inner
+                                .img-inner
+                                img {
+                                object-fit: cover;
+                              }
+                            
+
+/* ---- extracted style block ---- */
+
+
+                          #col-703346069 > .col-inner {
+                            margin: 0px 0px 0px 5px;
+                          }
+                        
+
+/* ---- extracted style block ---- */
+
+
+                              #iconbox-826492624 {
+                                float: none;
+                              }
+                              #iconbox-826492624 .ace-iconbox--content {
+                                text-align: left;
+                              }
+                              #iconbox-826492624 .ace-iconbox--inner {
+                                flex-direction: row;
+                              }
+                              #iconbox-826492624
+                                .ace-iconbox--inner
+                                .img-inner
+                                img {
+                                object-fit: cover;
+                              }
+                            
+
+/* ---- extracted style block ---- */
+
+
+                          #col-583229496 > .col-inner {
+                            margin: 0px 5px 0px 0px;
+                          }
+                        
+
+/* ---- extracted style block ---- */
+
+
+                              #iconbox-1139658728 {
+                                float: none;
+                              }
+                              #iconbox-1139658728 .ace-iconbox--content {
+                                text-align: left;
+                              }
+                              #iconbox-1139658728 .ace-iconbox--inner {
+                                flex-direction: row;
+                              }
+                              #iconbox-1139658728
+                                .ace-iconbox--inner
+                                .img-inner
+                                img {
+                                object-fit: cover;
+                              }
+                            
+
+/* ---- extracted style block ---- */
+
+
+                          #col-377803895 > .col-inner {
+                            margin: 0px 0px 0px 5px;
+                          }
+                        
+
+/* ---- extracted style block ---- */
+
+
+                        #text-2939154378 {
+                          line-height: 3;
+                          text-align: center;
+                        }
+                      
+
+/* ---- extracted style block ---- */
+
+
+                    #col-1505933980 > .col-inner {
+                      padding: 10px 10px 10px 10px;
+                      border-radius: 10px;
+                    }
+                  
+
+/* ---- extracted style block ---- */
+
+
+              #section_2138765411 {
+                padding-top: 0px;
+                padding-bottom: 0px;
+              }
+            
+
+/* ---- extracted style block ---- */
+
+
+                          #text-77349572 {
+                            font-size: 2rem;
+                            line-height: 1;
+                            text-align: center;
+                            color: rgb(255, 255, 255);
+                          }
+                          #text-77349572 > * {
+                            color: rgb(255, 255, 255);
+                          }
+                        
+
+/* ---- extracted style block ---- */
+
+
+                    #text-box-1966831214 {
+                      width: 77%;
+                    }
+                    #text-box-1966831214 .text-box-content {
+                      font-size: 100%;
+                    }
+                  
+
+/* ---- extracted style block ---- */
+
+
+              #banner-741373255 {
+                padding-top: 150px;
+              }
+              #banner-741373255 .overlay {
+                background-color: rgba(0, 0, 0, 0.5);
+              }
+              #banner-741373255 .banner-bg img {
+                object-position: 5% 22%;
+              }
+            
+
+/* ---- extracted style block ---- */
+
+
+                          #iconbox-2073032029 {
+                            float: none;
+                          }
+                          #iconbox-2073032029 .ace-iconbox--content {
+                            text-align: center;
+                          }
+                          #iconbox-2073032029 .ace-iconbox--inner {
+                            flex-direction: row;
+                          }
+                          #iconbox-2073032029
+                            .ace-iconbox--inner
+                            .img-inner
+                            img {
+                            object-fit: cover;
+                          }
+                        
+
+/* ---- extracted style block ---- */
+
+
+                      #col-1340161907 > .col-inner {
+                        margin: 0px 5px 0px 0px;
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                          #iconbox-1055245473 {
+                            float: none;
+                          }
+                          #iconbox-1055245473 .ace-iconbox--content {
+                            text-align: center;
+                          }
+                          #iconbox-1055245473 .ace-iconbox--inner {
+                            flex-direction: row;
+                          }
+                          #iconbox-1055245473
+                            .ace-iconbox--inner
+                            .img-inner
+                            img {
+                            object-fit: cover;
+                          }
+                        
+
+/* ---- extracted style block ---- */
+
+
+                      #col-1253922004 > .col-inner {
+                        margin: 0px 0px 0px 5px;
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                          #iconbox-784313694 {
+                            float: none;
+                          }
+                          #iconbox-784313694 .ace-iconbox--content {
+                            text-align: left;
+                          }
+                          #iconbox-784313694 .ace-iconbox--inner {
+                            flex-direction: row;
+                          }
+                          #iconbox-784313694
+                            .ace-iconbox--inner
+                            .img-inner
+                            img {
+                            object-fit: cover;
+                          }
+                        
+
+/* ---- extracted style block ---- */
+
+
+                      #col-651644825 > .col-inner {
+                        margin: 0px 5px 0px 0px;
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                          #iconbox-142976519 {
+                            float: none;
+                          }
+                          #iconbox-142976519 .ace-iconbox--content {
+                            text-align: left;
+                          }
+                          #iconbox-142976519 .ace-iconbox--inner {
+                            flex-direction: row;
+                          }
+                          #iconbox-142976519
+                            .ace-iconbox--inner
+                            .img-inner
+                            img {
+                            object-fit: cover;
+                          }
+                        
+
+/* ---- extracted style block ---- */
+
+
+                      #col-1789429512 > .col-inner {
+                        margin: 0px 0px 0px 5px;
+                      }
+                    
+
+/* ---- extracted style block ---- */
+
+
+                    #gap-1892936144 {
+                      padding-top: 10px;
+                    }
+                  
+
+/* ---- extracted style block ---- */
+
+
+                    #text-2001056306 {
+                      line-height: 2;
+                      text-align: center;
+                    }
+                  
+
+/* ---- extracted style block ---- */
+
+
+                #col-1690353223 > .col-inner {
+                  padding: 10px 20px 0px 20px;
+                }
+              
+
+/* ---- extracted style block ---- */
+
+
+      .single-product div#tab-description {
+        overflow: hidden;
+        position: relative;
+        padding-bottom: 50px;
+      }
+      .single-product .tab-panels div#tab-description.panel:not(.active) {
+        height: 0 !important;
+      }
+      .devvn_readmore_flatsome {
+        text-align: center;
+        padding: 10px 0;
+        cursor: pointer;
+        position: absolute;
+        z-index: 10;
+        bottom: 0;
+        width: 100%;
+        background: #fff;
+      }
+      .devvn_readmore_flatsome:before {
+        height: 55px;
+        margin-top: -65px;
+        content: "";
+        background: -moz-linear-gradient(
+          top,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 1) 100%
+        );
+        background: -webkit-linear-gradient(
+          top,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 1) 100%
+        );
+        background: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 1) 100%
+        );
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff00', endColorstr='#ffffff',GradientType=0 );
+        display: block;
+      }
+      .devvn_readmore_flatsome a {
+        *display: block;
+        margin: 0;
+        line-height: 2 !important;
+        min-height: 2em;
+      }
+      .devvn_readmore_flatsome a:after {
+        content: "";
+        width: 0;
+        right: 0;
+        border-top: 6px solid;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        display: inline-block;
+        vertical-align: middle;
+        margin: -2px 0 0 5px;
+      }
+      .devvn_readmore_flatsome_less a:after {
+        border-top: 0;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-bottom: 6px solid;
+      }
+      .devvn_readmore_flatsome_less:before {
+        display: none;
+      }
+    
+
+/* ---- extracted style block ---- */
+
+
+      .googlesitekit-sign-in-with-google__frontend-output-button {
+        max-width: 320px;
+      }
+    
+
+/* ---- extracted style block ---- */
+
+
+      :root {
+        --wp--preset--aspect-ratio--square: 1;
+        --wp--preset--aspect-ratio--4-3: 4/3;
+        --wp--preset--aspect-ratio--3-4: 3/4;
+        --wp--preset--aspect-ratio--3-2: 3/2;
+        --wp--preset--aspect-ratio--2-3: 2/3;
+        --wp--preset--aspect-ratio--16-9: 16/9;
+        --wp--preset--aspect-ratio--9-16: 9/16;
+        --wp--preset--color--black: #000000;
+        --wp--preset--color--cyan-bluish-gray: #abb8c3;
+        --wp--preset--color--white: #ffffff;
+        --wp--preset--color--pale-pink: #f78da7;
+        --wp--preset--color--vivid-red: #cf2e2e;
+        --wp--preset--color--luminous-vivid-orange: #ff6900;
+        --wp--preset--color--luminous-vivid-amber: #fcb900;
+        --wp--preset--color--light-green-cyan: #7bdcb5;
+        --wp--preset--color--vivid-green-cyan: #00d084;
+        --wp--preset--color--pale-cyan-blue: #8ed1fc;
+        --wp--preset--color--vivid-cyan-blue: #0693e3;
+        --wp--preset--color--vivid-purple: #9b51e0;
+        --wp--preset--color--primary: #254283;
+        --wp--preset--color--secondary: #db3e26;
+        --wp--preset--color--success: #7a9c59;
+        --wp--preset--color--alert: #b20000;
+        --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(
+          135deg,
+          rgba(6, 147, 227, 1) 0%,
+          rgb(155, 81, 224) 100%
+        );
+        --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(
+          135deg,
+          rgb(122, 220, 180) 0%,
+          rgb(0, 208, 130) 100%
+        );
+        --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(
+          135deg,
+          rgba(252, 185, 0, 1) 0%,
+          rgba(255, 105, 0, 1) 100%
+        );
+        --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(
+          135deg,
+          rgba(255, 105, 0, 1) 0%,
+          rgb(207, 46, 46) 100%
+        );
+        --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(
+          135deg,
+          rgb(238, 238, 238) 0%,
+          rgb(169, 184, 195) 100%
+        );
+        --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(
+          135deg,
+          rgb(74, 234, 220) 0%,
+          rgb(151, 120, 209) 20%,
+          rgb(207, 42, 186) 40%,
+          rgb(238, 44, 130) 60%,
+          rgb(251, 105, 98) 80%,
+          rgb(254, 248, 76) 100%
+        );
+        --wp--preset--gradient--blush-light-purple: linear-gradient(
+          135deg,
+          rgb(255, 206, 236) 0%,
+          rgb(152, 150, 240) 100%
+        );
+        --wp--preset--gradient--blush-bordeaux: linear-gradient(
+          135deg,
+          rgb(254, 205, 165) 0%,
+          rgb(254, 45, 45) 50%,
+          rgb(107, 0, 62) 100%
+        );
+        --wp--preset--gradient--luminous-dusk: linear-gradient(
+          135deg,
+          rgb(255, 203, 112) 0%,
+          rgb(199, 81, 192) 50%,
+          rgb(65, 88, 208) 100%
+        );
+        --wp--preset--gradient--pale-ocean: linear-gradient(
+          135deg,
+          rgb(255, 245, 203) 0%,
+          rgb(182, 227, 212) 50%,
+          rgb(51, 167, 181) 100%
+        );
+        --wp--preset--gradient--electric-grass: linear-gradient(
+          135deg,
+          rgb(202, 248, 128) 0%,
+          rgb(113, 206, 126) 100%
+        );
+        --wp--preset--gradient--midnight: linear-gradient(
+          135deg,
+          rgb(2, 3, 129) 0%,
+          rgb(40, 116, 252) 100%
+        );
+        --wp--preset--font-size--small: 13px;
+        --wp--preset--font-size--medium: 20px;
+        --wp--preset--font-size--large: 36px;
+        --wp--preset--font-size--x-large: 42px;
+        --wp--preset--spacing--20: 0.44rem;
+        --wp--preset--spacing--30: 0.67rem;
+        --wp--preset--spacing--40: 1rem;
+        --wp--preset--spacing--50: 1.5rem;
+        --wp--preset--spacing--60: 2.25rem;
+        --wp--preset--spacing--70: 3.38rem;
+        --wp--preset--spacing--80: 5.06rem;
+        --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+        --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--outlined:
+          6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+        --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+      }
+      :where(body) {
+        margin: 0;
+      }
+      .wp-site-blocks > .alignleft {
+        float: left;
+        margin-right: 2em;
+      }
+      .wp-site-blocks > .alignright {
+        float: right;
+        margin-left: 2em;
+      }
+      .wp-site-blocks > .aligncenter {
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      :where(.is-layout-flex) {
+        gap: 0.5em;
+      }
+      :where(.is-layout-grid) {
+        gap: 0.5em;
+      }
+      .is-layout-flow > .alignleft {
+        float: left;
+        margin-inline-start: 0;
+        margin-inline-end: 2em;
+      }
+      .is-layout-flow > .alignright {
+        float: right;
+        margin-inline-start: 2em;
+        margin-inline-end: 0;
+      }
+      .is-layout-flow > .aligncenter {
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      .is-layout-constrained > .alignleft {
+        float: left;
+        margin-inline-start: 0;
+        margin-inline-end: 2em;
+      }
+      .is-layout-constrained > .alignright {
+        float: right;
+        margin-inline-start: 2em;
+        margin-inline-end: 0;
+      }
+      .is-layout-constrained > .aligncenter {
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      .is-layout-constrained
+        > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      body .is-layout-flex {
+        display: flex;
+      }
+      .is-layout-flex {
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .is-layout-flex > :is(*, div) {
+        margin: 0;
+      }
+      body .is-layout-grid {
+        display: grid;
+      }
+      .is-layout-grid > :is(*, div) {
+        margin: 0;
+      }
+      body {
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+      }
+      a:where(:not(.wp-element-button)) {
+        text-decoration: none;
+      }
+      :root :where(.wp-element-button, .wp-block-button__link) {
+        background-color: #32373c;
+        border-width: 0;
+        color: #fff;
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        padding: calc(0.667em + 2px) calc(1.333em + 2px);
+        text-decoration: none;
+      }
+      .has-black-color {
+        color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-color {
+        color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-color {
+        color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-color {
+        color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-color {
+        color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-color {
+        color: var(--wp--preset--color--luminous-vivid-orange) !important;
+      }
+      .has-luminous-vivid-amber-color {
+        color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+      .has-light-green-cyan-color {
+        color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-color {
+        color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-color {
+        color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-color {
+        color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-color {
+        color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-primary-color {
+        color: var(--wp--preset--color--primary) !important;
+      }
+      .has-secondary-color {
+        color: var(--wp--preset--color--secondary) !important;
+      }
+      .has-success-color {
+        color: var(--wp--preset--color--success) !important;
+      }
+      .has-alert-color {
+        color: var(--wp--preset--color--alert) !important;
+      }
+      .has-black-background-color {
+        background-color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-background-color {
+        background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-background-color {
+        background-color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-background-color {
+        background-color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-background-color {
+        background-color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-background-color {
+        background-color: var(
+          --wp--preset--color--luminous-vivid-orange
+        ) !important;
+      }
+      .has-luminous-vivid-amber-background-color {
+        background-color: var(
+          --wp--preset--color--luminous-vivid-amber
+        ) !important;
+      }
+      .has-light-green-cyan-background-color {
+        background-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-background-color {
+        background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-background-color {
+        background-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-primary-background-color {
+        background-color: var(--wp--preset--color--primary) !important;
+      }
+      .has-secondary-background-color {
+        background-color: var(--wp--preset--color--secondary) !important;
+      }
+      .has-success-background-color {
+        background-color: var(--wp--preset--color--success) !important;
+      }
+      .has-alert-background-color {
+        background-color: var(--wp--preset--color--alert) !important;
+      }
+      .has-black-border-color {
+        border-color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-border-color {
+        border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-border-color {
+        border-color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-border-color {
+        border-color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-border-color {
+        border-color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-border-color {
+        border-color: var(
+          --wp--preset--color--luminous-vivid-orange
+        ) !important;
+      }
+      .has-luminous-vivid-amber-border-color {
+        border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+      .has-light-green-cyan-border-color {
+        border-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-border-color {
+        border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-border-color {
+        border-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-primary-border-color {
+        border-color: var(--wp--preset--color--primary) !important;
+      }
+      .has-secondary-border-color {
+        border-color: var(--wp--preset--color--secondary) !important;
+      }
+      .has-success-border-color {
+        border-color: var(--wp--preset--color--success) !important;
+      }
+      .has-alert-border-color {
+        border-color: var(--wp--preset--color--alert) !important;
+      }
+      .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+        background: var(
+          --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple
+        ) !important;
+      }
+      .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+        background: var(
+          --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan
+        ) !important;
+      }
+      .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+        background: var(
+          --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange
+        ) !important;
+      }
+      .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+        background: var(
+          --wp--preset--gradient--luminous-vivid-orange-to-vivid-red
+        ) !important;
+      }
+      .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+        background: var(
+          --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray
+        ) !important;
+      }
+      .has-cool-to-warm-spectrum-gradient-background {
+        background: var(
+          --wp--preset--gradient--cool-to-warm-spectrum
+        ) !important;
+      }
+      .has-blush-light-purple-gradient-background {
+        background: var(--wp--preset--gradient--blush-light-purple) !important;
+      }
+      .has-blush-bordeaux-gradient-background {
+        background: var(--wp--preset--gradient--blush-bordeaux) !important;
+      }
+      .has-luminous-dusk-gradient-background {
+        background: var(--wp--preset--gradient--luminous-dusk) !important;
+      }
+      .has-pale-ocean-gradient-background {
+        background: var(--wp--preset--gradient--pale-ocean) !important;
+      }
+      .has-electric-grass-gradient-background {
+        background: var(--wp--preset--gradient--electric-grass) !important;
+      }
+      .has-midnight-gradient-background {
+        background: var(--wp--preset--gradient--midnight) !important;
+      }
+      .has-small-font-size {
+        font-size: var(--wp--preset--font-size--small) !important;
+      }
+      .has-medium-font-size {
+        font-size: var(--wp--preset--font-size--medium) !important;
+      }
+      .has-large-font-size {
+        font-size: var(--wp--preset--font-size--large) !important;
+      }
+      .has-x-large-font-size {
+        font-size: var(--wp--preset--font-size--x-large) !important;
+      }
+    

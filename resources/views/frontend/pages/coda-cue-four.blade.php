@@ -3,6 +3,13 @@
 @section('title', 'CODA Audio CUE-FOUR – VD GROUP')
 @section('body_class', 'page-template-page-blank-php')
 
+@push('styles')
+<link rel="stylesheet" href="{{ asset('assets/extracted-coda-cue-four.css') }}">
+@endpush
+@push('scripts')
+<script defer src="{{ asset('assets/extracted-coda-cue-four.js') }}"></script>
+@endpush
+
 @section('content')
 
 <div class="content-area" id="primary"><main class="site-main shop-container" id="main" role="main">

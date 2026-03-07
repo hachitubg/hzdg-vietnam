@@ -3,6 +3,13 @@
 @section('title', 'VD GROUP – Phân phối âm thanh CHÍNH HÃNG, CHUYÊN NGHIỆP')
 @section('body_class', 'home page-template-page-blank-php')
 
+@push('styles')
+<link rel="stylesheet" href="{{ asset('assets/extracted-home.css') }}">
+@endpush
+@push('scripts')
+<script defer src="{{ asset('assets/extracted-home.js') }}"></script>
+@endpush
+
 @section('content')
 
 <div class="content-area" id="content" role="main">

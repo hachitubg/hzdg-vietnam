@@ -3,6 +3,13 @@
 @section('title', 'Dự án âm thanh hội trường Bộ tư lệnh Vùng 2 Hải quân – VD GROUP')
 @section('body_class', 'page-template-page-blank-php')
 
+@push('styles')
+<link rel="stylesheet" href="{{ asset('assets/extracted-projects-show.css') }}">
+@endpush
+@push('scripts')
+<script defer src="{{ asset('assets/extracted-projects-show.js') }}"></script>
+@endpush
+
 @section('content')
 
 <div class="portfolio-page-wrapper portfolio-single-page">
