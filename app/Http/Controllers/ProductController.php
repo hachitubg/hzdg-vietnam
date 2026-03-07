@@ -17,12 +17,7 @@ class ProductController extends Controller
 
     public function category($slug)
     {
-        $category = Category::where('slug', $slug)->where('type', 'product')->firstOrFail();
-        $categoryIds = $category->children->pluck('id')->push($category->id);
-        $products = Product::whereIn('category_id', $categoryIds)->where('is_visible', true)->with('images')->paginate(12);
-        $categories = Category::where('type', 'product')->where('is_visible', true)->whereNull('parent_id')->with('children')->orderBy('sort_order')->get();
-
-        return view('frontend.products.category', compact('category', 'categories', 'products'));
+        return view('frontend.products.category');
     }
 
     public function show($slug)
