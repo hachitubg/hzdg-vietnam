@@ -39,5 +39,5 @@ Route::post('/lien-he', [ContactController::class, 'store'])->name('contact.stor
 // Gửi yêu cầu mua hàng (form trên trang sản phẩm)
 Route::post('/yeu-cau-mua', [ContactController::class, 'purchase'])->name('contact.purchase');
 
-// Trang sản phẩm cụ thể (coda-cue-four)
-Route::get('/coda-cue-four', fn() => view('frontend.pages.coda-cue-four'))->name('pages.coda-cue-four');
+// Alias tương thích URL cũ cho trang sản phẩm
+Route::get('/coda-cue-four', fn () => redirect()->route('products.show', 'coda-cue-four'))->name('pages.coda-cue-four');
