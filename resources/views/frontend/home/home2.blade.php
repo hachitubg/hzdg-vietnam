@@ -72,6 +72,10 @@
 
 @push('styles')
     <style>
+    .home2 {
+        font-family: inherit;
+    }
+
         #c_grid-116273709439191 .p_gridbox::after {
             content: "";
             clear: left;

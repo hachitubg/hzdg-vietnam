@@ -1,6 +1,7 @@
 @push('styles')
 <style>
-    .button-primary {
+
+    .home4-scope .button-primary{
         position: relative;
         display: inline-block;
         font-size: 14px;
@@ -16,7 +17,7 @@
         overflow: hidden
     }
 
-    .button-primary::before {
+    .home4-scope .button-primary::before{
         content: "";
         position: absolute;
         top: 2px;
@@ -29,20 +30,20 @@
         transition: all .150s
     }
 
-    .button-primary:hover {
+    .home4-scope .button-primary:hover{
         color: #fff;
         background: #f16744
     }
 
-    .button-primary:hover::before {
+    .home4-scope .button-primary:hover::before{
         top: -1px;
         left: -1px;
         right: -1px;
         bottom: -1px
     }
 
-    .heading-primary {
-        font-family: "Gilroy",sans-serif;
+    .home4-scope .heading-primary{
+        font-family: inherit;
         font-size: 36px;
         font-weight: 700;
         line-height: 1.25;
@@ -50,647 +51,474 @@
         text-transform: uppercase
     }
 
-    .heading-primary span {
+    .home4-scope .heading-primary span{
         color: var(--color-primary)
     }
 
-    :root {
+     .home4-scope .container-home4{
         --color-primary: #ff5626;
         --color-secondary: #ff7a23;
         --color-tertiary: #f44024;
         --background-page: #f5f7f9
     }
 
-    .container-home4 {
+    .home4-scope .container-home4{
         max-width: 1220px !important;
         padding: 0 10px;
         margin: 0 auto
     }
-    
-    *,::before,::after {
-        --tw-border-spacing-x: 0;
-        --tw-border-spacing-y: 0;
-        --tw-translate-x: 0;
-        --tw-translate-y: 0;
-        --tw-rotate: 0;
-        --tw-skew-x: 0;
-        --tw-skew-y: 0;
-        --tw-scale-x: 1;
-        --tw-scale-y: 1;
-        --tw-pan-x: ;
-        --tw-pan-y: ;
-        --tw-pinch-zoom: ;
-        --tw-scroll-snap-strictness: proximity;
-        --tw-gradient-from-position: ;
-        --tw-gradient-via-position: ;
-        --tw-gradient-to-position: ;
-        --tw-ordinal: ;
-        --tw-slashed-zero: ;
-        --tw-numeric-figure: ;
-        --tw-numeric-spacing: ;
-        --tw-numeric-fraction: ;
-        --tw-ring-inset: ;
-        --tw-ring-offset-width: 0px;
-        --tw-ring-offset-color: #fff;
-        --tw-ring-color: rgb(59 130 246/0.5);
-        --tw-ring-offset-shadow: 0 0#0000;
-        --tw-ring-shadow: 0 0#0000;
-        --tw-shadow: 0 0#0000;
-        --tw-shadow-colored: 0 0#0000;
-        --tw-blur: ;
-        --tw-brightness: ;
-        --tw-contrast: ;
-        --tw-grayscale: ;
-        --tw-hue-rotate: ;
-        --tw-invert: ;
-        --tw-saturate: ;
-        --tw-sepia: ;
-        --tw-drop-shadow: ;
-        --tw-backdrop-blur: ;
-        --tw-backdrop-brightness: ;
-        --tw-backdrop-contrast: ;
-        --tw-backdrop-grayscale: ;
-        --tw-backdrop-hue-rotate: ;
-        --tw-backdrop-invert: ;
-        --tw-backdrop-opacity: ;
-        --tw-backdrop-saturate: ;
-        --tw-backdrop-sepia: ;
-        --tw-contain-size: ;
-        --tw-contain-layout: ;
-        --tw-contain-paint: ;
-        --tw-contain-style:
-    }
 
-    ::backdrop {
-        --tw-border-spacing-x: 0;
-        --tw-border-spacing-y: 0;
-        --tw-translate-x: 0;
-        --tw-translate-y: 0;
-        --tw-rotate: 0;
-        --tw-skew-x: 0;
-        --tw-skew-y: 0;
-        --tw-scale-x: 1;
-        --tw-scale-y: 1;
-        --tw-pan-x: ;
-        --tw-pan-y: ;
-        --tw-pinch-zoom: ;
-        --tw-scroll-snap-strictness: proximity;
-        --tw-gradient-from-position: ;
-        --tw-gradient-via-position: ;
-        --tw-gradient-to-position: ;
-        --tw-ordinal: ;
-        --tw-slashed-zero: ;
-        --tw-numeric-figure: ;
-        --tw-numeric-spacing: ;
-        --tw-numeric-fraction: ;
-        --tw-ring-inset: ;
-        --tw-ring-offset-width: 0px;
-        --tw-ring-offset-color: #fff;
-        --tw-ring-color: rgb(59 130 246/0.5);
-        --tw-ring-offset-shadow: 0 0#0000;
-        --tw-ring-shadow: 0 0#0000;
-        --tw-shadow: 0 0#0000;
-        --tw-shadow-colored: 0 0#0000;
-        --tw-blur: ;
-        --tw-brightness: ;
-        --tw-contrast: ;
-        --tw-grayscale: ;
-        --tw-hue-rotate: ;
-        --tw-invert: ;
-        --tw-saturate: ;
-        --tw-sepia: ;
-        --tw-drop-shadow: ;
-        --tw-backdrop-blur: ;
-        --tw-backdrop-brightness: ;
-        --tw-backdrop-contrast: ;
-        --tw-backdrop-grayscale: ;
-        --tw-backdrop-hue-rotate: ;
-        --tw-backdrop-invert: ;
-        --tw-backdrop-opacity: ;
-        --tw-backdrop-saturate: ;
-        --tw-backdrop-sepia: ;
-        --tw-contain-size: ;
-        --tw-contain-layout: ;
-        --tw-contain-paint: ;
-        --tw-contain-style:
-    }
 
-    *,::after,::before {
-        box-sizing: border-box;
-        border-width: 0;
-        border-style: solid;
-        border-color: #e5e7eb
-    }
-
-    ::after,::before {
-        --tw-content: ""
-    }
-
-    :host,html {
-        line-height: 1.5;
-        -webkit-text-size-adjust: 100%;
-        -moz-tab-size: 4;
-        tab-size: 4;
-        font-family: ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-        font-feature-settings: normal;
-        font-variation-settings: normal;
-        -webkit-tap-highlight-color: transparent
-    }
-
-    body {
-        margin: 0;
-        line-height: inherit
-    }
-
-    h2,h3 {
+    .home4-scope h2, .home4-scope h3{
         font-size: inherit
     }
 
-    a {
-        color: inherit;
-        text-decoration: inherit
-    }
 
-    b {
-        font-weight: bolder
-    }
 
-    button {
-        font-family: inherit;
-        font-feature-settings: inherit;
-        font-variation-settings: inherit;
-        font-size: 100%;
-        font-weight: inherit;
-        line-height: inherit;
-        letter-spacing: inherit;
-        color: inherit;
-        margin: 0;
-        padding: 0
-    }
 
-    button {
-        text-transform: none
-    }
-
-    button {
-        appearance: button;
-        background-color: transparent;
-        background-image: none
-    }
-
-    :-moz-focusring {
+    .home4-scope :-moz-focusring{
         outline: auto
     }
 
-    :-moz-ui-invalid {
+    .home4-scope :-moz-ui-invalid{
         box-shadow: none
     }
 
-    ::-webkit-inner-spin-button,::-webkit-outer-spin-button {
+    .home4-scope ::-webkit-inner-spin-button, .home4-scope ::-webkit-outer-spin-button{
         height: auto
     }
 
-    ::-webkit-search-decoration {
+    .home4-scope ::-webkit-search-decoration{
         appearance: none
     }
 
-    ::-webkit-file-upload-button {
+    .home4-scope ::-webkit-file-upload-button{
         appearance: button;
         font: inherit
     }
 
-    h2,h3,p {
+    .home4-scope h2, .home4-scope h3, .home4-scope p{
         margin: 0
     }
 
-    ol,ul {
+    .home4-scope ol, .home4-scope ul{
         list-style: none;
         margin: 0;
         padding: 0
     }
 
-    input::placeholder,textarea::placeholder {
+    .home4-scope input::placeholder, .home4-scope textarea::placeholder{
         opacity: 1;
         color: #9ca3af
     }
 
-    button {
-        cursor: pointer
-    }
 
-    :disabled {
+    .home4-scope :disabled{
         cursor: default
     }
 
-    img,svg {
+    .home4-scope img, .home4-scope svg{
         display: block;
         vertical-align: middle;
     }
 
-    img {
+    .home4-scope img{
         max-width: 100%
     }
 
-    html {
-        scroll-behavior: smooth;
-        font-family: "TikTok Sans",sans-serif
-    }
 
-    .container-home4 {
+    .home4-scope .container-home4{
         width: 100%
     }
 
     @media(min-width: 640px) {
-        .container-home4 {
+        .home4-scope .container-home4{
             max-width:640px
         }
     }
 
     @media(min-width: 768px) {
-        .container-home4 {
+        .home4-scope .container-home4{
             max-width:768px
         }
     }
 
     @media(min-width: 1024px) {
-        .container-home4 {
+        .home4-scope .container-home4{
             max-width:1024px
         }
     }
 
     @media(min-width: 1280px) {
-        .container-home4 {
+        .home4-scope .container-home4{
             max-width:1280px
         }
     }
 
     @media(min-width: 1536px) {
-        .container-home4 {
+        .home4-scope .container-home4{
             max-width:1536px
         }
     }
 
-    a {
-        outline: 0
-    }
 
-    a:hover {
+    .home4-scope a:hover{
         color: var(--color-primary)
     }
 
-    .pointer-events-none {
+    .home4-scope .pointer-events-none{
         pointer-events: none
     }
 
-    .absolute {
+    .home4-scope .absolute{
         position: absolute
     }
 
-    .relative {
+    .home4-scope .relative{
         position: relative
     }
 
-    .sticky {
+    .home4-scope .sticky{
         position: sticky
     }
 
-    .bottom-0 {
+    .home4-scope .bottom-0{
         bottom: 0px
     }
 
-    .left-0 {
+    .home4-scope .left-0{
         left: 0px
     }
 
-    .left-\[50\%\] {
+    .home4-scope .left-\[50\%\]{
         left: 50%
     }
 
-    .right-0 {
+    .home4-scope .right-0{
         right: 0px
     }
 
-    .top-0 {
+    .home4-scope .top-0{
         top: 0px
     }
 
-    .top-\[49\%\] {
+    .home4-scope .top-\[49\%\]{
         top: 49%
     }
 
-    .z-\[99\] {
+    .home4-scope .z-\[99\]{
         z-index: 99
     }
 
-    .m-auto {
+    .home4-scope .m-auto{
         margin: auto
     }
 
-    .mb-\[32px\] {
+    .home4-scope .mb-\[32px\]{
         margin-bottom: 32px
     }
 
-    .mt-\[-36px\] {
+    .home4-scope .mt-\[-36px\]{
         margin-top: -36px
     }
 
-    .mt-\[12px\] {
+    .home4-scope .mt-\[12px\]{
         margin-top: 12px
     }
 
-    .mt-\[16px\] {
+    .home4-scope .mt-\[16px\]{
         margin-top: 16px
     }
 
-    .mt-\[24px\] {
+    .home4-scope .mt-\[24px\]{
         margin-top: 24px
     }
 
-    .mr-\[2px\] {
+    .home4-scope .mr-\[2px\]{
         margin-right: 2px
     }
 
-    .block {
+    .home4-scope .block{
         display: block
     }
 
-    .inline-block {
+    .home4-scope .inline-block{
         display: inline-block
     }
 
-    .grid {
+    .home4-scope .grid{
         display: grid
     }
 
-    .h-full {
+    .home4-scope .h-full{
         height: 100%
     }
 
-    .w-full {
+    .home4-scope .w-full{
         width: 100%
     }
 
-    .\!min-w-max {
+    .home4-scope .\!min-w-max{
         min-width: max-content !important
     }
 
-    .flex-1 {
+    .home4-scope .flex-1{
         flex: 1 1 0%
     }
 
-    .translate-x-\[-50\%\] {
+    .home4-scope .translate-x-\[-50\%\]{
         --tw-translate-x: -50%
     }
 
-    .translate-x-\[-5px\] {
+    .home4-scope .translate-x-\[-5px\]{
         --tw-translate-x: -5px
     }
 
-    .translate-y-\[-3px\] {
+    .home4-scope .translate-y-\[-3px\]{
         --tw-translate-y: -3px;
         transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
     }
 
-    .translate-y-\[-50\%\] {
+    .home4-scope .translate-y-\[-50\%\]{
         --tw-translate-y: -50%;
         transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
     }
 
-    .translate-y-\[-1px\] {
+    .home4-scope .translate-y-\[-1px\]{
         --tw-translate-y: -1px;
         transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
     }
 
-    .scroll-mt-\[87px\] {
+    .home4-scope .scroll-mt-\[87px\]{
         scroll-margin-top: 87px
     }
 
-    .grid-cols-4 {
+    .home4-scope .grid-cols-4{
         grid-template-columns: repeat(4,minmax(0,1fr))
     }
 
-    .items-center {
+    .home4-scope .items-center{
         align-items: center
     }
 
-    .justify-between {
+    .home4-scope .justify-between{
         justify-content: space-between
     }
 
-    .gap-\[12px\] {
+    .home4-scope .gap-\[12px\]{
         gap: 12px
     }
 
-    .gap-\[2px\] {
+    .home4-scope .gap-\[2px\]{
         gap: 2px
     }
 
-    .gap-\[36px\] {
+    .home4-scope .gap-\[36px\]{
         gap: 36px
     }
 
-    .gap-\[48px\] {
+    .home4-scope .gap-\[48px\]{
         gap: 48px
     }
 
-    .gap-\[20px\] {
+    .home4-scope .gap-\[20px\]{
         gap: 20px
     }
 
-    .overflow-auto {
+    .home4-scope .overflow-auto{
         overflow: auto
     }
 
-    .overflow-hidden {
+    .home4-scope .overflow-hidden{
         overflow: hidden
     }
 
-    .whitespace-nowrap {
+    .home4-scope .whitespace-nowrap{
         white-space: nowrap
     }
 
-    .rounded-\[0_15px_0_0\] {
+    .home4-scope .rounded-\[0_15px_0_0\]{
         border-radius: 0 15px 0 0
     }
 
-    .rounded-\[100px\] {
+    .home4-scope .rounded-\[100px\]{
         border-radius: 100px
     }
 
-    .rounded-\[36px\] {
+    .home4-scope .rounded-\[36px\]{
         border-radius: 36px
     }
 
-    .rounded-\[8px\] {
+    .home4-scope .rounded-\[8px\]{
         border-radius: 8px
     }
 
-    .border-b {
+    .home4-scope .border-b{
         border-bottom-width: 1px
     }
 
-    .border-b-\[--color-primary\] {
+    .home4-scope .border-b-\[--color-primary\]{
         border-bottom-color: var(--color-primary)
     }
 
-    .bg-\[--color-primary\] {
+    .home4-scope .bg-\[--color-primary\]{
         background-color: var(--color-primary)
     }
 
-    .bg-white {
+    .home4-scope .bg-white{
         --tw-bg-opacity: 1;
         background-color: rgb(255 255 255/var(--tw-bg-opacity,1))
     }
 
-    .bg-\[\#f8f8f8\] {
+    .home4-scope .bg-\[\#f8f8f8\]{
         --tw-bg-opacity: 1;
         background-color: rgb(248 248 248/var(--tw-bg-opacity,1))
     }
 
-    .bg-cover {
+    .home4-scope .bg-cover{
         background-size: cover
     }
 
-    .bg-no-repeat {
+    .home4-scope .bg-no-repeat{
         background-repeat: no-repeat
     }
 
-    .object-cover {
+    .home4-scope .object-cover{
         object-fit: cover
     }
 
-    .p-\[8px_20px_8px_14px\] {
+    .home4-scope .p-\[8px_20px_8px_14px\]{
         padding: 8px 20px 8px 14px
     }
 
-    .px-\[10px\] {
+    .home4-scope .px-\[10px\]{
         padding-left: 10px;
         padding-right: 10px
     }
 
-    .px-\[15\%\] {
+    .home4-scope .px-\[15\%\]{
         padding-left: 15%;
         padding-right: 15%
     }
 
-    .px-\[24px\] {
+    .home4-scope .px-\[24px\]{
         padding-left: 24px;
         padding-right: 24px
     }
 
-    .py-\[12px\] {
+    .home4-scope .py-\[12px\]{
         padding-top: 12px;
         padding-bottom: 12px
     }
 
-    .py-\[40px\] {
+    .home4-scope .py-\[40px\]{
         padding-top: 40px;
         padding-bottom: 40px
     }
 
-    .py-\[5px\] {
+    .home4-scope .py-\[5px\]{
         padding-top: 5px;
         padding-bottom: 5px
     }
 
-    .py-\[80px\] {
+    .home4-scope .py-\[80px\]{
         padding-top: 80px;
         padding-bottom: 80px
     }
 
-    .\!pr-\[20px\] {
+    .home4-scope .\!pr-\[20px\]{
         padding-right: 20px !important
     }
 
-    .pb-\[113px\] {
+    .home4-scope .pb-\[113px\]{
         padding-bottom: 113px
     }
 
-    .pb-\[59\%\] {
+    .home4-scope .pb-\[59\%\]{
         padding-bottom: 59%
     }
 
-    .pt-\[80px\] {
+    .home4-scope .pt-\[80px\]{
         padding-top: 80px
     }
 
-    .text-center {
+    .home4-scope .text-center{
         text-align: center
     }
 
-    .text-\[13px\] {
+    .home4-scope .text-\[13px\]{
         font-size: 13px
     }
 
-    .text-\[18px\] {
+    .home4-scope .text-\[18px\]{
         font-size: 18px
     }
 
-    .text-\[20px\] {
+    .home4-scope .text-\[20px\]{
         font-size: 20px
     }
 
-    .text-\[14px\] {
+    .home4-scope .text-\[14px\]{
         font-size: 14px
     }
 
-    .font-bold {
+    .home4-scope .font-bold{
         font-weight: 700
     }
 
-    .font-medium {
+    .home4-scope .font-medium{
         font-weight: 500
     }
 
-    .uppercase {
+    .home4-scope .uppercase{
         text-transform: uppercase
     }
 
-    .capitalize {
+    .home4-scope .capitalize{
         text-transform: capitalize
     }
 
-    .leading-\[28px\] {
+    .home4-scope .leading-\[28px\]{
         line-height: 28px
     }
 
-    .leading-\[48px\] {
+    .home4-scope .leading-\[48px\]{
         line-height: 48px
     }
 
-    .leading-tight {
+    .home4-scope .leading-tight{
         line-height: 1.25
     }
 
-    .leading-\[24px\] {
+    .home4-scope .leading-\[24px\]{
         line-height: 24px
     }
 
-    .text-\[--color-primary\] {
+    .home4-scope .text-\[--color-primary\]{
         color: var(--color-primary)
     }
 
-    .text-white {
+    .home4-scope .text-white{
         --tw-text-opacity: 1;
         color: rgb(255 255 255/var(--tw-text-opacity,1))
     }
 
-    .shadow {
+    .home4-scope .shadow{
         --tw-shadow: 0 1px 3px 0 rgb(0 0 0/0.1),0 1px 2px -1px rgb(0 0 0/0.1);
         --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color),0 1px 2px -1px var(--tw-shadow-color);
         box-shadow: var(--tw-ring-offset-shadow,0 0#0000),var(--tw-ring-shadow,0 0#0000),var(--tw-shadow)
     }
 
-    .transition-all {
+    .home4-scope .transition-all{
         transition-property: all;
         transition-timing-function: cubic-bezier(0.4,0,0.2,1)
     }
 
-    .duration-300 {
+    .home4-scope .duration-300{
         transition-duration: 300ms
     }
 
-    .duration-500 {
+    .home4-scope .duration-500{
         transition-duration: 500ms
     }
 
@@ -701,273 +529,273 @@
         --background-page: #f5f7f9
     }
 
-    .before\:absolute::before {
+    .home4-scope .before\:absolute::before{
         content: var(--tw-content);
         position: absolute
     }
 
-    .before\:bottom-\[-4\.5px\]::before {
+    .home4-scope .before\:bottom-\[-4\.5px\]::before{
         content: var(--tw-content);
         bottom: -4.5px
     }
 
-    .before\:left-0::before {
+    .home4-scope .before\:left-0::before{
         content: var(--tw-content);
         left: 0px
     }
 
-    .before\:left-\[-4px\]::before {
+    .home4-scope .before\:left-\[-4px\]::before{
         content: var(--tw-content);
         left: -4px
     }
 
-    .before\:right-0::before {
+    .home4-scope .before\:right-0::before{
         content: var(--tw-content);
         right: 0px
     }
 
-    .before\:top-0::before {
+    .home4-scope .before\:top-0::before{
         content: var(--tw-content);
         top: 0px
     }
 
-    .before\:mt-\[-14px\]::before {
+    .home4-scope .before\:mt-\[-14px\]::before{
         content: var(--tw-content);
         margin-top: -14px
     }
 
-    .before\:h-\[8px\]::before {
+    .home4-scope .before\:h-\[8px\]::before{
         content: var(--tw-content);
         height: 8px
     }
 
-    .before\:w-\[84px\]::before {
+    .home4-scope .before\:w-\[84px\]::before{
         content: var(--tw-content);
         width: 84px
     }
 
-    .before\:w-\[96px\]::before {
+    .home4-scope .before\:w-\[96px\]::before{
         content: var(--tw-content);
         width: 96px
     }
 
-    .before\:w-\[8px\]::before {
+    .home4-scope .before\:w-\[8px\]::before{
         content: var(--tw-content);
         width: 8px
     }
 
-    .before\:rounded-full::before {
+    .home4-scope .before\:rounded-full::before{
         content: var(--tw-content);
         border-radius: 9999px
     }
 
-    .before\:border-t-4::before {
+    .home4-scope .before\:border-t-4::before{
         content: var(--tw-content);
         border-top-width: 4px
     }
 
-    .before\:bg-\[\#ffbb8b\]::before {
+    .home4-scope .before\:bg-\[\#ffbb8b\]::before{
         content: var(--tw-content);
         --tw-bg-opacity: 1;
         background-color: rgb(255 187 139/var(--tw-bg-opacity,1))
     }
 
-    .before\:bg-contain::before {
+    .home4-scope .before\:bg-contain::before{
         content: var(--tw-content);
         background-size: contain
     }
 
-    .before\:bg-no-repeat::before {
+    .home4-scope .before\:bg-no-repeat::before{
         content: var(--tw-content);
         background-repeat: no-repeat
     }
 
-    .after\:absolute::after {
+    .home4-scope .after\:absolute::after{
         content: var(--tw-content);
         position: absolute
     }
 
-    .after\:bottom-\[-4\.5px\]::after {
+    .home4-scope .after\:bottom-\[-4\.5px\]::after{
         content: var(--tw-content);
         bottom: -4.5px
     }
 
-    .after\:bottom-\[-7px\]::after {
+    .home4-scope .after\:bottom-\[-7px\]::after{
         content: var(--tw-content);
         bottom: -7px
     }
 
-    .after\:left-\[-8px\]::after {
+    .home4-scope .after\:left-\[-8px\]::after{
         content: var(--tw-content);
         left: -8px
     }
 
-    .after\:left-\[3px\]::after {
+    .home4-scope .after\:left-\[3px\]::after{
         content: var(--tw-content);
         left: 3px
     }
 
-    .after\:right-\[-4px\]::after {
+    .home4-scope .after\:right-\[-4px\]::after{
         content: var(--tw-content);
         right: -4px
     }
 
-    .after\:right-\[-8px\]::after {
+    .home4-scope .after\:right-\[-8px\]::after{
         content: var(--tw-content);
         right: -8px
     }
 
-    .after\:top-\[-7px\]::after {
+    .home4-scope .after\:top-\[-7px\]::after{
         content: var(--tw-content);
         top: -7px
     }
 
-    .after\:top-\[51px\]::after {
+    .home4-scope .after\:top-\[51px\]::after{
         content: var(--tw-content);
         top: 51px
     }
 
-    .after\:h-\[14px\]::after {
+    .home4-scope .after\:h-\[14px\]::after{
         content: var(--tw-content);
         height: 14px
     }
 
-    .after\:h-\[8px\]::after {
+    .home4-scope .after\:h-\[8px\]::after{
         content: var(--tw-content);
         height: 8px
     }
 
-    .after\:w-\[14px\]::after {
+    .home4-scope .after\:w-\[14px\]::after{
         content: var(--tw-content);
         width: 14px
     }
 
-    .after\:w-\[8px\]::after {
+    .home4-scope .after\:w-\[8px\]::after{
         content: var(--tw-content);
         width: 8px
     }
 
-    .after\:rounded-full::after {
+    .home4-scope .after\:rounded-full::after{
         content: var(--tw-content);
         border-radius: 9999px
     }
 
-    .after\:bg-contain::after {
+    .home4-scope .after\:bg-contain::after{
         content: var(--tw-content);
         background-size: contain
     }
 
-    .hover\:translate-y-\[-5px\]:hover {
+    .home4-scope .hover\:translate-y-\[-5px\]:hover{
         --tw-translate-y: -5px;
         transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
     }
 
-    .hover\:bg-\[\#9c2507\]:hover {
+    .home4-scope .hover\:bg-\[\#9c2507\]:hover{
         --tw-bg-opacity: 1;
         background-color: rgb(156 37 7/var(--tw-bg-opacity,1))
     }
 
-    .hover\:bg-white:hover {
+    .home4-scope .hover\:bg-white:hover{
         --tw-bg-opacity: 1;
         background-color: rgb(255 255 255/var(--tw-bg-opacity,1))
     }
 
-    .group:hover .group-hover\:translate-y-\[-5px\] {
+    .home4-scope .group:hover .group-hover\:translate-y-\[-5px\]{
         --tw-translate-y: -5px;
         transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
     }
 
-    .group:hover .group-hover\:scale-\[1\.15\] {
+    .home4-scope .group:hover .group-hover\:scale-\[1\.15\]{
         --tw-scale-x: 1.15;
         --tw-scale-y: 1.15;
         transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
     }
 
-    .group:hover .group-hover\:fill-\[--color-primary\] {
+    .home4-scope .group:hover .group-hover\:fill-\[--color-primary\]{
         fill: var(--color-primary)
     }
 
     @media(max-width: 992px) {
-        .max-\[992px\]\:fixed {
+        .home4-scope .max-\[992px\]\:fixed{
             position:fixed
         }
 
-        .max-\[992px\]\:bottom-0 {
+        .home4-scope .max-\[992px\]\:bottom-0{
             bottom: 0px
         }
 
-        .max-\[992px\]\:left-\[100\%\] {
+        .home4-scope .max-\[992px\]\:left-\[100\%\]{
             left: 100%
         }
 
-        .max-\[992px\]\:top-\[87px\] {
+        .home4-scope .max-\[992px\]\:top-\[87px\]{
             top: 87px
         }
 
-        .max-\[992px\]\:mt-\[10px\] {
+        .home4-scope .max-\[992px\]\:mt-\[10px\]{
             margin-top: 10px
         }
 
-        .max-\[992px\]\:block {
+        .home4-scope .max-\[992px\]\:block{
             display: block
         }
 
-        .max-\[992px\]\:flex {
+        .home4-scope .max-\[992px\]\:flex{
             display: flex
         }
 
-        .max-\[992px\]\:w-full {
+        .home4-scope .max-\[992px\]\:w-full{
             width: 100%
         }
 
-        .max-\[992px\]\:max-w-\[582px\] {
+        .home4-scope .max-\[992px\]\:max-w-\[582px\]{
             max-width: 582px
         }
 
-        .max-\[992px\]\:grid-cols-3 {
+        .home4-scope .max-\[992px\]\:grid-cols-3{
             grid-template-columns: repeat(3,minmax(0,1fr))
         }
 
-        .max-\[992px\]\:flex-col {
+        .home4-scope .max-\[992px\]\:flex-col{
             flex-direction: column
         }
 
-        .max-\[992px\]\:items-end {
+        .home4-scope .max-\[992px\]\:items-end{
             align-items: flex-end
         }
 
-        .max-\[992px\]\:gap-\[24px\] {
+        .home4-scope .max-\[992px\]\:gap-\[24px\]{
             gap: 24px
         }
 
-        .max-\[992px\]\:bg-\[\#dedede\] {
+        .home4-scope .max-\[992px\]\:bg-\[\#dedede\]{
             --tw-bg-opacity: 1;
             background-color: rgb(222 222 222/var(--tw-bg-opacity,1))
         }
 
-        .max-\[992px\]\:p-\[24px\] {
+        .home4-scope .max-\[992px\]\:p-\[24px\]{
             padding: 24px
         }
 
-        .max-\[992px\]\:px-\[5\%\] {
+        .home4-scope .max-\[992px\]\:px-\[5\%\]{
             padding-left: 5%;
             padding-right: 5%
         }
 
-        .max-\[992px\]\:py-\[60px\] {
+        .home4-scope .max-\[992px\]\:py-\[60px\]{
             padding-top: 60px;
             padding-bottom: 60px
         }
 
-        .max-\[992px\]\:pb-\[96px\] {
+        .home4-scope .max-\[992px\]\:pb-\[96px\]{
             padding-bottom: 96px
         }
 
-        .max-\[992px\]\:pt-\[60px\] {
+        .home4-scope .max-\[992px\]\:pt-\[60px\]{
             padding-top: 60px
         }
 
-        .max-\[992px\]\:shadow {
+        .home4-scope .max-\[992px\]\:shadow{
             --tw-shadow: 0 1px 3px 0 rgb(0 0 0/0.1),0 1px 2px -1px rgb(0 0 0/0.1);
             --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color),0 1px 2px -1px var(--tw-shadow-color);
             box-shadow: var(--tw-ring-offset-shadow,0 0#0000),var(--tw-ring-shadow,0 0#0000),var(--tw-shadow)
@@ -975,121 +803,122 @@
     }
 
     @media(max-width: 768px) {
-        .max-\[768px\]\:grid-cols-2 {
+        .home4-scope .max-\[768px\]\:grid-cols-2{
             grid-template-columns:repeat(2,minmax(0,1fr))
         }
     }
 
     @media(max-width: 576px) {
-        .max-\[576px\]\:top-\[68px\] {
+        .home4-scope .max-\[576px\]\:top-\[68px\]{
             top:68px
         }
 
-        .max-\[576px\]\:mt-\[-24px\] {
+        .home4-scope .max-\[576px\]\:mt-\[-24px\]{
             margin-top: -24px
         }
 
-        .max-\[576px\]\:mt-\[4px\] {
+        .home4-scope .max-\[576px\]\:mt-\[4px\]{
             margin-top: 4px
         }
 
-        .max-\[576px\]\:block {
+        .home4-scope .max-\[576px\]\:block{
             display: block
         }
 
-        .max-\[576px\]\:h-\[30px\] {
+        .home4-scope .max-\[576px\]\:h-\[30px\]{
             height: 30px
         }
 
-        .max-\[576px\]\:h-\[35px\] {
+        .home4-scope .max-\[576px\]\:h-\[35px\]{
             height: 35px
         }
 
-        .max-\[576px\]\:w-\[30px\] {
+        .home4-scope .max-\[576px\]\:w-\[30px\]{
             width: 30px
         }
 
-        .max-\[576px\]\:w-\[35px\] {
+        .home4-scope .max-\[576px\]\:w-\[35px\]{
             width: 35px
         }
 
-        .max-\[576px\]\:scroll-mt-\[68px\] {
+        .home4-scope .max-\[576px\]\:scroll-mt-\[68px\]{
             scroll-margin-top: 68px
         }
 
-        .max-\[576px\]\:flex-col {
+        .home4-scope .max-\[576px\]\:flex-col{
             flex-direction: column
         }
 
-        .max-\[576px\]\:gap-\[10px\] {
+        .home4-scope .max-\[576px\]\:gap-\[10px\]{
             gap: 10px
         }
 
-        .max-\[576px\]\:rounded-\[24px\] {
+        .home4-scope .max-\[576px\]\:rounded-\[24px\]{
             border-radius: 24px
         }
 
-        .max-\[576px\]\:rounded-\[4px\] {
+        .home4-scope .max-\[576px\]\:rounded-\[4px\]{
             border-radius: 4px
         }
 
-        .max-\[576px\]\:p-\[5px\] {
+        .home4-scope .max-\[576px\]\:p-\[5px\]{
             padding: 5px
         }
 
-        .max-\[576px\]\:px-\[5px\] {
+        .home4-scope .max-\[576px\]\:px-\[5px\]{
             padding-left: 5px;
             padding-right: 5px
         }
 
-        .max-\[576px\]\:py-\[40px\] {
+        .home4-scope .max-\[576px\]\:py-\[40px\]{
             padding-top: 40px;
             padding-bottom: 40px
         }
 
-        .max-\[576px\]\:py-\[20px\] {
+        .home4-scope .max-\[576px\]\:py-\[20px\]{
             padding-top: 20px;
             padding-bottom: 20px
         }
 
-        .max-\[576px\]\:pb-\[64px\] {
+        .home4-scope .max-\[576px\]\:pb-\[64px\]{
             padding-bottom: 64px
         }
 
-        .max-\[576px\]\:pt-\[40px\] {
+        .home4-scope .max-\[576px\]\:pt-\[40px\]{
             padding-top: 40px
         }
 
-        .max-\[576px\]\:text-\[11px\] {
+        .home4-scope .max-\[576px\]\:text-\[11px\]{
             font-size: 11px
         }
 
-        .max-\[576px\]\:text-\[12px\] {
+        .home4-scope .max-\[576px\]\:text-\[12px\]{
             font-size: 12px
         }
 
-        .max-\[576px\]\:text-\[18px\] {
+        .home4-scope .max-\[576px\]\:text-\[18px\]{
             font-size: 18px
         }
 
-        .before\:max-\[576px\]\:w-\[84px\]::before {
+        .home4-scope .before\:max-\[576px\]\:w-\[84px\]::before{
             content: var(--tw-content);
             width: 84px
         }
     }
 
-    .\[\&\.active\]\:bg-\[linear-gradient\(90deg\2c \#f3d278_0\%\2c \#f16744_100\%\)\].active {
+    .home4-scope .\[\&\.active\]\:bg-\[linear-gradient\(90deg\2c \#f3d278_0\%\2c \#f16744_100\%\)\].active{
         background-image: linear-gradient(90deg,#f3d278 0%,#f16744 100%)
     }
 
-    .\[\&\.active\]\:text-white.active {
+    .home4-scope .\[\&\.active\]\:text-white.active{
         --tw-text-opacity: 1;
         color: rgb(255 255 255/var(--tw-text-opacity,1))
     }
+
 </style>
 @endpush
 
-<div class="container-home4">
+<div class="container-home4 home4-scope" style="font-family: inherit;">
     <div class="deployment-bottom">
             <h2 class=heading-primary>
                 Công trình chúng tôi <span class=max-[576px]:block>đã triển khai</span>
