@@ -404,32 +404,16 @@
                                                     </div>
                                                     <div class="product-specification short">
                                                         <table class="specification-table">
-                                                        <!-- Thông số đầy đủ của sản phẩm -->
+                                                        @if(!empty($product->specs_summary))
                                                         <tbody class="dropdown">
-                                                                <tr>
-                                                                    <td>PHÂN TÍCH TẦN SỐ <a class="tooltip bottom left dark" data-title="Measured on-axis in open (4p) space at 4 metres, then referred to 1 metre.">(1)</a></td>
-                                                                    <td>52Hz-18kHz ± 3dB</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>MAXIMUM SPL @ 1M</td>
-                                                                    <td>
-                                                                        <ul>
-                                                                            <li>LF: 133dB liên tục, đỉnh 139dB <a
-                                                                                    class="tooltip bottom left dark"
-                                                                                    data-title="Measured in half-space at 1 metre with a tone burst signal, then referred back to open (4p) space.">(3)</a>
-                                                                            </li>
-                                                                            <li>MF: 134dB liên tục, đỉnh 140dB <a
-                                                                                    class="tooltip bottom left dark"
-                                                                                    data-title="Calculated from 4m 2.83v sensitivity, referred to 1m.">(4)</a>
-                                                                            </li>
-                                                                            <li>HF: 139dB liên tục, đỉnh 145dB <a
-                                                                                    class="tooltip bottom left dark"
-                                                                                    data-title="Calculated from 4m 2.83v sensitivity, referred to 1m.">(4)</a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
+                                                            @foreach($product->specs_summary as $spec)
+                                                            <tr>
+                                                                <td>{{ $spec['key'] ?? '' }}</td>
+                                                                <td>{{ $spec['value'] ?? '' }}</td>
+                                                            </tr>
+                                                            @endforeach
+                                                        </tbody>
+                                                        @endif
                                                         </table>
                                                     </div>
 
@@ -459,60 +443,26 @@
                                                             </h2>
                                                         </div>
 
-                                                        <!-- Thông số đầy đủ của sản phẩm -->
+                                                        <!-- Thong so day du cua san pham -->
                                                         <table class="specification-table">
-                                                            <tbody class="dropdown">
+                                                        @if(!empty($product->specs_full))
+                                                        @php $inGroup = false; @endphp
+                                                        @foreach($product->specs_full as $row)
+                                                            @if(!empty($row['section']))
+                                                                @if($inGroup)</tbody>@php $inGroup = false; @endphp@endif
+                                                                <tbody>
+                                                                    <tr class="sub-head table-drop"><td>{{ $row['section'] }}</td></tr>
+                                                                </tbody>
+                                                            @elseif(!empty($row['key']))
+                                                                @if(!$inGroup)<tbody class="dropdown">@php $inGroup = true; @endphp@endif
                                                                 <tr>
-                                                                    <td>PHÂN TÍCH TẦN SỐ <a
-                                                                            class="tooltip bottom left dark"
-                                                                            data-title="Measured on-axis in open (4p) space at 4 metres, then referred to 1 metre.">(1)</a>
-                                                                    </td>
-                                                                    <td>52Hz-18kHz ± 3dB</td>
+                                                                    <td>{{ $row['key'] }}</td>
+                                                                    <td>{!! nl2br(e($row['value'] ?? '')) php /tmp/fix_specs.php}</td>
                                                                 </tr>
-                                                                <tr>
-                                                                    <td>MAXIMUM SPL @ 1M</td>
-                                                                    <td>
-                                                                        <ul>
-                                                                            <li>LF: 133dB liên tục, đỉnh 139dB <a
-                                                                                    class="tooltip bottom left dark"
-                                                                                    data-title="Measured in half-space at 1 metre with a tone burst signal, then referred back to open (4p) space.">(3)</a>
-                                                                            </li>
-                                                                            <li>MF: 134dB liên tục, đỉnh 140dB <a
-                                                                                    class="tooltip bottom left dark"
-                                                                                    data-title="Calculated from 4m 2.83v sensitivity, referred to 1m.">(4)</a>
-                                                                            </li>
-                                                                            <li>HF: 139dB liên tục, đỉnh 145dB <a
-                                                                                    class="tooltip bottom left dark"
-                                                                                    data-title="Calculated from 4m 2.83v sensitivity, referred to 1m.">(4)</a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                            <tbody>
-                                                                <tr class="sub-head table-drop">
-                                                                    <td>TRÌNH ĐIỀU KHIỂN</td>
-                                                                </tr>
-                                                            </tbody>
-                                                            <tbody class="dropdown">
-                                                                <tr>
-                                                                    <td>LF</td>
-                                                                    <td>Cuộn dây bằng giọng nói x12 “(300mm) / 3” (75mm),
-                                                                        chuyến tham quan siêu dài,<br />
-                                                                        trình điều khiển nam châm neodymium, Hybrid sừng
-                                                                        bass được nạp</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>MF</td>
-                                                                    <td>2 x 6.5 “(165mm) / 2” (50mm) cuộn,<br />
-                                                                        trình điều khiển nam châm neodymium, sừng nạp</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>HF</td>
-                                                                    <td>3 x 1 ”(25mm) thoát khỏi nam châm neodymium<br />
-                                                                        nén trình điều khiển, sừng nạp</td>
-                                                                </tr>
-                                                            </tbody>
+                                                            @endif
+                                                        @endforeach
+                                                        @if($inGroup)</tbody>@endif
+                                                        @endif
                                                         </table>
                                                     </div>
                                                 </div>

@@ -10,6 +10,7 @@ use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use Mohamedsabil83\FilamentFormsTinyeditor\Components\TinyEditor;
 
@@ -29,7 +30,15 @@ class ProductResource extends Resource
                 Forms\Components\Tabs\Tab::make('Thông tin cơ bản')->schema([
                     Forms\Components\Select::make('category_id')
                         ->label('Danh mục')
-                        ->options(Category::where('type', 'product')->pluck('name', 'id'))
+                        ->options(function () {
+                            return Category::where('type', 'product')->get()->mapWithKeys(function ($cat) {
+                                $img = $cat->image
+                                    ? '<img src="' . Storage::url($cat->image) . '" style="width:22px;height:22px;object-fit:cover;border-radius:3px;display:inline-block;vertical-align:middle;margin-right:6px;">'
+                                    : '<span style="width:22px;height:22px;display:inline-block;vertical-align:middle;margin-right:6px;background:#e5e7eb;border-radius:3px;"></span>';
+                                return [$cat->id => $img . htmlspecialchars($cat->name, ENT_QUOTES)];
+                            });
+                        })
+                        ->allowHtml()
                         ->searchable()
                         ->required(),
                     Forms\Components\TextInput::make('name')
@@ -73,20 +82,34 @@ class ProductResource extends Resource
 
                 Forms\Components\Tabs\Tab::make('Thông số')->schema([
                     Forms\Components\Repeater::make('specs_summary')
-                        ->label('Thông số tóm tắt (Key-Value)')
+                        ->label('Thông số tóm tắt (hiển thị trong sidebar sản phẩm)')
                         ->schema([
-                            Forms\Components\TextInput::make('key')->label('Tên')->required(),
+                            Forms\Components\TextInput::make('key')->label('Tên thông số')->required(),
                             Forms\Components\TextInput::make('value')->label('Giá trị')->required(),
                         ])
                         ->columns(2)
                         ->defaultItems(0)
+                        ->addActionLabel('+ Thêm dòng')
                         ->columnSpanFull(),
                     Forms\Components\Repeater::make('specs_full')
-                        ->label('Thông số đầy đủ')
+                        ->label('Thông số đầy đủ (hiển thị trong bảng chi tiết)')
+                        ->helperText('Muốn thêm TIÊU ĐỀ NHÓM: điền "Tiêu đề nhóm", để trống Thông số & Giá trị. Muốn thêm HÀNG THÔNG SỐ: để trống "Tiêu đề nhóm", điền Thông số & Giá trị.')
                         ->schema([
-                            Forms\Components\TextInput::make('value')->label('Thông số')->required(),
+                            Forms\Components\TextInput::make('section')
+                                ->label('--- Tiêu đề nhóm (nếu có) ---')
+                                ->placeholder('VD: TRÌNH ĐIỀU KHIỂN')
+                                ->columnSpanFull(),
+                            Forms\Components\TextInput::make('key')
+                                ->label('Thông số')
+                                ->placeholder('VD: Phân tích tần số'),
+                            Forms\Components\Textarea::make('value')
+                                ->label('Giá trị')
+                                ->placeholder('VD: 52Hz-18kHz ± 3dB')
+                                ->rows(2),
                         ])
+                        ->columns(2)
                         ->defaultItems(0)
+                        ->addActionLabel('+ Thêm dòng')
                         ->columnSpanFull(),
                     Forms\Components\Repeater::make('advantages')
                         ->label('Ưu điểm sản phẩm')

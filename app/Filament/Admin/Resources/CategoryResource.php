@@ -9,6 +9,7 @@ use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
 class CategoryResource extends Resource
@@ -28,7 +29,15 @@ class CategoryResource extends Resource
                 ->required(),
             Forms\Components\Select::make('parent_id')
                 ->label('Danh mục cha')
-                ->options(Category::pluck('name', 'id'))
+                ->options(function () {
+                    return Category::all()->mapWithKeys(function ($cat) {
+                        $img = $cat->image
+                            ? '<img src="' . Storage::url($cat->image) . '" style="width:22px;height:22px;object-fit:cover;border-radius:3px;display:inline-block;vertical-align:middle;margin-right:6px;">'
+                            : '<span style="width:22px;height:22px;display:inline-block;vertical-align:middle;margin-right:6px;background:#e5e7eb;border-radius:3px;"></span>';
+                        return [$cat->id => $img . htmlspecialchars($cat->name, ENT_QUOTES)];
+                    });
+                })
+                ->allowHtml()
                 ->searchable()
                 ->nullable(),
             Forms\Components\TextInput::make('name')
@@ -62,6 +71,7 @@ class CategoryResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('id')->sortable(),
+                Tables\Columns\ImageColumn::make('image')->label('Ảnh')->square()->size(40),
                 Tables\Columns\TextColumn::make('name')->label('Tên')->searchable(),
                 Tables\Columns\TextColumn::make('type')->label('Loại')->badge()
                     ->color(fn (string $state) => match ($state) {

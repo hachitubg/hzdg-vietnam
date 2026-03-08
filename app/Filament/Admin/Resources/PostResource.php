@@ -10,6 +10,7 @@ use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use Mohamedsabil83\FilamentFormsTinyeditor\Components\TinyEditor;
 
@@ -26,7 +27,15 @@ class PostResource extends Resource
         return $form->schema([
             Forms\Components\Select::make('category_id')
                 ->label('Danh mục')
-                ->options(Category::where('type', 'post')->pluck('name', 'id'))
+                ->options(function () {
+                    return Category::where('type', 'post')->get()->mapWithKeys(function ($cat) {
+                        $img = $cat->image
+                            ? '<img src="' . Storage::url($cat->image) . '" style="width:22px;height:22px;object-fit:cover;border-radius:3px;display:inline-block;vertical-align:middle;margin-right:6px;">'
+                            : '<span style="width:22px;height:22px;display:inline-block;vertical-align:middle;margin-right:6px;background:#e5e7eb;border-radius:3px;"></span>';
+                        return [$cat->id => $img . htmlspecialchars($cat->name, ENT_QUOTES)];
+                    });
+                })
+                ->allowHtml()
                 ->searchable()
                 ->required(),
             Forms\Components\TextInput::make('title')
