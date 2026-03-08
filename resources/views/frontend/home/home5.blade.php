@@ -12,7 +12,51 @@
         --sf-img-23: url("logo8.png");
         --sf-img-24: url("logo9.png");
         --sf-img-25: url("logo10.png");
+        --swiper-theme-color: #007aff;
+        --swiper-navigation-size: 44px;
         font-family: inherit;
+    }
+
+    .home5-scope .swiper {
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        overflow: hidden;
+        list-style: none;
+        padding: 0;
+        z-index: 1;
+    }
+
+    .home5-scope .swiper-wrapper {
+        position: relative;
+        width: 100%;
+        z-index: 1;
+        display: flex;
+        transition-property: transform;
+        box-sizing: content-box;
+    }
+
+    .home5-scope .swiper-pointer-events {
+        touch-action: pan-y;
+    }
+
+    .home5-scope .swiper-slide {
+        flex-shrink: 0;
+        position: relative;
+        transition-property: transform;
+    }
+
+    .home5-scope .swiper-css-mode > .swiper-wrapper::-webkit-scrollbar {
+        display: none;
+    }
+
+    .home5-scope .swiper .swiper-notification {
+        position: absolute;
+        left: 0;
+        top: 0;
+        pointer-events: none;
+        opacity: 0;
+        z-index: -1000;
     }
 
 
