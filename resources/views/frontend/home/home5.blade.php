@@ -756,7 +756,8 @@
 </style>
 @endpush 
 
-<div class="container-home5 home5-scope">
+<div class="home5-scope" style="font-family: inherit;">
+<div class="container-home5">
     <div class="text-white text-center py-[33px] px-[36px] bg-black rounded-[24px] max-[576px]:px-[10px]">
         <p class="heading-primary !normal-case">Được sự tin tưởng từ những đối tác hàng đầu</p>
         <p class="font-light mt-[20px] mb-[28px]">
@@ -924,4 +925,5 @@
             <span class="swiper-notification sf-hidden" aria-live=assertive aria-atomic=true></span>
         </div>
     </div>
+</div>
 </div>

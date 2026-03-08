@@ -918,7 +918,8 @@
 </style>
 @endpush
 
-<div class="container-home4 home4-scope" style="font-family: inherit;">
+<div class="home4-scope" style="font-family: inherit;">
+<div class="container-home4">
     <div class="deployment-bottom">
             <h2 class=heading-primary>
                 Công trình chúng tôi <span class=max-[576px]:block>đã triển khai</span>
@@ -1029,4 +1030,5 @@
             </div>
         </div>
     </div>
+</div>
 </div>
