@@ -1,6 +1,6 @@
 @push('styles')
 <style>
-    :root {
+    .home3 {
         --color-primary: #ff5626;
         --color-secondary: #ff7a23;
         --color-tertiary: #f44024;
@@ -25,7 +25,7 @@
         color: var(--color-primary)
     }
     
-    *,::before,::after {
+    .home3, .home3 *, .home3 *::before, .home3 *::after {
         --tw-border-spacing-x: 0;
         --tw-border-spacing-y: 0;
         --tw-translate-x: 0;
@@ -79,7 +79,7 @@
         --tw-contain-style:
     }
 
-    ::backdrop {
+    .home3 ::backdrop {
         --tw-border-spacing-x: 0;
         --tw-border-spacing-y: 0;
         --tw-translate-x: 0;
@@ -133,18 +133,18 @@
         --tw-contain-style:
     }
 
-    *,::after,::before {
+    .home3, .home3 *, .home3 *::after, .home3 *::before {
         box-sizing: border-box;
         border-width: 0;
         border-style: solid;
         border-color: #e5e7eb
     }
 
-    ::after,::before {
+    .home3 *::after, .home3 *::before {
         --tw-content: ""
     }
 
-    :host,html {
+    .home3 {
         line-height: 1.5;
         -webkit-text-size-adjust: 100%;
         -moz-tab-size: 4;
@@ -155,36 +155,36 @@
         -webkit-tap-highlight-color: transparent
     }
 
-    body {
+    .home3 {
         margin: 0;
         line-height: inherit
     }
 
-    h2,h3 {
+    .home3 h2, .home3 h3 {
         font-size: inherit
     }
 
-    a {
+    .home3 a {
         color: inherit;
         text-decoration: inherit
     }
 
-    h2,h3,p {
+    .home3 h2, .home3 h3, .home3 p {
         margin: 0
     }
 
-    ul {
+    .home3 ul {
         list-style: none;
         margin: 0;
         padding: 0
     }
 
-    input::placeholder,textarea::placeholder {
+    .home3 input::placeholder, .home3 textarea::placeholder {
         opacity: 1;
         color: #9ca3af
     }
 
-    img {
+    .home3 img {
         max-width: 100%;
         height: auto
     }
@@ -223,11 +223,11 @@
         }
     }
 
-    a {
+    .home3 a {
         outline: 0
     }
 
-    a:hover {
+    .home3 a:hover {
         color: var(--color-primary)
     }
 
@@ -924,7 +924,7 @@
 </style>
 @endpush
 
-<div class="section-deployment overflow-hidden">
+<div class="section-deployment overflow-hidden home3">
     <div class=container-home3>
         <div class="deployment-middle py-[80px] max-[992px]:py-[60px] max-[576px]:py-[40px]">
             <h2 class="heading-primary !text-left mb-[24px]">

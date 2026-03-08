@@ -37,88 +37,40 @@
             padding: 20px 0px;
         }
 
-        *, *:before, *:after {
-            box-sizing: border-box;
-            outline: none !important;
-        }
-
-        html, body, p, a, img, ul, li {
-            font-family: inherit;
-            font-size: 100%;
-            font-weight: inherit;
-            font-style: inherit;
-            line-height: inherit;
-            vertical-align: baseline;
-            border: 0;
-            padding: 0;
-            margin: 0;
-        }
-
-        body {
-            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-            background: #fff;
-            font-size: 14px;
-            color: #484338;
-            min-height: 700px;
-        }
-
-        html {
-            -webkit-text-size-adjust: none;
-            height: 100%;
-        }
-
-        .container {
+        .home1.container {
             width: 98%;
             max-width: 1360px;
             margin: 0 auto;
             position: relative;
         }
 
-        a {
-            text-decoration: none;
-            color: #333;
-        }
-
-        a:hover {
-            color: #5e5e5e;
-        }
-
-        p {
-            margin: 0;
-            padding: 0;
-        }
-
-        li, ul {
-            list-style: none;
-        }
-
-        .center {
+        .home1 .center {
             text-align: center;
         }
 
-        img {
+        .home1 img {
             max-width: 100%;
         }
 
-        .service {
+        .home1 .service {
             margin-right: -5px;
             margin-left: -5px;
         }
 
-        .service::after {
+        .home1 .service::after {
             content: " ";
             display: block;
             clear: both;
         }
 
-        .service li {
+        .home1 .service li {
             float: left;
             width: 33.333%;
             padding: 0 5px;
             padding-top: 10px;
         }
 
-        .service li .grid {
+        .home1 .service li .grid {
             height: 245px;
             overflow: hidden;
             position: relative;
@@ -129,7 +81,7 @@
             padding: 5px 10px;
         }
 
-        .service li p {
+        .home1 .service li p {
             color: #264c5d;
             font-weight: bold;
             font-size: 24px;
@@ -137,11 +89,11 @@
             margin-bottom: 10px;
         }
 
-        .service li span {
+        .home1 .service li span {
             line-height: 24px;
         }
 
-        .service li a.send {
+        .home1 .service li a.send {
             background: #fff;
             border-radius: 5px;
             text-align: center;
@@ -159,55 +111,55 @@
             font-weight: bold;
         }
 
-        .service li a.send:hover {
+        .home1 .service li a.send:hover {
             background: #264c5d;
             color: #fff;
         }
 
-        .service li:nth-child(1) img {
+        .home1 .service li:nth-child(1) img {
             width: 100%;
             height: 100%;
             border-radius: 5px;
         }
 
-        .service li:nth-child(1) .grid {
+        .home1 .service li:nth-child(1) .grid {
             padding: 0;
         }
 
         @media screen and (max-width: 840px) {
-            .container {
+            .home1.container {
                 width: 99%;
             }
 
-            .service li {
+            .home1 .service li {
                 width: 50%;
             }
         }
 
         @media screen and (max-width: 640px) {
-            .hidemb {
+            .home1 .hidemb {
                 display: none;
             }
 
-            .service li {
+            .home1 .service li {
                 width: 100%;
             }
         }
 
         @media screen and (max-width: 480px) {
-            .service {
+            .home1 .service {
                 margin: 0;
             }
 
-            .container {
+            .home1.container {
                 width: 100%;
             }
 
-            .service li .grid {
+            .home1 .service li .grid {
                 height: auto;
             }
 
-            .service li a.send {
+            .home1 .service li a.send {
                 position: relative;
                 display: block;
                 bottom: 0;

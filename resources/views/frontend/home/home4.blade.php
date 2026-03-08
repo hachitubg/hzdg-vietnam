@@ -54,7 +54,7 @@
         color: var(--color-primary)
     }
 
-    :root {
+    .home4 {
         --color-primary: #ff5626;
         --color-secondary: #ff7a23;
         --color-tertiary: #f44024;
@@ -67,7 +67,7 @@
         margin: 0 auto
     }
     
-    *,::before,::after {
+    .home4, .home4 *, .home4 *::before, .home4 *::after {
         --tw-border-spacing-x: 0;
         --tw-border-spacing-y: 0;
         --tw-translate-x: 0;
@@ -121,7 +121,7 @@
         --tw-contain-style:
     }
 
-    ::backdrop {
+    .home4 ::backdrop {
         --tw-border-spacing-x: 0;
         --tw-border-spacing-y: 0;
         --tw-translate-x: 0;
@@ -175,18 +175,18 @@
         --tw-contain-style:
     }
 
-    *,::after,::before {
+    .home4, .home4 *, .home4 *::after, .home4 *::before {
         box-sizing: border-box;
         border-width: 0;
         border-style: solid;
         border-color: #e5e7eb
     }
 
-    ::after,::before {
+    .home4 *::after, .home4 *::before {
         --tw-content: ""
     }
 
-    :host,html {
+    .home4 {
         line-height: 1.5;
         -webkit-text-size-adjust: 100%;
         -moz-tab-size: 4;
@@ -197,25 +197,25 @@
         -webkit-tap-highlight-color: transparent
     }
 
-    body {
+    .home4 {
         margin: 0;
         line-height: inherit
     }
 
-    h2,h3 {
+    .home4 h2, .home4 h3 {
         font-size: inherit
     }
 
-    a {
+    .home4 a {
         color: inherit;
         text-decoration: inherit
     }
 
-    b {
+    .home4 b {
         font-weight: bolder
     }
 
-    button {
+    .home4 button {
         font-family: inherit;
         font-feature-settings: inherit;
         font-variation-settings: inherit;
@@ -228,11 +228,11 @@
         padding: 0
     }
 
-    button {
+    .home4 button {
         text-transform: none
     }
 
-    button {
+    .home4 button {
         appearance: button;
         background-color: transparent;
         background-image: none
@@ -259,39 +259,39 @@
         font: inherit
     }
 
-    h2,h3,p {
+    .home4 h2, .home4 h3, .home4 p {
         margin: 0
     }
 
-    ol,ul {
+    .home4 ol, .home4 ul {
         list-style: none;
         margin: 0;
         padding: 0
     }
 
-    input::placeholder,textarea::placeholder {
+    .home4 input::placeholder, .home4 textarea::placeholder {
         opacity: 1;
         color: #9ca3af
     }
 
-    button {
+    .home4 button {
         cursor: pointer
     }
 
-    :disabled {
+    .home4 :disabled {
         cursor: default
     }
 
-    img,svg {
+    .home4 img, .home4 svg {
         display: block;
         vertical-align: middle;
     }
 
-    img {
+    .home4 img {
         max-width: 100%
     }
 
-    html {
+    .home4 {
         scroll-behavior: smooth;
         font-family: "TikTok Sans",sans-serif
     }
@@ -330,11 +330,11 @@
         }
     }
 
-    a {
+    .home4 a {
         outline: 0
     }
 
-    a:hover {
+    .home4 a:hover {
         color: var(--color-primary)
     }
 
@@ -1089,7 +1089,7 @@
 </style>
 @endpush
 
-<div class="container-home4">
+<div class="container-home4 home4">
     <div class="deployment-bottom">
             <h2 class=heading-primary>
                 Công trình chúng tôi <span class=max-[576px]:block>đã triển khai</span>
