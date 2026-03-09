@@ -59,7 +59,7 @@ class ProductController extends Controller
 
         $query = Product::where('category_id', $activeTab->id)
             ->where('is_visible', true)
-            ->with('images');
+            ->with(['images', 'reviews' => fn($q) => $q->where('is_approved', true), 'promotionProduct']);
 
         match ($sort) {
             'price_asc'  => $query->orderBy('price'),

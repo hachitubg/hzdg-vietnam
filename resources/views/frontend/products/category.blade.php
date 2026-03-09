@@ -14,18 +14,7 @@
 
 {{-- ===================== BANNER ===================== --}}
 <div class="cat-banner">
-    @if($category->image)
-        <img class="cat-banner__img" src="{{ asset('storage/' . $category->image) }}" alt="{{ $category->name }}">
-    @elseif(isset($category->parent) && $category->parent && $category->parent->image)
-        <img class="cat-banner__img" src="{{ asset('storage/' . $category->parent->image) }}" alt="{{ $category->parent->name }}">
-    @else
-        <div style="min-height:340px; background:linear-gradient(135deg,#0d1b3e 0%,#1e3a7e 100%);"></div>
-    @endif
-    <div class="cat-banner__overlay">
-        <h1 class="cat-banner__title">
-            {{ $category->parent ? $category->parent->name : $category->name }}
-        </h1>
-    </div>
+    <img class="cat-banner__img" src="{{ asset('wp-content/uploads/images_hzdg/danhmuc_01.png') }}" alt="{{ $category->parent ? $category->parent->name : $category->name }}">
 </div>
 
 {{-- ===================== MAIN CONTENT ===================== --}}
@@ -68,7 +57,7 @@
     <div class="cat-section-header">
         <h2 class="cat-section-title">{{ $activeTab ? $activeTab->name : $category->name }}</h2>
         <div>
-            <select class="cat-sort-select" onchange="window.location.href=this.value">
+            <select class="cat-sort-select" style="width:200px" onchange="window.location.href=this.value">
                 @php
                     $sortBase = $isParentCategory
                         ? route('products.category', $category->slug) . '?sub=' . ($activeTab ? $activeTab->slug : '')
@@ -90,26 +79,29 @@
                 $thumb = $product->images->firstWhere('is_thumbnail', true) ?? $product->images->first();
                 $hasSale = $product->sale_price && $product->sale_price > 0 && $product->sale_price < $product->price;
                 $discountPct = $hasSale ? round(($product->price - $product->sale_price) / $product->price * 100) : 0;
+                $approvedReviews = $product->reviews;
+                $reviewCount = $approvedReviews->count();
+                $avgRating = $reviewCount > 0 ? round($approvedReviews->avg('rating'), 1) : 0;
             @endphp
             <a href="{{ route('products.show', $product->slug) }}" class="cat-product-card">
 
-                {{-- Badges row – above the image --}}
+                {{-- Badges row --}}
                 <div class="cat-product-badges">
                     @if($product->is_new)
-                        <span class="badge-pill badge-new">🌿 New {{ date('Y') }}</span>
+                        <span class="badge-pill badge-new"><i class="fas fa-seedling"></i> New {{ date('Y') }}</span>
                     @endif
                     @if($product->is_bestseller)
-                        <span class="badge-pill badge-bestseller">🌿 Bán Chạy</span>
+                        <span class="badge-pill badge-bestseller"><i class="fas fa-medal"></i> Bán Chạy</span>
                     @endif
                     @if($product->is_hot)
-                        <span class="badge-pill badge-hot">🔥 Hot</span>
+                        <span class="badge-pill badge-hot"><i class="fas fa-fire"></i> Hot</span>
                     @endif
                 </div>
 
                 {{-- Image --}}
                 <div class="cat-product-img-wrap">
                     @if($thumb)
-                        <img src="{{ $thumb->image_url }}" alt="{{ $product->name }}" loading="lazy">
+                        <img src="{{ asset('storage/' . $thumb->image_url) }}" alt="{{ $product->name }}" loading="lazy">
                     @else
                         <img src="{{ asset('wp-content/uploads/logo-VD-150.png') }}" alt="{{ $product->name }}" loading="lazy">
                     @endif
@@ -135,12 +127,17 @@
                         @endif
                     </div>
 
-                    @if($product->reviews_count ?? 0)
-                    <div class="cat-product-rating">
-                        <span class="stars">★★★★★</span>
-                        <span>{{ number_format($product->avg_rating ?? 5, 1) }} ({{ $product->reviews_count }})</span>
+                    @if($product->is_promotion && $product->promotionProduct)
+                    <div class="cat-product-gift">
+                        <i class="fas fa-gift"></i>
+                        Tặng <strong>PMH {{ number_format($product->promotionProduct->price, 0, ',', '.') }}đ</strong>
                     </div>
                     @endif
+
+                    <div class="cat-product-rating">
+                        <span class="stars">★</span>
+                        <span>{{ $avgRating > 0 ? $avgRating : 0 }} ({{ $reviewCount }})</span>
+                    </div>
                 </div>
             </a>
         @endforeach

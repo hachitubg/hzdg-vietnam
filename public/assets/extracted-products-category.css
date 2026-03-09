@@ -3944,9 +3944,9 @@
       }
       .cat-banner__img {
           width: 100%;
-          height: 360px;
+          height: 500px;
           object-fit: cover;
-          opacity: .65;
+          /* opacity: .65; */
           display: block;
       }
       .cat-banner__overlay {
@@ -4077,14 +4077,13 @@
           align-items: center;
           gap: 3px;
           font-size: 12px;
-          font-weight: 700;
           padding: 3px 8px;
           border-radius: 4px;
           line-height: 1.4;
       }
-      .badge-new        { color: #db3e26; background: transparent; }
-      .badge-bestseller { color: #1a8a1a; background: transparent; }
-      .badge-hot        { color: #f07400; background: transparent; }
+      .badge-new        { color: #db3e26; background: #fef2f0; }
+      .badge-bestseller { color: #1a8a1a; background: #edf7ed; }
+      .badge-hot        { color: #f07400; background: #fff5eb; }
 
       /* Image area */
       .cat-product-img-wrap {
@@ -4123,7 +4122,7 @@
       .price-sale {
           display: block;
           color: #db3e26;
-          font-size: 16.5px;
+          font-size: 20px;
           font-weight: 700;
           line-height: 1.3;
       }
@@ -4133,15 +4132,27 @@
           gap: 5px;
           margin-top: 3px;
       }
-      .price-original { color: #aaa; font-size: 13px; text-decoration: line-through; }
+      .price-original { color: #aaa; font-size: 16px; text-decoration: line-through; }
       .price-discount {
-          color: #888;
-          font-size: 13px;
-          background: #f3f3f3;
+          color: #ff0000;
+          font-size: 16px;
           border-radius: 3px;
           padding: 0 5px;
       }
       .price-contact { color: #254283; font-size: 16.5px; font-weight: 600; }
+
+      /* Gift / Promotion */
+      .cat-product-gift {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          font-size: 13px;
+          color: #db3e26;
+          margin-top: 6px;
+          line-height: 1.4;
+      }
+      .cat-product-gift i { font-size: 14px; }
+      .cat-product-gift strong { color: #db3e26; }
 
       /* Star rating */
       .cat-product-rating {
