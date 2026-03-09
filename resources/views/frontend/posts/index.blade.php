@@ -1,37 +1,59 @@
 @extends('frontend.layouts.app')
 
-@section('title', 'Tin tức - HZDG Việt Nam')
+@section('title', 'Tin tức – VD GROUP')
+@section('body_class', 'page-template-page-blank-php')
+
+@push('styles')
+    <link rel="stylesheet" href="{{ asset('css/projects.css') }}">
+@endpush
 
 @section('content')
-    <section class="section" style="padding:40px 0;">
-        <div class="container">
-            <h1 style="text-align:center;margin-bottom:30px;">TIN TỨC</h1>
-            <div class="row">
-                @forelse($posts as $post)
-                    <div class="col large-4 medium-6" style="margin-bottom:20px;">
-                        <div style="background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
-                            <a href="{{ route('posts.show', $post->slug) }}">
-                                @if ($post->thumbnail)
-                                    <img src="{{ asset('storage/' . $post->thumbnail) }}" alt="{{ $post->title }}"
-                                        style="width:100%;height:220px;object-fit:cover;">
-                                @endif
-                            </a>
-                            <div style="padding:15px;">
-                                <a href="{{ route('posts.show', $post->slug) }}">
-                                    <h3 style="font-size:16px;margin-bottom:8px;">{{ $post->title }}</h3>
-                                </a>
-                                @if ($post->published_at)
-                                    <p style="color:#888;font-size:13px;">📅 {{ $post->published_at->format('d/m/Y') }}</p>
-                                @endif
-                                <p style="margin-top:8px;color:#666;">{{ Str::limit($post->excerpt, 120) }}</p>
-                            </div>
-                        </div>
-                    </div>
-                @empty
-                    <p style="text-align:center;">Chưa có bài viết nào.</p>
-                @endforelse
+
+<div class="container" style="max-width:1250px; margin:0 auto; padding:0 20px;">
+
+    <h1 class="pj-section-title">Tin tức</h1>
+
+    @if($categories->count() > 0)
+    <div class="pj-filter-tabs">
+        <a href="{{ route('posts.index') }}"
+           class="pj-filter-tab {{ !request('category') ? 'is-active' : '' }}">All</a>
+        @foreach($categories as $cat)
+            <a href="{{ route('posts.index', ['category' => $cat->slug]) }}"
+               class="pj-filter-tab {{ request('category') === $cat->slug ? 'is-active' : '' }}">
+                {{ $cat->name }}
+            </a>
+        @endforeach
+    </div>
+    @endif
+
+    @if($posts->count() > 0)
+    <div class="pj-grid">
+        @foreach($posts as $post)
+        <a href="{{ route('posts.show', $post->slug) }}" class="pj-card">
+            @if($post->thumbnail)
+                <img class="pj-card-img" src="{{ asset('storage/' . $post->thumbnail) }}" alt="{{ $post->title }}" loading="lazy">
+            @else
+                <div class="pj-card-img" style="background:#eee;display:flex;align-items:center;justify-content:center;color:#bbb;font-size:14px;">No image</div>
+            @endif
+            <div class="pj-card-body">
+                <div class="pj-card-title">{{ $post->title }}</div>
+                @if($post->excerpt)
+                    <div class="pj-card-excerpt">{{ $post->excerpt }}</div>
+                @endif
             </div>
-            <div style="margin-top:20px;">{{ $posts->links() }}</div>
-        </div>
-    </section>
+        </a>
+        @endforeach
+    </div>
+
+    <div class="pj-pagination">
+        {{ $posts->appends(request()->query())->links() }}
+    </div>
+    @else
+    <div class="pj-empty">
+        <p>Chưa có bài viết nào.</p>
+    </div>
+    @endif
+
+</div>
+
 @endsection
