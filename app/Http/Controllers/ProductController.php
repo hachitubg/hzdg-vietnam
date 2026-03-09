@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Product;
 use App\Models\Category;
+use App\Models\ProductReview;
+use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
@@ -78,15 +80,53 @@ class ProductController extends Controller
 
     public function show($slug)
     {
-        $product = Product::where('slug', $slug)->where('is_visible', true)->with('category', 'images', 'reviews')->first();
+        $product = Product::where('slug', $slug)
+            ->where('is_visible', true)
+            ->with(['category.parent', 'images', 'reviews'])
+            ->first();
 
         if (!$product) {
             return view('frontend.products.show');
         }
 
         $product->increment('view_count');
-        $relatedProducts = Product::where('category_id', $product->category_id)->where('id', '!=', $product->id)->where('is_visible', true)->limit(4)->get();
+        $relatedProducts = Product::where('category_id', $product->category_id)
+            ->where('id', '!=', $product->id)
+            ->where('is_visible', true)
+            ->with(['images', 'reviews'])
+            ->limit(10)
+            ->get();
 
         return view('frontend.products.show', compact('product', 'relatedProducts'));
+    }
+
+    public function storeReview(Request $request, $slug)
+    {
+        $product = Product::where('slug', $slug)->where('is_visible', true)->first();
+
+        if (!$product) {
+            abort(404);
+        }
+
+        $validated = $request->validate([
+            'rating' => 'required|integer|min:1|max:5',
+            'reviewer_name' => 'required|string|max:255',
+            'reviewer_email' => 'nullable|email|max:255',
+            'reviewer_phone' => 'nullable|string|max:20',
+            'comment' => 'required|string|max:2000',
+        ]);
+
+        ProductReview::create([
+            'product_id' => $product->id,
+            'reviewer_name' => $validated['reviewer_name'],
+            'reviewer_email' => $validated['reviewer_email'] ?? null,
+            'reviewer_phone' => $validated['reviewer_phone'] ?? null,
+            'rating' => $validated['rating'],
+            'comment' => $validated['comment'],
+            'is_approved' => false,
+        ]);
+
+        return redirect()->route('products.show', $slug)
+            ->with('review_success', 'Cảm ơn bạn đã gửi đánh giá! Đánh giá sẽ được hiển thị sau khi được duyệt.');
     }
 }
