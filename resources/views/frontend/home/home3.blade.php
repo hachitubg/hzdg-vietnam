@@ -924,7 +924,7 @@
 </style>
 @endpush
 
-<div class="section-deployment overflow-hidden">
+<div id="du-an-tieu-bieu" class="section-deployment overflow-hidden">
     <div class=container-home3>
         <div class="deployment-middle py-[80px] max-[992px]:py-[60px] max-[576px]:py-[40px]">
             <h2 class="heading-primary !text-left mb-[24px]">

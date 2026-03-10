@@ -153,7 +153,7 @@
         max-height: 83px;
       }
       #logo {
-        width: 90px;
+        width: 140px;
       }
       .header-bottom {
         min-height: 80px;
@@ -178,7 +178,7 @@
         height: 50px !important;
       }
       .stuck #logo img {
-        max-height: 50px !important;
+        max-height: 40px !important;
       }
       .header-bottom {
         background-color: #ffffff;
@@ -3999,11 +3999,31 @@
           background: #fff;
           font-size: 15px;
           font-weight: 500;
-          transition: border-color .15s, color .15s;
+          transition: border-color .25s, color .25s, background .25s, box-shadow .25s, transform .2s;
           flex-shrink: 0;
+          cursor: pointer;
       }
-      .cat-tab:hover { border-color: #254283; color: #254283; }
-      .cat-tab.is-active { border-color: #254283; color: #254283; font-weight: 700; }
+      .cat-tab:hover {
+          border-color: #254283;
+          color: #254283;
+          background: #f0f4ff;
+          box-shadow: 0 2px 8px rgba(37,66,131,.15);
+          transform: translateY(-2px);
+      }
+      .cat-tab.is-active {
+          border-color: #254283;
+          color: #fff;
+          background: #254283;
+          font-weight: 700;
+          box-shadow: 0 3px 10px rgba(37,66,131,.25);
+      }
+      .cat-tab.is-active:hover {
+          background: #1e3870;
+          border-color: #1e3870;
+      }
+      .cat-tab.is-active .cat-tab__icon {
+          background: rgba(255,255,255,.2);
+      }
       .cat-tab__icon {
           width: 40px;
           height: 40px;

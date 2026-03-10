@@ -20,7 +20,7 @@ Route::get('/ho-so-nang-luc', [HomeController::class, 'capability'])->name('capa
 Route::get('/gioi-thieu-he-thong-am-thanh', [HomeController::class, 'audioSystem'])->name('audio-system');
 
 // Sản phẩm
-Route::get('/san-pham', [ProductController::class, 'index'])->name('products.index');
+Route::get('/danh-muc', [ProductController::class, 'allCategories'])->name('products.index');
 Route::get('/danh-muc/{slug}', [ProductController::class, 'category'])->name('products.category');
 Route::get('/san-pham/{slug}', [ProductController::class, 'show'])->name('products.show');
 

@@ -17,6 +17,58 @@ class ProductController extends Controller
         return view('frontend.products.index', compact('categories', 'products'));
     }
 
+    public function allCategories()
+    {
+        $categories = Category::where('type', 'product')->where('is_visible', true)->whereNull('parent_id')->with('children')->orderBy('sort_order')->get();
+
+        // Collect all leaf category IDs
+        $allCatIds = [];
+        foreach ($categories as $cat) {
+            if ($cat->children->count() > 0) {
+                foreach ($cat->children as $child) {
+                    $allCatIds[] = $child->id;
+                }
+            } else {
+                $allCatIds[] = $cat->id;
+            }
+        }
+
+        $sort = request('sort', 'featured');
+        $activeSlug = request('cat');
+        $activeTab = null;
+
+        if ($activeSlug) {
+            $activeTab = Category::where('slug', $activeSlug)->where('is_visible', true)->whereNull('parent_id')->first();
+            if ($activeTab && $activeTab->children->count() === 0) {
+                // Leaf parent category — filter on this page
+                $query = Product::where('category_id', $activeTab->id)->where('is_visible', true);
+            } else {
+                // Has children or not found - show all (parent with children should use /danh-muc/slug instead)
+                $query = Product::whereIn('category_id', $allCatIds)->where('is_visible', true);
+                $activeTab = null;
+            }
+        } else {
+            $query = Product::whereIn('category_id', $allCatIds)->where('is_visible', true);
+        }
+
+        $query->with(['images', 'reviews' => fn($q) => $q->where('is_approved', true), 'promotionProduct']);
+
+        match ($sort) {
+            'price_asc'  => $query->orderBy('price'),
+            'price_desc' => $query->orderByDesc('price'),
+            'newest'     => $query->orderByDesc('created_at'),
+            default      => $query->orderByDesc('is_hot')
+                                  ->orderByDesc('is_bestseller')
+                                  ->orderByDesc('is_new')
+                                  ->orderBy('sort_order'),
+        };
+
+        $products = $query->paginate(20);
+        $tabs = $categories;
+
+        return view('frontend.products.all', compact('categories', 'tabs', 'activeTab', 'products', 'sort'));
+    }
+
     public function category($slug)
     {
         $category = Category::where('slug', $slug)
@@ -34,15 +86,21 @@ class ProductController extends Controller
 
         $sort = request('sort', 'featured');
 
-        // If category has sub-categories: use them as filter tabs
+        // If category has sub-categories: show child tabs with toggle
         if ($category->children->count() > 0) {
             $tabs = $category->children;
             $subSlug = request('sub');
             $activeTab = $subSlug ? $tabs->firstWhere('slug', $subSlug) : null;
-            if (!$activeTab) {
-                $activeTab = $tabs->first();
-            }
+            // activeTab = null means "show all" (no child filter)
             $isParentCategory = true;
+
+            if ($activeTab) {
+                $query = Product::where('category_id', $activeTab->id)->where('is_visible', true);
+            } else {
+                // Show all products from all children
+                $childIds = $tabs->pluck('id')->toArray();
+                $query = Product::whereIn('category_id', $childIds)->where('is_visible', true);
+            }
         } else {
             // Leaf category: show sibling categories as tabs
             if ($category->parent_id) {
@@ -55,11 +113,11 @@ class ProductController extends Controller
             }
             $activeTab = $category;
             $isParentCategory = false;
+
+            $query = Product::where('category_id', $activeTab->id)->where('is_visible', true);
         }
 
-        $query = Product::where('category_id', $activeTab->id)
-            ->where('is_visible', true)
-            ->with(['images', 'reviews' => fn($q) => $q->where('is_approved', true), 'promotionProduct']);
+        $query->with(['images', 'reviews' => fn($q) => $q->where('is_approved', true), 'promotionProduct']);
 
         match ($sort) {
             'price_asc'  => $query->orderBy('price'),

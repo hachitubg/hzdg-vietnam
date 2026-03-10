@@ -1,6 +1,6 @@
 @extends('frontend.layouts.app')
 
-@section('title', $category->name . ' – VD GROUP')
+@section('title', 'Danh mục sản phẩm – HZDG Việt Nam')
 @section('body_class', 'page-template-page-blank-php woocommerce-page')
 
 @push('styles')
@@ -14,7 +14,7 @@
 
 {{-- ===================== BANNER ===================== --}}
 <div class="cat-banner">
-    <img class="cat-banner__img" src="{{ asset('wp-content/uploads/images_hzdg/danhmuc_01.png') }}" alt="{{ $category->parent ? $category->parent->name : $category->name }}">
+    <img class="cat-banner__img" src="{{ asset('wp-content/uploads/images_hzdg/danhmuc_01.png') }}" alt="Danh mục sản phẩm">
 </div>
 
 {{-- ===================== MAIN CONTENT ===================== --}}
@@ -24,70 +24,47 @@
     <nav class="cat-breadcrumb">
         <a href="{{ route('home') }}">Trang chủ</a>
         <span class="sep">»</span>
-        <a href="{{ route('products.index') }}">Danh mục sản phẩm</a>
-        @if($isParentCategory)
-            <span class="sep">»</span>
-            <span>{{ $category->name }}</span>
-        @else
-            @if(isset($category->parent) && $category->parent)
-                <span class="sep">»</span>
-                <a href="{{ route('products.category', $category->parent->slug) }}">{{ $category->parent->name }}</a>
-            @endif
-            <span class="sep">»</span>
-            <span>{{ $category->name }}</span>
-        @endif
+        <span>Danh mục sản phẩm</span>
     </nav>
 
-    {{-- Sub-category Tabs (toggle: click to filter, click again to show all) --}}
-    @if($isParentCategory && $tabs->count() > 0)
+    {{-- Parent Category Tabs --}}
     <div class="cat-tabs-wrap">
         @foreach($tabs as $tab)
             @php
                 $isActiveTab = $activeTab && $activeTab->id === $tab->id;
-                // Toggle: if active, clicking removes filter (back to all); if not active, apply filter
-                $tabUrl = $isActiveTab
-                    ? route('products.category', $category->slug) . ($sort !== 'featured' ? '?sort=' . $sort : '')
-                    : route('products.category', $category->slug) . '?sub=' . $tab->slug . ($sort !== 'featured' ? '&sort=' . $sort : '');
+                $hasChildren = $tab->children->count() > 0;
+
+                if ($hasChildren) {
+                    // Has children → link to /danh-muc/slug
+                    $tabUrl = route('products.category', $tab->slug);
+                } else {
+                    // No children → toggle filter on current page
+                    $tabUrl = $isActiveTab
+                        ? route('products.index') . ($sort !== 'featured' ? '?sort=' . $sort : '')
+                        : route('products.index') . '?cat=' . $tab->slug . ($sort !== 'featured' ? '&sort=' . $sort : '');
+                }
             @endphp
             <a href="{{ $tabUrl }}" class="cat-tab {{ $isActiveTab ? 'is-active' : '' }}">
                 @if($tab->image)
                     <img class="cat-tab__icon" src="{{ Storage::url($tab->image) }}" alt="{{ $tab->name }}">
                 @endif
                 {{ $tab->name }}
-                @if($isActiveTab)
+                @if($hasChildren)
+                    <i class="fas fa-chevron-right" style="margin-left:4px;font-size:10px;opacity:.5;"></i>
+                @elseif($isActiveTab)
                     <i class="fas fa-times" style="margin-left:6px;font-size:11px;opacity:.6;"></i>
                 @endif
             </a>
         @endforeach
     </div>
-    @elseif(!$isParentCategory && $tabs->count() > 1)
-    <div class="cat-tabs-wrap">
-        @foreach($tabs as $tab)
-            @php
-                $isActiveTab = $activeTab && $activeTab->id === $tab->id;
-                $tabUrl = route('products.category', $tab->slug) . ($sort !== 'featured' ? '?sort=' . $sort : '');
-            @endphp
-            <a href="{{ $tabUrl }}" class="cat-tab {{ $isActiveTab ? 'is-active' : '' }}">
-                @if($tab->image)
-                    <img class="cat-tab__icon" src="{{ Storage::url($tab->image) }}" alt="{{ $tab->name }}">
-                @endif
-                {{ $tab->name }}
-            </a>
-        @endforeach
-    </div>
-    @endif
 
     {{-- Section header: title + sort --}}
     <div class="cat-section-header">
-        <h2 class="cat-section-title">{{ $activeTab ? $activeTab->name : $category->name }}</h2>
+        <h2 class="cat-section-title">{{ $activeTab ? $activeTab->name : 'Tất cả sản phẩm' }}</h2>
         <div>
             <select class="cat-sort-select" style="width:200px" onchange="window.location.href=this.value">
                 @php
-                    if ($isParentCategory) {
-                        $sortBase = route('products.category', $category->slug) . ($activeTab ? '?sub=' . $activeTab->slug . '&' : '?');
-                    } else {
-                        $sortBase = route('products.category', $activeTab ? $activeTab->slug : $category->slug) . '?';
-                    }
+                    $sortBase = route('products.index') . ($activeTab ? '?cat=' . $activeTab->slug . '&' : '?');
                 @endphp
                 <option value="{{ $sortBase . 'sort=featured' }}" {{ $sort === 'featured' ? 'selected' : '' }}>Sắp xếp theo: Nổi bật</option>
                 <option value="{{ $sortBase . 'sort=newest' }}" {{ $sort === 'newest' ? 'selected' : '' }}>Mới nhất</option>
