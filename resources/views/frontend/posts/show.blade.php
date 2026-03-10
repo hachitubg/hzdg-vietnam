@@ -4,7 +4,11 @@
 @section('body_class', 'page-template-page-blank-php')
 
 @push('styles')
+    <link rel="stylesheet" href="{{ asset('assets/extracted-projects-show.css') }}">
     <link rel="stylesheet" href="{{ asset('css/projects.css') }}">
+@endpush
+@push('scripts')
+    <script defer src="{{ asset('assets/extracted-projects-show.js') }}"></script>
 @endpush
 
 @section('content')
