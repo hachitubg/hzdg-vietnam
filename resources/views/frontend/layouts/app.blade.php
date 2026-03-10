@@ -6,12 +6,12 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title', 'VD GROUP – Phân phối âm thanh CHÍNH HÃNG, CHUYÊN NGHIỆP')</title>
+    <title>@yield('title', 'HZDG VIETNAM – Nhà phân phối chính hãng của HZDG tại Việt Nam')</title>
 
     {{-- Favicons --}}
-    <link href="{{ asset('wp-content/uploads/cropped-favicon-32x32.png') }}" rel="icon" sizes="32x32" />
-    <link href="{{ asset('wp-content/uploads/cropped-favicon-192x192.png') }}" rel="icon" sizes="192x192" />
-    <link href="{{ asset('wp-content/uploads/logo-VD-150.png') }}" rel="apple-touch-icon" />
+    <link href="{{ asset('wp-content/uploads/logo_icon/logo_blue_notext.png') }}" rel="icon" sizes="32x32" />
+    <link href="{{ asset('wp-content/uploads/logo_icon/logo_blue_notext.png') }}" rel="icon" sizes="192x192" />
+    <link href="{{ asset('wp-content/uploads/logo_icon/logo_blue_notext.png') }}" rel="apple-touch-icon" />
 
     {{-- Google Fonts --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -64,6 +64,8 @@
     </main>
 
     @include('frontend.partials.footer')
+
+    @include('frontend.partials.floating-icons')
 
     {{-- jQuery --}}
     <script src="{{ asset('wp-includes/js/jquery/jquery.min.js') }}" defer></script>

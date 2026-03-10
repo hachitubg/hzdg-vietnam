@@ -1,6 +1,6 @@
 @extends('frontend.layouts.app')
 
-@section('title', 'VD GROUP – Phân phối âm thanh CHÍNH HÃNG, CHUYÊN NGHIỆP')
+@section('title', 'HZDG VIETNAM – Nhà phân phối chính hãng của HZDG tại Việt Nam')
 @section('body_class', 'home page-template-page-blank-php')
 
 @push('styles')

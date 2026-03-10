@@ -14,7 +14,7 @@
                     <img src="{{ asset('wp-content/uploads/images_hzdg/trangchu_header_01.jpg') }}">
                 </div>
                 <p>Tư vấn thiết kế hệ thống ánh sáng</p>
-                <span>Bạn sắp về nhà mới và cần được tư vấn? Chia sẻ những tâm tư và ý tưởng tuyệt vời cho ngôi nhà tương lai, Decox luôn lắng nghe bạn.</span>
+                <span>Bạn đang cần thuê đèn chiếu sáng và cần được tư vấn? Chia sẻ những tâm tư và ý tưởng tuyệt vời, HZDG Việt Nam luôn lắng nghe bạn.</span>
                 <a href="#footer" data-scroll-to="footer" title="Liên hệ tư vấn" class="send">LIÊN HỆ TƯ VẤN</a>
             </div>
         </li>
@@ -24,7 +24,7 @@
                     <img src="{{ asset('wp-content/uploads/images_hzdg/trangchu_header_02.jpg') }}">
                 </div>
                 <p>Lợi ích cho nhà thầu - dự án</p>
-                <span>Bạn sắp về nhà mới và đã có bản vẽ thiết kế nội thất, bạn đang cần tìm một nhà thầu uy tín để thi công?</span>
+                <span>Bạn đang cần một nhà thầu cho dự án ánh sáng của bạn, bạn đang cần tìm một nhà thầu uy tín để gửi gắm?</span>
                 <a href="#ho-so-nang-luc" data-scroll-to="ho-so-nang-luc" title="Xem hồ sơ năng lực" class="send">HỒ SƠ NĂNG LỰC</a>
             </div>
         </li>

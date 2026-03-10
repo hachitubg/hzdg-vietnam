@@ -274,7 +274,7 @@
     </header>
 
     {{-- Mobile Sidebar Menu --}}
-    <div id="main-menu" class="mobile-sidebar mfp-hide">
+    <div id="main-menu" class="mobile-sidebar">
         <div class="mobile-sidebar-overlay" id="main-menu-overlay"></div>
         <div class="mobile-sidebar-inner">
             <div class="mobile-sidebar-header">
