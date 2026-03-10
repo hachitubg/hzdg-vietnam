@@ -38,6 +38,24 @@
         @endif
     </nav>
 
+    {{-- Parent category navigation (always show when viewing a parent category) --}}
+    @if($isParentCategory && $parentTabs->count() > 1)
+    <div class="cat-tabs-wrap cat-tabs-wrap--parent">
+        @foreach($parentTabs as $ptab)
+            @php
+                $isActivePtab = $ptab->id === $category->id;
+                $ptabUrl = route('products.category', $ptab->slug);
+            @endphp
+            <a href="{{ $ptabUrl }}" class="cat-tab {{ $isActivePtab ? 'is-active' : '' }}">
+                @if($ptab->image)
+                    <img class="cat-tab__icon" src="{{ Storage::url($ptab->image) }}" alt="{{ $ptab->name }}">
+                @endif
+                {{ $ptab->name }}
+            </a>
+        @endforeach
+    </div>
+    @endif
+
     {{-- Sub-category Tabs (toggle: click to filter, click again to show all) --}}
     @if($isParentCategory && $tabs->count() > 0)
     <div class="cat-tabs-wrap">

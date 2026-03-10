@@ -17,10 +17,6 @@
     $avgRating = $approvedReviews->count() > 0 ? round($approvedReviews->avg('rating'), 1) : 0;
     $reviewCount = $approvedReviews->count();
     $parentCategory = isset($product) && $product->category ? ($product->category->parent ?? $product->category) : null;
-    $siblingCategories = $parentCategory ? $parentCategory->children()->where('is_visible', true)->orderBy('sort_order')->get() : collect();
-    if ($siblingCategories->isEmpty() && $parentCategory) {
-        $siblingCategories = collect([$parentCategory]);
-    }
 @endphp
 
 @section('content')
@@ -47,16 +43,19 @@
                 <span>{{ $product->name }}</span>
             </div>
 
-            <!-- Category Tabs -->
-            @if($siblingCategories->count() > 0)
+            <!-- Parent Category Tabs -->
+            @if(isset($parentTabs) && $parentTabs->count() > 1)
             <div class="pd-category-tabs">
-                @foreach($siblingCategories as $cat)
-                    <a href="{{ route('products.category', $cat->slug) }}"
-                       class="pd-category-tab {{ isset($product->category) && $product->category_id == $cat->id ? 'is-active' : '' }}">
-                        @if($cat->image)
-                            <img src="{{ asset('storage/' . $cat->image) }}" alt="{{ $cat->name }}">
+                @foreach($parentTabs as $ptab)
+                    @php
+                        $isActivePtab = $parentCategory && $ptab->id === $parentCategory->id;
+                    @endphp
+                    <a href="{{ route('products.category', $ptab->slug) }}"
+                       class="pd-category-tab {{ $isActivePtab ? 'is-active' : '' }}">
+                        @if($ptab->image)
+                            <img src="{{ Storage::url($ptab->image) }}" alt="{{ $ptab->name }}">
                         @endif
-                        <span>{{ $cat->name }}</span>
+                        <span>{{ $ptab->name }}</span>
                     </a>
                 @endforeach
             </div>
@@ -591,38 +590,65 @@
                                     $relThumb = $related->images->where('is_thumbnail', true)->first() ?? $related->images->first();
                                     $relReviews = $related->reviews->where('is_approved', true);
                                     $relAvg = $relReviews->count() > 0 ? round($relReviews->avg('rating'), 1) : 0;
+                                    $relReviewCount = $relReviews->count();
+                                    $relHasSale = $related->sale_price && $related->sale_price > 0 && $related->sale_price < $related->price;
+                                    $relDiscountPct = $relHasSale ? round(($related->price - $related->sale_price) / $related->price * 100) : 0;
                                 @endphp
-                                <a href="{{ route('products.show', $related->slug) }}" class="pd-related-card">
-                                    <div class="card-badges">
-                                        @if($related->is_new)<span class="badge-pill badge-new">New {{ date('Y') }}</span>@endif
-                                        @if($related->is_bestseller)<span class="badge-pill badge-bestseller">Bán Chạy</span>@endif
-                                        @if($related->is_hot)<span class="badge-pill badge-hot">Hot</span>@endif
-                                        @if($related->is_promotion)<span class="badge-pill badge-promo">KM</span>@endif
+                                <a href="{{ route('products.show', $related->slug) }}" class="cat-product-card">
+
+                                    {{-- Badges row --}}
+                                    <div class="cat-product-badges">
+                                        @if($related->is_new)
+                                            <span class="badge-pill badge-new"><i class="fas fa-seedling"></i> New {{ date('Y') }}</span>
+                                        @endif
+                                        @if($related->is_bestseller)
+                                            <span class="badge-pill badge-bestseller"><i class="fas fa-medal"></i> Bán Chạy</span>
+                                        @endif
+                                        @if($related->is_hot)
+                                            <span class="badge-pill badge-hot"><i class="fas fa-fire"></i> Hot</span>
+                                        @endif
                                     </div>
-                                    @if($relThumb)
-                                        <img src="{{ asset('storage/' . $relThumb->image_url) }}" alt="{{ $related->name }}" class="card-img">
-                                    @else
-                                        <div class="card-img" style="background:#eee;display:flex;align-items:center;justify-content:center;color:#999;">No img</div>
-                                    @endif
-                                    <div class="card-body">
-                                        <div class="card-name">{{ $related->name }}</div>
-                                        <div class="card-price">
-                                            <span class="price-current">{{ number_format($related->sale_price ?? $related->price) }}đ</span>
-                                            @if($related->sale_price)
-                                                <span class="price-old">{{ number_format($related->price) }}đ</span>
-                                                <span class="price-off">-{{ round(100 - ($related->sale_price / $related->price * 100)) }}%</span>
+
+                                    {{-- Image --}}
+                                    <div class="cat-product-img-wrap">
+                                        @if($relThumb)
+                                            <img src="{{ asset('storage/' . $relThumb->image_url) }}" alt="{{ $related->name }}" loading="lazy">
+                                        @else
+                                            <img src="{{ asset('wp-content/uploads/logo-VD-150.png') }}" alt="{{ $related->name }}" loading="lazy">
+                                        @endif
+                                    </div>
+
+                                    {{-- Info --}}
+                                    <div class="cat-product-info">
+                                        <div class="cat-product-name">{{ $related->name }}</div>
+
+                                        <div class="cat-price-block">
+                                            @if($related->price > 0)
+                                                @if($relHasSale)
+                                                    <span class="price-sale">{{ number_format($related->sale_price, 0, ',', '.') }}đ</span>
+                                                    <div class="price-secondary">
+                                                        <span class="price-original">{{ number_format($related->price, 0, ',', '.') }}đ</span>
+                                                        <span class="price-discount">-{{ $relDiscountPct }}%</span>
+                                                    </div>
+                                                @else
+                                                    <span class="price-sale">{{ number_format($related->price, 0, ',', '.') }}đ</span>
+                                                @endif
+                                            @else
+                                                <span class="price-contact">Liên hệ</span>
                                             @endif
                                         </div>
-                                        @if($relReviews->count() > 0)
-                                        <div class="card-rating">
-                                            <span class="stars">
-                                                @for($i = 1; $i <= 5; $i++)
-                                                    @if($i <= floor($relAvg))★@else☆@endif
-                                                @endfor
-                                            </span>
-                                            {{ $relAvg }} ({{ $relReviews->count() }})
+
+                                        @if($related->is_promotion && $related->promotionProduct)
+                                        <div class="cat-product-gift">
+                                            <i class="fas fa-gift"></i>
+                                            Tặng <strong>PMH {{ number_format($related->promotionProduct->price, 0, ',', '.') }}đ</strong>
                                         </div>
                                         @endif
+
+                                        <div class="cat-product-rating">
+                                            <span class="stars">★</span>
+                                            <span>{{ $relAvg > 0 ? $relAvg : 0 }} ({{ $relReviewCount }})</span>
+                                        </div>
                                     </div>
                                 </a>
                             @endforeach

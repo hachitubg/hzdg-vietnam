@@ -86,6 +86,13 @@ class ProductController extends Controller
 
         $sort = request('sort', 'featured');
 
+        // All top-level parent categories (for navigation when no subcategories)
+        $parentTabs = Category::whereNull('parent_id')
+            ->where('type', 'product')
+            ->where('is_visible', true)
+            ->orderBy('sort_order')
+            ->get();
+
         // If category has sub-categories: show child tabs with toggle
         if ($category->children->count() > 0) {
             $tabs = $category->children;
@@ -102,19 +109,23 @@ class ProductController extends Controller
                 $query = Product::whereIn('category_id', $childIds)->where('is_visible', true);
             }
         } else {
-            // Leaf category: show sibling categories as tabs
+            // Leaf category or parent with no children
             if ($category->parent_id) {
+                // Leaf category: show sibling categories as tabs
                 $tabs = Category::where('parent_id', $category->parent_id)
                     ->where('is_visible', true)
                     ->orderBy('sort_order')
                     ->get();
+                $activeTab = $category;
+                $isParentCategory = false;
+                $query = Product::where('category_id', $activeTab->id)->where('is_visible', true);
             } else {
-                $tabs = collect([$category]);
+                // Parent category with no children: show own products
+                $tabs = collect();
+                $activeTab = null;
+                $isParentCategory = true;
+                $query = Product::where('category_id', $category->id)->where('is_visible', true);
             }
-            $activeTab = $category;
-            $isParentCategory = false;
-
-            $query = Product::where('category_id', $activeTab->id)->where('is_visible', true);
         }
 
         $query->with(['images', 'reviews' => fn($q) => $q->where('is_approved', true), 'promotionProduct']);
@@ -132,7 +143,7 @@ class ProductController extends Controller
         $products = $query->paginate(20);
 
         return view('frontend.products.category', compact(
-            'category', 'tabs', 'activeTab', 'products', 'sort', 'isParentCategory'
+            'category', 'tabs', 'activeTab', 'products', 'sort', 'isParentCategory', 'parentTabs'
         ));
     }
 
@@ -151,11 +162,18 @@ class ProductController extends Controller
         $relatedProducts = Product::where('category_id', $product->category_id)
             ->where('id', '!=', $product->id)
             ->where('is_visible', true)
-            ->with(['images', 'reviews'])
+            ->with(['images', 'reviews', 'promotionProduct'])
             ->limit(10)
             ->get();
 
-        return view('frontend.products.show', compact('product', 'relatedProducts'));
+        // All top-level parent categories for navigation
+        $parentTabs = Category::whereNull('parent_id')
+            ->where('type', 'product')
+            ->where('is_visible', true)
+            ->orderBy('sort_order')
+            ->get();
+
+        return view('frontend.products.show', compact('product', 'relatedProducts', 'parentTabs'));
     }
 
     public function storeReview(Request $request, $slug)

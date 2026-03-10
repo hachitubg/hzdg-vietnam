@@ -1,59 +1,166 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# HZDG Vietnam - Âm Thanh & Ánh Sáng Chuyên Nghiệp
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Hệ thống quản lý nội dung và trưng bày giải pháp âm thanh, ánh sáng cho các sự kiện và không gian công cộng. Xây dựng bằng **Laravel 11** và **Filament** với giao diện hiện đại.
 
-## About Laravel
+## Yêu Cầu Hệ Thống
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- PHP 8.2+
+- Composer
+- MySQL 8.0+
+- Node.js 18+
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Cài Đặt & Chạy Project
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 1. Clone & Cài Đặt Dependency
 
-## Learning Laravel
+```bash
+git clone <repo-url> hzdg-vietnam
+cd hzdg-vietnam
+composer install
+npm install
+```
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+### 2. Cấu Hình Environment
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+```bash
+cp .env.example .env
+php artisan key:generate
+```
 
-## Laravel Sponsors
+Chỉnh sửa `.env`:
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=hzdg_vietnam
+DB_USERNAME=root
+DB_PASSWORD=
+```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### 3. Tạo Database & Chạy Migration
 
-### Premium Partners
+```bash
+# Tạo database (tùy chọn, nếu dùng CLI MySQL trực tiếp)
+mysql -u root -e "CREATE DATABASE hzdg_vietnam;"
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+# Chạy migrations & seeders
+php artisan migrate:fresh --seed
+```
 
-## Contributing
+### 4. Chạy Development Server
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+```bash
+# Terminal 1: Laravel server
+php artisan serve
 
-## Code of Conduct
+# Terminal 2: Vite (hot reload CSS/JS)
+npm run dev
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Truy cập:
+- **Frontend**: http://localhost:8000
+- **Admin Panel**: http://localhost:8000/admin (đăng nhập với tài khoản seeder)
 
-## Security Vulnerabilities
+## Các Lệnh Cơ Bản
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### Database
 
-## License
+```bash
+# Reset database (xóa hết dữ liệu cũ + import lại seeders)
+php artisan migrate:fresh --seed
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+# Chạy migrations mà không reset
+php artisan migrate
+
+# Chạy một seeder cụ thể
+php artisan migrate:fresh --seeder=HzdgImportedSeeder
+
+# Rollback migrations
+php artisan migrate:rollback
+```
+
+### Assets & Cache
+
+```bash
+# Build assets cho production
+npm run build
+
+# Clear application cache
+php artisan cache:clear
+php artisan view:clear
+php artisan config:clear
+
+# Optimize autoload
+composer dumpautoload -o
+```
+
+### Artisan Commands
+
+```bash
+# Liệt kê tất cả commands
+php artisan list
+
+# Tạo migration
+php artisan make:migration create_table_name
+
+# Tạo model
+php artisan make:model ModelName
+```
+
+## Cấu Trúc Project
+
+```
+app/
+├── Http/Controllers/        # Controllers
+├── Models/                   # Models (Category, Post, Product...)
+├── Providers/               # Service Providers
+└── Filament/               # Filament admin resources
+resources/
+├── css/                     # Tailwind CSS
+├── js/                      # Vite JS entry
+└── views/
+    └── frontend/            # Blade templates
+public/
+├── css/                     # Compiled CSS
+├── js/                      # Compiled JS
+└── storage/                 # Uploaded files
+database/
+├── migrations/              # Database schemas
+├── seeders/                 # Seed data
+└── factories/               # Model factories
+```
+
+## Triển Khai (Deployment)
+
+Chi tiết đầy đủ xem [DEPLOY.md](DEPLOY.md)
+
+**Tóm tắt:**
+1. Pull code từ git
+2. Chạy `composer install --no-dev`
+3. Chạy `php artisan migrate --force`
+4. Build assets: `npm run build`
+5. Đảm bảo folder `storage/` và `public/storage` có quyền ghi
+
+## Account Mặc Định (sau khi seed)
+
+```
+Email: admin@example.com
+Password: password
+```
+
+Đổi mật khẩu trong panel admin sau khi đăng nhập lần đầu.
+
+## Thường Gặp
+
+**Q: Lỗi "Class not found"**  
+A: Chạy `composer dumpautoload -o`
+
+**Q: Assets không load**  
+A: Đảm bảo chạy `npm run dev` hoặc `npm run build` rồi xóa cache: `php artisan cache:clear`
+
+**Q: Database connection error**  
+A: Kiểm tra MySQL đang chạy và `.env` có đúng credentials
+
+## Support
+
+Liên hệ hoặc check git issues.
