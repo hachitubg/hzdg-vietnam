@@ -2,77 +2,6 @@
 
 <template id="trungchinh-template">
     <link rel="stylesheet" href="{{ asset('css/trungchinh.css') }}">
-    <style>
-        /* ============================================================
-           TAB DANH MỤC - hover & active effects
-        ============================================================ */
-        .js-tab-button {
-            position: relative;
-            color: #fff;
-            background: transparent;
-            transition: color 0.25s ease, background-image 0.25s ease, transform 0.2s ease;
-            overflow: hidden;
-        }
-        .js-tab-button::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(90deg, #0066FF, #0044A9);
-            opacity: 0;
-            transition: opacity 0.25s ease;
-            z-index: 0;
-        }
-        .js-tab-button span { position: relative; z-index: 1; }
-        .js-tab-button:hover::after  { opacity: 0.25; }
-        .js-tab-button:hover { transform: translateY(-2px); }
-        .js-tab-button.active {
-            background-image: linear-gradient(90deg, #0066FF, #0044A9) !important;
-            color: #fff;
-        }
-        .js-tab-button.active::after { opacity: 0; }
-
-        /* Tab content slide-in animation */
-        .js-tab-content { animation: none; }
-        .js-tab-content.tab-enter {
-            animation: tabFadeIn 0.35s ease forwards;
-        }
-        @keyframes tabFadeIn {
-            from { opacity: 0; transform: translateY(12px); }
-            to   { opacity: 1; transform: translateY(0); }
-        }
-
-        /* ============================================================
-           BRAND MARQUEE - 2 rows, opposite directions
-        ============================================================ */
-        .js-brand-top-slider,
-        .js-brand-top-slider-2 {
-            overflow: hidden !important;
-        }
-        .js-brand-top-slider .swiper-wrapper {
-            transform: translateX(0) !important;
-            transition: none !important;
-            animation: brand-scroll-left 22s linear infinite;
-            will-change: transform;
-        }
-        .js-brand-top-slider-2 .swiper-wrapper {
-            transform: translateX(-1144px) !important;
-            transition: none !important;
-            animation: brand-scroll-right 22s linear infinite;
-            will-change: transform;
-        }
-        @keyframes brand-scroll-left {
-            0%   { transform: translateX(0); }
-            100% { transform: translateX(-1144px); }
-        }
-        @keyframes brand-scroll-right {
-            0%   { transform: translateX(-1144px); }
-            100% { transform: translateX(0); }
-        }
-        .js-brand-top-slider:hover .swiper-wrapper,
-        .js-brand-top-slider-2:hover .swiper-wrapper {
-            animation-play-state: paused;
-        }
-    </style>
 
      <main class=global-main>
     <div class="section-deployment overflow-hidden">
@@ -108,7 +37,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="flex gap-[24px] text-white max-[992px]:hidden">
+                <div class="flex gap-[24px] text-white strength-cards-bottom">
                     <a href="" class="project-item relative w-[34.5%] rounded-[12px_12px_12px_0] m-auto overflow-hidden" target=_blank rel="noopener noreferrer">
                         <img class="w-full lazy loaded" src="{{ asset('wp-content/uploads/images_hzdg/themanh_01.png') }}" data-was-processed=true>
                         <div class="absolute bottom-0 left-0 right-0 flex bg-[linear-gradient(180deg,rgba(64,64,65,0.1)_0%,rgba(35,31,32,1)_100%)] before:w-[84px] before:mt-[-14px] before:bg-[url(/media/lib/15-01-2026/tca-svg-frame-13012026-1.png)] before:bg-no-repeat before:bg-contain">
@@ -162,13 +91,13 @@
                     DỰ ÁN ÁNH SÁNG TIÊU BIỂU
                 </h2>
                 <hr class="hr-20 mb-[24px]">
-                <p class="mt-[16px] mb-[32px] max-[992px]:px-[5%]" style="padding-right: 40%;">
+                <p class="mt-[16px] mb-[32px] max-[992px]:px-[5%] max-[576px]:!pr-0">
                 Sản phẩm và thiết bị của chúng tôi được sử dụng rộng rãi trong các nhà hát, quán bar, hội trường đa năng, đài truyền hình, địa điểm biểu diễn lưu động, khu du lịch văn hóa và các địa điểm văn hóa giải trí khác.    
                 </p>
-                <ul class="grid text-center text-[20px] leading-[48px] font-medium capitalize border-b border-b-[--color-primary] overflow-auto whitespace-nowrap max-[992px]:flex max-[576px]:text-[18px]" style="grid-template-columns: repeat({{ $postCategories->count() }}, 1fr)">
+                <ul class="flex flex-nowrap text-center text-[20px] leading-[48px] font-medium capitalize border-b border-b-[--color-primary] overflow-x-auto whitespace-nowrap max-[576px]:text-[14px] max-[576px]:leading-[38px] max-[576px]:gap-0">
                     @foreach($postCategories as $catIndex => $cat)
                     <li>
-                        <button class="w-full rounded-[0_15px_0_0] px-[24px] js-tab-button{{ $catIndex === 0 ? ' active' : '' }}" type="button" data-id="{{ $cat->id }}"><span>{{ $cat->name }}</span></button>
+                        <button class="w-full rounded-[0_15px_0_0] px-[24px] max-[576px]:px-[12px] js-tab-button{{ $catIndex === 0 ? ' active' : '' }}" type="button" data-id="{{ $cat->id }}"><span>{{ $cat->name }}</span></button>
                     </li>
                     @endforeach
                 </ul>
@@ -192,7 +121,7 @@
                     <p class="mt-[24px] text-center" style="color:#aaa">Chưa có bài viết nào trong danh mục này.</p>
                     @endif
                     <div class="text-center">
-                        <a href="{{ route('posts.index') }}" class="button-primary mt-[24px] inline-flex items-center gap-[6px] no-underline">
+                        <a href="{{ route('posts.index') }}" class="button-primary mt-[24px] inline-flex items-center gap-[6px] no-underline" style="min-width:auto">
                             Xem thêm
                             <svg class="inline-block translate-x-[-5px] translate-y-[-3px]" xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30" fill="#FFFFFF">
                                 <path d="M480-360 280-560h400L480-360Z"></path>
@@ -213,8 +142,8 @@
             </h2>
             <hr class="hr-20 mb-[24px]">
             <div class="text-white text-center py-[33px] px-[36px] bg-black rounded-[24px] max-[576px]:px-[10px]">
-                <p class="heading-primary !normal-case">Được sự tin tưởng từ những đối tác hàng đầu</p>
-                <p class="font-light mt-[20px] mb-[28px]">
+                <p class="heading-primary !normal-case max-[576px]:!text-[16px]">Được sự tin tưởng từ những đối tác hàng đầu</p>
+                <p class="font-light mt-[20px] mb-[28px] max-[576px]:text-[13px] max-[576px]:mt-[12px] max-[576px]:mb-[18px]">
                     Sự tin tưởng của những thương hiệu danh tiếng toàn cầu là minh chứng rõ nét nhất cho chất lượng dịch vụ của chúng tôi.<br>Chúng tôi cam kết mang đến những giải pháp âm thanh và công nghệ tốt nhất
                 </p>
                 <div class="swiper swiper-brand-top js-brand-top-slider mb-[12px] swiper-initialized swiper-horizontal swiper-pointer-events">
@@ -426,5 +355,11 @@
             const firstActive = container.querySelector('.js-tab-button.active');
             if (firstActive) switchTab(firstActive.dataset.id);
         }
+
+        // ── BRAND MARQUEE — clear inline styles so CSS animation works ──
+        shadow.querySelectorAll('.js-brand-top-slider .swiper-wrapper, .js-brand-top-slider-2 .swiper-wrapper').forEach(el => {
+            el.style.transform = '';
+            el.style.transitionDuration = '';
+        });
     })();
 </script>

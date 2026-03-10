@@ -74,6 +74,9 @@
 
         @include('frontend.home.home3')
 
+        <!-- Thêm phần hiển thị file PDF ở đây cho tôi, -->
+        
+
     </div>
 
 @endsection
