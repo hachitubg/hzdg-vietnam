@@ -2,7 +2,7 @@
     <img alt="ĐÓN TẾT RỘN RÀNG" class="attachment-full size-full" src="{{ asset('wp-content/uploads/DON-TET-RON-RANG-scaled.png') }}" decoding="async" fetchpriority="high" height="93" width="2560" />
     <header class="header has-sticky sticky-jump" id="header">
         <div class="header-wrapper">
-            <div class="header-top hide-for-sticky nav-dark" id="top-bar">
+            <div class="header-top hide-for-sticky nav-dark" id="top-bar" style="margin-top:-3px">
                 <div class="flex-row container">
                     <div class="flex-col hide-for-medium flex-left">
                         <ul class="nav nav-left medium-nav-center nav-small nav-divided">
@@ -17,11 +17,11 @@
                         <ul class="nav top-bar-nav nav-right nav-small nav-divided">
                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41048 menu-item-design-default"
                                 id="menu-item-41048">
-                                <a class="nav-top-link" href="kien-thuc-am-thanh-anh-sang/">Blog</a>
+                                <a class="nav-top-link" href="">Blog</a>
                             </li>
                             <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-43560 menu-item-design-default"
                                 id="menu-item-43560">
-                                <a class="nav-top-link" href="tuyen-dung/">Tuyển dụng</a>
+                                <a class="nav-top-link" href="">Tuyển dụng</a>
                             </li>
                         </ul>
                     </div>
@@ -196,7 +196,7 @@
 
                             {{-- Dự án tiêu biểu (scroll tới section trên trang chủ) --}}
                             <li class="menu-item menu-item-design-default">
-                                <a class="nav-top-link" href="{{ route('home') }}#du-an-tieu-bieu">Dự án tiêu biểu</a>
+                                <a class="nav-top-link" href="{{ route('home') }}#du-an-tieu-bieu" data-scroll-to="du-an-tieu-bieu">Dự án tiêu biểu</a>
                             </li>
 
                             {{-- Giới thiệu về HZDG (scroll tới section trên trang chủ) --}}
@@ -328,7 +328,7 @@
 
                 {{-- Dự án tiêu biểu --}}
                 <li class="menu-item">
-                    <a href="{{ route('home') }}#du-an-tieu-bieu">Dự án tiêu biểu</a>
+                    <a href="{{ route('home') }}#du-an-tieu-bieu" data-scroll-to="du-an-tieu-bieu">Dự án tiêu biểu</a>
                 </li>
 
                 {{-- Giới thiệu --}}

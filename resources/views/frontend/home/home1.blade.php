@@ -15,7 +15,7 @@
                 </div>
                 <p>Tư vấn thiết kế hệ thống ánh sáng</p>
                 <span>Bạn sắp về nhà mới và cần được tư vấn? Chia sẻ những tâm tư và ý tưởng tuyệt vời cho ngôi nhà tương lai, Decox luôn lắng nghe bạn.</span>
-                <a href="https://decoxdesign.com/dang-ky-tu-van-va-nhan-phac-thao" title="1 giờ trò chuyện cùng chuyên gia" class="send">LIÊN HỆ TƯ VẤN</a>
+                <a href="#footer" data-scroll-to="footer" title="Liên hệ tư vấn" class="send">LIÊN HỆ TƯ VẤN</a>
             </div>
         </li>
         <li>
@@ -25,7 +25,7 @@
                 </div>
                 <p>Lợi ích cho nhà thầu - dự án</p>
                 <span>Bạn sắp về nhà mới và đã có bản vẽ thiết kế nội thất, bạn đang cần tìm một nhà thầu uy tín để thi công?</span>
-                <a href="https://decoxdesign.com/bao-gia-thiet-ke-noi-that" title="Bạn cần thi công theo bản vẽ?" class="send">HỒ SƠ NĂNG LỰC</a>
+                <a href="#ho-so-nang-luc" data-scroll-to="ho-so-nang-luc" title="Xem hồ sơ năng lực" class="send">HỒ SƠ NĂNG LỰC</a>
             </div>
         </li>
     </ul>
@@ -183,10 +183,6 @@
         }
 
         @media screen and (max-width: 640px) {
-            .hidemb {
-                display: none;
-            }
-
             .service li {
                 width: 100%;
             }

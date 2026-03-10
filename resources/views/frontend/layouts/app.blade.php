@@ -117,6 +117,29 @@
 
     @stack('scripts')
 
+    <script>
+    document.addEventListener('click', function(e) {
+        var link = e.target.closest('[data-scroll-to]');
+        if (!link) return;
+        var id = link.getAttribute('data-scroll-to');
+        var target = document.getElementById(id);
+        if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            history.replaceState(null, '', '#' + id);
+        }
+    });
+    (function() {
+        if (location.hash) {
+            var id = location.hash.substring(1);
+            var target = document.getElementById(id);
+            if (target) {
+                setTimeout(function() { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 500);
+            }
+        }
+    })();
+    </script>
+
 </body>
 
 </html>

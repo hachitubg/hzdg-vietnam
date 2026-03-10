@@ -1,3 +1,4 @@
+<div id="du-an-tieu-bieu"></div>
 <div id="trungchinh-host"></div>
 
 <template id="trungchinh-template">
@@ -16,7 +17,7 @@
 				<div class="grid grid-cols-2 gap-[36px] text-white max-[992px]:gap-[24px] max-[768px]:grid-cols-1 padding-20">
                     
                     <a href="" class="solution-item relative rounded-[12px_12px_12px_0] overflow-hidden" target=_blank rel="noopener noreferrer">
-                        <img class="w-full lazy loading" src="{{ asset('wp-content/uploads/images_hzdg/themanh_001.png') }}" alt="Ánh sáng hội trường" width=582 height=316 data-was-processed=true>
+                        <img class="w-full lazy loading" src="{{ asset('wp-content/uploads/images_hzdg/anhsang01.jpg') }}" alt="Ánh sáng hội trường" width=582 height=316 data-was-processed=true>
                         <div class="absolute bottom-0 left-0 right-0 flex bg-[linear-gradient(180deg,rgba(64,64,65,0.1)_0%,rgba(35,31,32,1)_100%)] before:w-[96px] before:mt-[-14px] before:bg-[url(/media/lib/15-01-2026/tca-svg-frame-13012026-1.png)] before:bg-no-repeat before:bg-contain before:max-[576px]:w-[84px]">
                             <i class="absolute top-[16px] left-0 inline-flex w-[65px] h-[65px] bg-[url(/media/lib/15-01-2026/tca-section-solution-icon-27122025-5.png)] bg-no-repeat bg-contain max-[576px]:w-[55px] max-[576px]:h-[55px ]"></i>
                             <div class="flex-1 p-[10px_10px_10px_0]">
@@ -27,7 +28,7 @@
                     </a>
 
                     <a href="" class="solution-item relative rounded-[12px_12px_12px_0] overflow-hidden" target=_blank rel="noopener noreferrer">
-                        <img class="w-full lazy loading" src="{{ asset('wp-content/uploads/images_hzdg/themanh_02.png') }}" alt="Ánh sáng sân khấu" width=582 height=316 data-was-processed=true>
+                        <img class="w-full lazy loading" src="{{ asset('wp-content/uploads/images_hzdg/anhsang02.jpg') }}" alt="Ánh sáng sân khấu" width=582 height=316 data-was-processed=true>
                         <div class="absolute bottom-0 left-0 right-0 flex bg-[linear-gradient(180deg,rgba(64,64,65,0.1)_0%,rgba(35,31,32,1)_100%)] before:w-[96px] before:mt-[-14px] before:bg-[url(/media/lib/15-01-2026/tca-svg-frame-13012026-1.png)] before:bg-no-repeat before:bg-contain before:max-[576px]:w-[84px]">
                             <i class="absolute top-[16px] left-0 inline-flex w-[65px] h-[65px] bg-[url(/media/lib/15-01-2026/tca-section-solution-icon-27122025-5.png)] bg-no-repeat bg-contain max-[576px]:w-[55px] max-[576px]:h-[55px ]"></i>
                             <div class="flex-1 p-[10px_10px_10px_0]">
@@ -39,7 +40,7 @@
                 </div>
                 <div class="flex gap-[24px] text-white strength-cards-bottom">
                     <a href="" class="project-item relative w-[34.5%] rounded-[12px_12px_12px_0] m-auto overflow-hidden" target=_blank rel="noopener noreferrer">
-                        <img class="w-full lazy loaded" src="{{ asset('wp-content/uploads/images_hzdg/themanh_01.png') }}" data-was-processed=true>
+                        <img class="w-full lazy loaded" src="{{ asset('wp-content/uploads/images_hzdg/anhsang03.jpg') }}" data-was-processed=true>
                         <div class="absolute bottom-0 left-0 right-0 flex bg-[linear-gradient(180deg,rgba(64,64,65,0.1)_0%,rgba(35,31,32,1)_100%)] before:w-[84px] before:mt-[-14px] before:bg-[url(/media/lib/15-01-2026/tca-svg-frame-13012026-1.png)] before:bg-no-repeat before:bg-contain">
                             <i class="absolute top-[16px] left-0 inline-flex w-[55px] h-[55px] bg-no-repeat bg-contain" style="background-image: url('{{ asset('wp-content/uploads/images_hzdg/themanh_icon_01.png') }}')"></i>
                             <div class="flex-1 p-[10px_10px_10px_0]">
@@ -50,7 +51,7 @@
                     </a>
                     <div class="flex-1 flex flex-wrap gap-[24px]">
                         <a href="" class="project-item relative rounded-[12px_12px_12px_0] overflow-hidden w-[calc(50%-12px)]" target=_blank rel="noopener noreferrer">
-                            <img class="w-full lazy loaded" src="{{ asset('wp-content/uploads/images_hzdg/themanh_02.png') }}" data-was-processed=true>
+                            <img class="w-full lazy loaded" src="{{ asset('wp-content/uploads/images_hzdg/anhsang04.jpg') }}" data-was-processed=true>
                             <div class="absolute bottom-0 left-0 right-0 flex bg-[linear-gradient(180deg,rgba(64,64,65,0.1)_0%,rgba(35,31,32,1)_100%)] before:w-[84px] before:mt-[-14px] before:bg-[url(/media/lib/15-01-2026/tca-svg-frame-13012026-1.png)] before:bg-no-repeat before:bg-contain">
                                 <i class="absolute top-[16px] left-0 inline-flex w-[55px] h-[55px] bg-no-repeat bg-contain" style="background-image: url('{{ asset('wp-content/uploads/images_hzdg/themanh_icon_01.png') }}')"></i>
                                 <div class="flex-1 p-[10px_10px_10px_0]">
@@ -60,7 +61,7 @@
                             </div>
                         </a>
                         <a href="" class="project-item relative rounded-[12px_12px_12px_0] overflow-hidden w-[calc(50%-12px)]" target=_blank rel="noopener noreferrer">
-                            <img class="w-full lazy loaded" src="{{ asset('wp-content/uploads/images_hzdg/themanh_03.png') }}" data-was-processed=true>
+                            <img class="w-full lazy loaded" src="{{ asset('wp-content/uploads/images_hzdg/anhsang05.jpg') }}" data-was-processed=true>
                             <div class="absolute bottom-0 left-0 right-0 flex bg-[linear-gradient(180deg,rgba(64,64,65,0.1)_0%,rgba(35,31,32,1)_100%)] before:w-[84px] before:mt-[-14px] before:bg-[url(/media/lib/15-01-2026/tca-svg-frame-13012026-1.png)] before:bg-no-repeat before:bg-contain">
                                 <i class="absolute top-[16px] left-0 inline-flex w-[55px] h-[55px] bg-no-repeat bg-contain" style="background-image: url('{{ asset('wp-content/uploads/images_hzdg/themanh_icon_01.png') }}"></i>
                                 <div class="flex-1 p-[10px_10px_10px_0]">
@@ -70,7 +71,7 @@
                             </div>
                         </a>
                         <a href="" class="project-item relative rounded-[12px_12px_12px_0] overflow-hidden w-full" target=_blank rel="noopener noreferrer">
-                            <img class="w-full lazy loaded" src="{{ asset('wp-content/uploads/images_hzdg/themanh_04.png') }}" data-was-processed=true>
+                            <img class="w-full lazy loaded" src="{{ asset('wp-content/uploads/images_hzdg/anhsang06.jpg') }}" data-was-processed=true>
                             <div class="absolute bottom-0 left-0 right-0 flex bg-[linear-gradient(180deg,rgba(64,64,65,0.1)_0%,rgba(35,31,32,1)_100%)] before:w-[84px] before:mt-[-14px] before:bg-[url(/media/lib/15-01-2026/tca-svg-frame-13012026-1.png)] before:bg-no-repeat before:bg-contain">
                                 <i class="absolute top-[16px] left-0 inline-flex w-[55px] h-[55px] bg-no-repeat bg-contain" style="background-image: url('{{ asset('wp-content/uploads/images_hzdg/themanh_icon_01.png') }}')"></i>
                                 <div class="flex-1 p-[10px_10px_10px_0]">

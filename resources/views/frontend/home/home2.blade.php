@@ -247,7 +247,7 @@
             font-size: 40px;
             min-width: 0px;
             color: rgba(234,234,234,0.8);
-            font-family: Arial;
+            font-family: "Source Sans 3", sans-serif;
             font-weight: bold;
             max-width: none;
             text-align: left
@@ -318,7 +318,7 @@
             font-size: 48px;
             font-weight: bold;
             color: #0044A9;
-            font-family: "montserrat-regular-8(1)"
+            font-family: "Source Sans 3", sans-serif
         }
 
         #c_static_001_P_47178-1717658196864 .e_scrollNumber-43 .p_plus {
@@ -330,7 +330,7 @@
             line-height: 60px;
             font-weight: bold;
             color: #0044A9;
-            font-family: "montserrat-regular-8(1)";
+            font-family: "Source Sans 3", sans-serif;
             font-size: 48px
         }
 
@@ -343,7 +343,7 @@
             line-height: 60px;
             font-weight: bold;
             color: #0044A9;
-            font-family: "montserrat-regular-8(1)";
+            font-family: "Source Sans 3", sans-serif;
             font-size: 48px
         }
 
@@ -497,7 +497,7 @@
                 font-size: 24px;
                 color: rgba(51,51,51,1);
                 line-height: 1.5;
-                font-family: "17370e03-f6d4-4ba1-bcad-3b3dc0e0f547"
+                font-family: "Source Sans 3", sans-serif
             }
 
             #c_static_001_P_47178-1717658196864 .e_container-36 {
@@ -538,7 +538,7 @@
                 color: rgba(0,77,160,1);
                 line-height: 1;
                 height: auto;
-                font-family: "Montserrat-B"
+                font-family: "Source Sans 3", sans-serif
             }
 
             #c_static_001_P_47178-1717658196864 .e_richText-44 {
@@ -552,7 +552,7 @@
                 color: rgba(0,77,160,1);
                 line-height: 1;
                 height: auto;
-                font-family: "Montserrat-B"
+                font-family: "Source Sans 3", sans-serif
             }
 
             #c_static_001_P_47178-1717658196864 .e_richText-46 {
@@ -566,7 +566,7 @@
                 color: rgba(0,77,160,1);
                 line-height: 1;
                 height: auto;
-                font-family: "Montserrat-B"
+                font-family: "Source Sans 3", sans-serif
             }
 
             #c_static_001_P_47178-1717658196864 .e_richText-48 {

@@ -58,7 +58,7 @@ img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 15
 
 
 			.wpcf7 input[type="submit"] {
-  background-color: #ff0000;
+  background-color: #1a73e9;
   color: #fff;
   border: none;
   padding: 12px 30px;
