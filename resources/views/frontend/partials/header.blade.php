@@ -266,6 +266,10 @@
                     <div class="top-divider full-width"></div>
                 </div>
             </div>
+            <div class="header-bg-container fill">
+                <div class="header-bg-image fill"></div>
+                <div class="header-bg-color fill"></div>
+            </div>
         </div>
     </header>
 

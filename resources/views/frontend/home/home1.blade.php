@@ -1,5 +1,5 @@
 <!-- 3 thẻ card -->
-<div id="gioi-thieu-hzdg" class="container home1">
+<div id="gioi-thieu-hzdg" class="container-home1 home1">
     <ul class="service hidemb">
         <li>
             <div class="grid">
@@ -67,7 +67,7 @@
             height: 100%;
         }
 
-        .container {
+        .container-home1 {
             width: 98%;
             max-width: 1360px;
             margin: 0 auto;
@@ -175,7 +175,7 @@
         }
 
         @media screen and (max-width: 840px) {
-            .container {
+            .container-home1 {
                 width: 99%;
             }
 
@@ -199,7 +199,7 @@
                 margin: 0;
             }
 
-            .container {
+            .container-home1 {
                 width: 100%;
             }
 

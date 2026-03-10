@@ -27,21 +27,33 @@
         <span>Danh mục sản phẩm</span>
     </nav>
 
-    {{-- Category Tabs with ALL --}}
+    {{-- Parent Category Tabs --}}
     <div class="cat-tabs-wrap">
-        <a href="{{ route('products.index') }}{{ $sort !== 'featured' ? '?sort=' . $sort : '' }}" class="cat-tab {{ !$activeTab ? 'is-active' : '' }}">
-            ALL
-        </a>
         @foreach($tabs as $tab)
             @php
-                $tabUrl = route('products.index') . '?cat=' . $tab->slug . ($sort !== 'featured' ? '&sort=' . $sort : '');
                 $isActiveTab = $activeTab && $activeTab->id === $tab->id;
+                $hasChildren = $tab->children->count() > 0;
+
+                if ($hasChildren) {
+                    // Has children → link to /danh-muc/slug
+                    $tabUrl = route('products.category', $tab->slug);
+                } else {
+                    // No children → toggle filter on current page
+                    $tabUrl = $isActiveTab
+                        ? route('products.index') . ($sort !== 'featured' ? '?sort=' . $sort : '')
+                        : route('products.index') . '?cat=' . $tab->slug . ($sort !== 'featured' ? '&sort=' . $sort : '');
+                }
             @endphp
             <a href="{{ $tabUrl }}" class="cat-tab {{ $isActiveTab ? 'is-active' : '' }}">
                 @if($tab->image)
-                    <img class="cat-tab__icon" src="{{ asset('storage/' . $tab->image) }}" alt="{{ $tab->name }}">
+                    <img class="cat-tab__icon" src="{{ Storage::url($tab->image) }}" alt="{{ $tab->name }}">
                 @endif
                 {{ $tab->name }}
+                @if($hasChildren)
+                    <i class="fas fa-chevron-right" style="margin-left:4px;font-size:10px;opacity:.5;"></i>
+                @elseif($isActiveTab)
+                    <i class="fas fa-times" style="margin-left:6px;font-size:11px;opacity:.6;"></i>
+                @endif
             </a>
         @endforeach
     </div>
@@ -52,13 +64,12 @@
         <div>
             <select class="cat-sort-select" style="width:200px" onchange="window.location.href=this.value">
                 @php
-                    $sortBase = route('products.index') . ($activeTab ? '?cat=' . $activeTab->slug : '');
-                    $sortSep = $activeTab ? '&' : '?';
+                    $sortBase = route('products.index') . ($activeTab ? '?cat=' . $activeTab->slug . '&' : '?');
                 @endphp
-                <option value="{{ $sortBase . $sortSep . 'sort=featured' }}" {{ $sort === 'featured' ? 'selected' : '' }}>Sắp xếp theo: Nổi bật</option>
-                <option value="{{ $sortBase . $sortSep . 'sort=newest' }}" {{ $sort === 'newest' ? 'selected' : '' }}>Mới nhất</option>
-                <option value="{{ $sortBase . $sortSep . 'sort=price_asc' }}" {{ $sort === 'price_asc' ? 'selected' : '' }}>Giá tăng dần</option>
-                <option value="{{ $sortBase . $sortSep . 'sort=price_desc' }}" {{ $sort === 'price_desc' ? 'selected' : '' }}>Giá giảm dần</option>
+                <option value="{{ $sortBase . 'sort=featured' }}" {{ $sort === 'featured' ? 'selected' : '' }}>Sắp xếp theo: Nổi bật</option>
+                <option value="{{ $sortBase . 'sort=newest' }}" {{ $sort === 'newest' ? 'selected' : '' }}>Mới nhất</option>
+                <option value="{{ $sortBase . 'sort=price_asc' }}" {{ $sort === 'price_asc' ? 'selected' : '' }}>Giá tăng dần</option>
+                <option value="{{ $sortBase . 'sort=price_desc' }}" {{ $sort === 'price_desc' ? 'selected' : '' }}>Giá giảm dần</option>
             </select>
         </div>
     </div>

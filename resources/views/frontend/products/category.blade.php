@@ -23,29 +23,53 @@
     {{-- Breadcrumb --}}
     <nav class="cat-breadcrumb">
         <a href="{{ route('home') }}">Trang chủ</a>
-        @if(isset($category->parent) && $category->parent)
-            <span class="sep">»</span>
-            <a href="{{ route('products.category', $category->parent->slug) }}">{{ $category->parent->name }}</a>
-        @endif
         <span class="sep">»</span>
-        <span>{{ $category->name }}</span>
+        <a href="{{ route('products.index') }}">Danh mục sản phẩm</a>
+        @if($isParentCategory)
+            <span class="sep">»</span>
+            <span>{{ $category->name }}</span>
+        @else
+            @if(isset($category->parent) && $category->parent)
+                <span class="sep">»</span>
+                <a href="{{ route('products.category', $category->parent->slug) }}">{{ $category->parent->name }}</a>
+            @endif
+            <span class="sep">»</span>
+            <span>{{ $category->name }}</span>
+        @endif
     </nav>
 
-    {{-- Sub-category Tabs --}}
-    @if($tabs->count() > 1)
+    {{-- Sub-category Tabs (toggle: click to filter, click again to show all) --}}
+    @if($isParentCategory && $tabs->count() > 0)
     <div class="cat-tabs-wrap">
         @foreach($tabs as $tab)
             @php
-                if ($isParentCategory) {
-                    $tabUrl = route('products.category', $category->slug) . '?sub=' . $tab->slug . ($sort !== 'featured' ? '&sort=' . $sort : '');
-                } else {
-                    $tabUrl = route('products.category', $tab->slug) . ($sort !== 'featured' ? '?sort=' . $sort : '');
-                }
                 $isActiveTab = $activeTab && $activeTab->id === $tab->id;
+                // Toggle: if active, clicking removes filter (back to all); if not active, apply filter
+                $tabUrl = $isActiveTab
+                    ? route('products.category', $category->slug) . ($sort !== 'featured' ? '?sort=' . $sort : '')
+                    : route('products.category', $category->slug) . '?sub=' . $tab->slug . ($sort !== 'featured' ? '&sort=' . $sort : '');
             @endphp
             <a href="{{ $tabUrl }}" class="cat-tab {{ $isActiveTab ? 'is-active' : '' }}">
                 @if($tab->image)
-                    <img class="cat-tab__icon" src="{{ asset('storage/' . $tab->image) }}" alt="{{ $tab->name }}">
+                    <img class="cat-tab__icon" src="{{ Storage::url($tab->image) }}" alt="{{ $tab->name }}">
+                @endif
+                {{ $tab->name }}
+                @if($isActiveTab)
+                    <i class="fas fa-times" style="margin-left:6px;font-size:11px;opacity:.6;"></i>
+                @endif
+            </a>
+        @endforeach
+    </div>
+    @elseif(!$isParentCategory && $tabs->count() > 1)
+    <div class="cat-tabs-wrap">
+        @foreach($tabs as $tab)
+            @php
+                $isActiveTab = $activeTab && $activeTab->id === $tab->id;
+                $tabUrl = route('products.category', $tab->slug) . ($sort !== 'featured' ? '?sort=' . $sort : '');
+            @endphp
+            <a href="{{ $tabUrl }}" class="cat-tab {{ $isActiveTab ? 'is-active' : '' }}">
+                @if($tab->image)
+                    <img class="cat-tab__icon" src="{{ Storage::url($tab->image) }}" alt="{{ $tab->name }}">
                 @endif
                 {{ $tab->name }}
             </a>
@@ -59,14 +83,16 @@
         <div>
             <select class="cat-sort-select" style="width:200px" onchange="window.location.href=this.value">
                 @php
-                    $sortBase = $isParentCategory
-                        ? route('products.category', $category->slug) . '?sub=' . ($activeTab ? $activeTab->slug : '')
-                        : route('products.category', $activeTab ? $activeTab->slug : $category->slug);
+                    if ($isParentCategory) {
+                        $sortBase = route('products.category', $category->slug) . ($activeTab ? '?sub=' . $activeTab->slug . '&' : '?');
+                    } else {
+                        $sortBase = route('products.category', $activeTab ? $activeTab->slug : $category->slug) . '?';
+                    }
                 @endphp
-                <option value="{{ $sortBase . '&sort=featured' }}" {{ $sort === 'featured' ? 'selected' : '' }}>Sắp xếp theo: Nổi bật</option>
-                <option value="{{ $sortBase . '&sort=newest' }}" {{ $sort === 'newest' ? 'selected' : '' }}>Mới nhất</option>
-                <option value="{{ $sortBase . '&sort=price_asc' }}" {{ $sort === 'price_asc' ? 'selected' : '' }}>Giá tăng dần</option>
-                <option value="{{ $sortBase . '&sort=price_desc' }}" {{ $sort === 'price_desc' ? 'selected' : '' }}>Giá giảm dần</option>
+                <option value="{{ $sortBase . 'sort=featured' }}" {{ $sort === 'featured' ? 'selected' : '' }}>Sắp xếp theo: Nổi bật</option>
+                <option value="{{ $sortBase . 'sort=newest' }}" {{ $sort === 'newest' ? 'selected' : '' }}>Mới nhất</option>
+                <option value="{{ $sortBase . 'sort=price_asc' }}" {{ $sort === 'price_asc' ? 'selected' : '' }}>Giá tăng dần</option>
+                <option value="{{ $sortBase . 'sort=price_desc' }}" {{ $sort === 'price_desc' ? 'selected' : '' }}>Giá giảm dần</option>
             </select>
         </div>
     </div>
