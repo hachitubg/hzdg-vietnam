@@ -1,5 +1,5 @@
 <!-- 3 thẻ card -->
-<div class="container home1">
+<div id="gioi-thieu-hzdg" class="container home1">
     <ul class="service hidemb">
         <li>
             <div class="grid">

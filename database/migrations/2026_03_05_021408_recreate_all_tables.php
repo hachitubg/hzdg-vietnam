@@ -14,7 +14,7 @@ return new class extends Migration
             $table->unsignedBigInteger('parent_id')->nullable();
             $table->string('name');
             $table->string('slug')->unique();
-            $table->enum('type', ['product', 'post', 'project']);
+            $table->enum('type', ['product', 'post', 'project', 'service']);
             $table->text('description')->nullable();
             $table->string('image')->nullable();
             $table->integer('sort_order')->default(0);

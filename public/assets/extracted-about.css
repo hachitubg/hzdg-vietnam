@@ -153,7 +153,7 @@
         max-height: 83px;
       }
       #logo {
-        width: 90px;
+        width: 140px;
       }
       .header-bottom {
         min-height: 80px;
@@ -178,7 +178,7 @@
         height: 50px !important;
       }
       .stuck #logo img {
-        max-height: 50px !important;
+        max-height: 40px !important;
       }
       .header-bottom {
         background-color: #ffffff;

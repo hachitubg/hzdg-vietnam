@@ -17,6 +17,57 @@ class ProductController extends Controller
         return view('frontend.products.index', compact('categories', 'products'));
     }
 
+    public function allCategories()
+    {
+        $categories = Category::where('type', 'product')->where('is_visible', true)->whereNull('parent_id')->with('children')->orderBy('sort_order')->get();
+
+        // Collect all leaf category IDs
+        $allCatIds = [];
+        foreach ($categories as $cat) {
+            if ($cat->children->count() > 0) {
+                foreach ($cat->children as $child) {
+                    $allCatIds[] = $child->id;
+                }
+            } else {
+                $allCatIds[] = $cat->id;
+            }
+        }
+
+        $sort = request('sort', 'featured');
+        $activeSlug = request('cat');
+
+        if ($activeSlug) {
+            $activeTab = Category::where('slug', $activeSlug)->where('is_visible', true)->first();
+            if ($activeTab) {
+                $query = Product::where('category_id', $activeTab->id)->where('is_visible', true);
+            } else {
+                $query = Product::whereIn('category_id', $allCatIds)->where('is_visible', true);
+                $activeTab = null;
+            }
+        } else {
+            $query = Product::whereIn('category_id', $allCatIds)->where('is_visible', true);
+            $activeTab = null;
+        }
+
+        $query->with(['images', 'reviews' => fn($q) => $q->where('is_approved', true), 'promotionProduct']);
+
+        match ($sort) {
+            'price_asc'  => $query->orderBy('price'),
+            'price_desc' => $query->orderByDesc('price'),
+            'newest'     => $query->orderByDesc('created_at'),
+            default      => $query->orderByDesc('is_hot')
+                                  ->orderByDesc('is_bestseller')
+                                  ->orderByDesc('is_new')
+                                  ->orderBy('sort_order'),
+        };
+
+        $products = $query->paginate(20);
+        $tabs = $categories;
+        $isAllPage = true;
+
+        return view('frontend.products.all', compact('categories', 'tabs', 'activeTab', 'products', 'sort', 'isAllPage'));
+    }
+
     public function category($slug)
     {
         $category = Category::where('slug', $slug)
