@@ -212,7 +212,7 @@
                             {{-- Hotline --}}
                             <li class="html header-button-1">
                                 <div class="header-button">
-                                    <a class="button alert is-large box-shadow-2" href="tel:0967793333"
+                                    <a style="background-color:#254283;" class="button alert is-large box-shadow-2" href="tel:0967793333"
                                         style="border-radius:99px;">
                                         <span>Hotline: 096.779.3333</span>
                                     </a>

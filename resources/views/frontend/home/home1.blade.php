@@ -9,7 +9,7 @@
             </div>
         </li>
         <li>
-            <div class="grid">
+            <div class="grid" style="display: flex; flex-direction: column;">
                 <div class="center">
                     <img src="{{ asset('wp-content/uploads/images_hzdg/trangchu_header_01.jpg') }}">
                 </div>
@@ -19,7 +19,7 @@
             </div>
         </li>
         <li>
-            <div class="grid">
+            <div class="grid" style="display: flex; flex-direction: column;">
                 <div class="center">
                     <img src="{{ asset('wp-content/uploads/images_hzdg/trangchu_header_02.jpg') }}">
                 </div>

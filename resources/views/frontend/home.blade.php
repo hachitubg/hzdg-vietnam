@@ -74,10 +74,6 @@
 
         @include('frontend.home.home3')
 
-        @include('frontend.home.home4')
-
-        @include('frontend.home.home5')
-
     </div>
 
 @endsection
