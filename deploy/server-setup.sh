@@ -1,88 +1,73 @@
 #!/bin/bash
 # ============================================================
-# Server Setup Script - Chạy MỘT LẦN trên server mới
-# Usage: ssh root@103.200.20.160 'bash -s' < deploy/server-setup.sh
+# Server Setup Script - Chạy MỘT LẦN trên server
+# Tạo database MySQL và cài đặt Composer/Supervisor nếu chưa có
+#
+# Usage: bash deploy/server-setup.sh
 # ============================================================
 set -e
 
-APP_DIR="/var/www/hzdg-vietnam"
 DB_NAME="hzdg_vietnam"
 DB_USER="hzdg_user"
 
-echo "=== [1/7] Cập nhật hệ thống ==="
-apt-get update && apt-get upgrade -y
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+NC='\033[0m'
 
-echo "=== [2/7] Cài đặt các packages cần thiết ==="
-apt-get install -y \
-    nginx \
-    mysql-server \
-    php8.2-fpm \
-    php8.2-cli \
-    php8.2-mysql \
-    php8.2-mbstring \
-    php8.2-xml \
-    php8.2-curl \
-    php8.2-zip \
-    php8.2-gd \
-    php8.2-intl \
-    php8.2-bcmath \
-    php8.2-tokenizer \
-    php8.2-fileinfo \
-    php8.2-redis \
-    supervisor \
-    unzip \
-    git \
-    curl
+info()  { echo -e "${GREEN}[SETUP]${NC} $1"; }
+warn()  { echo -e "${YELLOW}[WARN]${NC} $1"; }
 
-echo "=== [3/7] Cài đặt Composer ==="
+echo ""
+echo "============================================"
+echo "  HZDG Vietnam - Server Setup"
+echo "============================================"
+echo ""
+
+# ── Kiểm tra các phần mềm cần thiết ─────────────────────────
+info "Kiểm tra phần mềm..."
+
+for cmd in php nginx mysql node npm; do
+    if command -v $cmd &> /dev/null; then
+        echo "  ✓ $cmd: $(command -v $cmd)"
+    else
+        echo "  ✗ $cmd: CHƯA CÀI"
+    fi
+done
+
+# ── Cài Composer nếu chưa có ─────────────────────────────────
 if ! command -v composer &> /dev/null; then
+    info "Cài đặt Composer..."
     curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 fi
+echo "  ✓ composer: $(composer --version 2>/dev/null | head -1)"
 
-echo "=== [4/7] Cài đặt Node.js (LTS) ==="
-if ! command -v node &> /dev/null; then
-    curl -fsSL https://deb.nodesource.com/setup_22.x | bash -
-    apt-get install -y nodejs
+# ── Cài Supervisor nếu chưa có ───────────────────────────────
+if ! command -v supervisorctl &> /dev/null; then
+    info "Cài đặt Supervisor..."
+    apt-get install -y supervisor
 fi
 
-echo "=== [5/7] Tạo thư mục project ==="
-mkdir -p "$APP_DIR"
-chown -R www-data:www-data "$APP_DIR"
-
-echo "=== [6/7] Cấu hình MySQL ==="
-echo "Tạo database và user MySQL..."
-echo ">> Bạn cần nhập mật khẩu cho MySQL user '$DB_USER':"
-read -s -p "Nhập mật khẩu: " DB_PASS
+# ── Tạo database MySQL ───────────────────────────────────────
+info "Cấu hình MySQL..."
+echo ">> Tạo database '$DB_NAME' và user '$DB_USER'"
+echo -n "Nhập mật khẩu cho MySQL user '$DB_USER': "
+read -s DB_PASS
 echo ""
 
 mysql -e "CREATE DATABASE IF NOT EXISTS \`$DB_NAME\` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
 mysql -e "CREATE USER IF NOT EXISTS '$DB_USER'@'localhost' IDENTIFIED BY '$DB_PASS';"
 mysql -e "GRANT ALL PRIVILEGES ON \`$DB_NAME\`.* TO '$DB_USER'@'localhost';"
 mysql -e "FLUSH PRIVILEGES;"
-
-echo "=== [7/7] Cấu hình Nginx & Supervisor ==="
-# Copy nginx config (sẽ được deploy script xử lý)
-# Copy supervisor config (sẽ được deploy script xử lý)
-
-# Tạo thư mục storage cần thiết
-mkdir -p "$APP_DIR/storage/app/public"
-mkdir -p "$APP_DIR/storage/framework/cache"
-mkdir -p "$APP_DIR/storage/framework/sessions"
-mkdir -p "$APP_DIR/storage/framework/views"
-mkdir -p "$APP_DIR/storage/logs"
-mkdir -p "$APP_DIR/bootstrap/cache"
-
-chown -R www-data:www-data "$APP_DIR"
-chmod -R 775 "$APP_DIR/storage"
-chmod -R 775 "$APP_DIR/bootstrap/cache"
+info "Database đã sẵn sàng."
 
 echo ""
 echo "============================================"
-echo "  Server setup hoàn tất!"
-echo "  DB_NAME: $DB_NAME"
-echo "  DB_USER: $DB_USER"
+echo "  Setup hoàn tất!"
 echo ""
 echo "  Bước tiếp theo:"
-echo "  1. Cập nhật mật khẩu DB vào .env.production"
-echo "  2. Chạy: bash deploy.sh"
+echo "  1. git clone <repo> /var/www/hzdg-vietnam"
+echo "  2. cd /var/www/hzdg-vietnam"
+echo "  3. bash deploy.sh --fresh"
+echo "     (Script sẽ tạo .env từ .env.example,"
+echo "      bạn sửa .env rồi chạy lại)"
 echo "============================================"
