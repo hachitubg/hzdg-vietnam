@@ -69,7 +69,7 @@
 
         .container-home1 {
             width: 98%;
-            max-width: 1360px;
+            max-width: 1250px;
             margin: 0 auto;
             position: relative;
         }
@@ -132,9 +132,8 @@
         .service li p {
             color: #264c5d;
             font-weight: bold;
-            font-size: 24px;
-            line-height: 30px;
-            margin-bottom: 10px;
+            font-size: 20px;
+            line-height: normal;
         }
 
         .service li span {
@@ -149,7 +148,6 @@
             border: 1px solid #264c5d;
             text-transform: uppercase;
             margin: auto;
-            position: absolute;
             bottom: 10px;
             left: 0;
             right: 0;
