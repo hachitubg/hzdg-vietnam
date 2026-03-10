@@ -142,6 +142,34 @@
     })();
     </script>
 
+    <script>
+    /* Drag-to-scroll for horizontal tab containers */
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.cat-tabs-wrap, .pd-category-tabs').forEach(function(el) {
+            var isDown = false, startX, scrollLeft, moved;
+            el.addEventListener('mousedown', function(e) {
+                isDown = true; moved = false;
+                el.classList.add('is-dragging');
+                startX = e.pageX - el.offsetLeft;
+                scrollLeft = el.scrollLeft;
+            });
+            el.addEventListener('mouseleave', function() { isDown = false; el.classList.remove('is-dragging'); });
+            el.addEventListener('mouseup', function() { isDown = false; el.classList.remove('is-dragging'); });
+            el.addEventListener('mousemove', function(e) {
+                if (!isDown) return;
+                e.preventDefault();
+                var x = e.pageX - el.offsetLeft;
+                var walk = (x - startX) * 1.5;
+                if (Math.abs(walk) > 3) moved = true;
+                el.scrollLeft = scrollLeft - walk;
+            });
+            el.addEventListener('click', function(e) {
+                if (moved) e.preventDefault();
+            }, true);
+        });
+    });
+    </script>
+
 </body>
 
 </html>

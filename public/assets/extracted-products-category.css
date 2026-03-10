@@ -3982,14 +3982,14 @@
           gap: 10px;
           overflow-x: auto;
           padding: 16px 0 18px;
-          scrollbar-width: thin;
-          scrollbar-color: #c0c0c0 transparent;
+          scrollbar-width: none;
           border-bottom: 2px solid #f0f0f0;
+          cursor: grab;
+          -webkit-user-select: none;
+          user-select: none;
       }
-      .cat-tabs-wrap::-webkit-scrollbar { height: 6px; }
-      .cat-tabs-wrap::-webkit-scrollbar-track { background: transparent; }
-      .cat-tabs-wrap::-webkit-scrollbar-thumb { background: #c0c0c0; border-radius: 3px; }
-      .cat-tabs-wrap::-webkit-scrollbar-thumb:hover { background: #999; }
+      .cat-tabs-wrap::-webkit-scrollbar { display: none; }
+      .cat-tabs-wrap.is-dragging { cursor: grabbing; }
       .cat-tabs-wrap--parent { border-bottom: none; padding-bottom: 8px; }
       .cat-tab {
           display: inline-flex;

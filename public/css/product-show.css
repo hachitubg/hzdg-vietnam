@@ -32,13 +32,13 @@
     max-width: 1250px;
     margin-left: auto;
     margin-right: auto;
-    scrollbar-width: thin;
-    scrollbar-color: #c0c0c0 transparent;
+    scrollbar-width: none;
+    cursor: grab;
+    -webkit-user-select: none;
+    user-select: none;
 }
-.pd-category-tabs::-webkit-scrollbar { height: 6px; }
-.pd-category-tabs::-webkit-scrollbar-track { background: transparent; }
-.pd-category-tabs::-webkit-scrollbar-thumb { background: #c0c0c0; border-radius: 3px; }
-.pd-category-tabs::-webkit-scrollbar-thumb:hover { background: #999; }
+.pd-category-tabs::-webkit-scrollbar { display: none; }
+.pd-category-tabs.is-dragging { cursor: grabbing; }
 .pd-category-tab {
     display: flex;
     align-items: center;
@@ -52,6 +52,7 @@
     font-size: 15px;
     font-weight: 600;
     white-space: nowrap;
+    flex-shrink: 0;
     transition: border-color .2s, box-shadow .2s;
 }
 .pd-category-tab:hover,
